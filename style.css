@@ -163,7 +163,7 @@ header li a:hover,
   /*FORSIDE*/
 
 #forsideIntro {
-    height: 950px;
+    height: 970px;
     background-image: url(img/baggrundForsideIllustration.svg);
     background-size: cover;
     position: relative;
@@ -177,6 +177,18 @@ header li a:hover,
     top: 40vw;
     left: 15vw;
     width: 40%;
+    z-index: 15;
+}
+
+#baggrundIntroForside {
+    background-image: url(img/BaggrundBeige.svg);
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 10vw;
+    z-index: 10;
+    width: 110%;
+    height: 970px;
 }
 
 /*CSS-animationer på forsiden*/
@@ -321,8 +333,9 @@ header li a:hover,
     25% {transform: rotate(-4deg);}
     75% {transform: rotate(4deg);}
     100% {transform: rotate(0deg);}
-    
 }
+
+
 
   .bogKarousselMidlertidig {
     height: 700px;
