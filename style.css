@@ -1,0 +1,87 @@
+* {
+
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+h1, h2, h3 {
+    color:#2A3C24;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+}
+ 
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f1f1f;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+    
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2A3C24;
+}
+
+.lilleCTA, .storCTA {
+    background-color: #f9dc5c;
+    padding: 3%;
+    text-align: center;
+    border-radius: 35px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+
+/* FORSIDE*/
+
+/* LÆSEKLUB BANNER */
+
+.toKolonner {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.toKolonnerBillede {
+    width: 50%;
+    margin: auto;
+}
+
+.toKolonnerTekst {
+    width: 35%;
+    margin: auto;
+}
+
+
