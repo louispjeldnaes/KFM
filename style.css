@@ -60,10 +60,14 @@ a {
 
 }
 
+ul li {
+    list-style-type: none;
+}
 
-/* FORSIDE*/
 
-/* LÆSEKLUB BANNER */
+
+
+/* TO KOLONNER */
 
 .toKolonner {
     width: 90%;
@@ -84,4 +88,74 @@ a {
     margin: auto;
 }
 
+
+/* HEADER*/
+
+header  {
+    height: 8vw;
+    background-color: white;
+    opacity: 0.8;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+}
+
+#logo {
+    width: 4.5%;
+    margin-left: 2.5vw;
+    margin-top: 1vw;
+}
+
+nav ul{
+    display: flex;
+    position: relative;
+    top: 5.5vw;
+
+}
+
+nav a {
+    padding: 0vw 0vw 1vw 1vw;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 3vw;
+}
+
+nav li {
+    margin-right: 2vw;
+}
+
+  header li a:hover,
+  .dropdown:hover .dropbtn {
+    color: #A690A4;
+  }
+
+  .dropdown-content {
+    display: none; /*Indhold i dropdown viser sig ikke*/
+    position: absolute;
+    top: 2vw;
+    background-color: white;
+    z-index: 1;
+  }
+  
+
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  .ikoner {
+    display: flex;
+    margin-right: 2vw;
+    position: relative;
+    top: 4.5vw;
+  }
+  .ikoner div i{
+    width: 60px ;
+  }
+
+
+  /*FORSIDE*/
 
