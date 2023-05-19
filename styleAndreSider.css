@@ -1,13 +1,15 @@
+/*Overskrifter der skal centreres
+og have samme top og bottom margin*/
+.overskriftCenter{
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
 /*HTML: EVENTS*/
 .eventMaaned{
     width: 90%;
     margin: auto;
-    margin-top: 100px; 
-}
-
-.eventMaaned h1{
-    text-align: center;
-    margin-bottom: 100px;
 }
 
 /*Flexer de forskellige events*/
@@ -112,15 +114,22 @@ fastsættes denne oppe i .eventFlex div*/
 /*Vores læseklubber sektionen styles og flexes*/
 .laeseklubberLaeserFlex{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    margin-bottom: 100px;
 }
 
 .laeseklubberLaeserFlex div{
+    min-width: 228px;
     width: 45%;
-    width: 228px;
-    margin-inline-end: 30px;
+    
+    /*det bliver jo meget mere end 10px, så hvordan får vi styringen over mellemrum mellem billede og tekst her????*/
+    margin-inline-end: 10px;
 }
 
+.bogFlex{
+    display: flex;
+    justify-content: space-between;
+}
 
 /*Styrer Læseklub 2 læser's placering
 så den centres i højden ift. læseklub 1
