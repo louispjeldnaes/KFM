@@ -12,6 +12,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png"> <!--FavIcon - skal laves!-->
     <script src="https://kit.fontawesome.com/0396285b10.js" crossorigin="anonymous"></script> <!--Fontawesome - MLS' kit-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleAndreSider.css">
     <script src="script" defer></script>
     
     <title>Kristian F. Møller - Aarhus' hyggeligeste boghandel</title>
@@ -30,71 +31,94 @@
     <!--LÆSEKLUB INTRO-->
         <!--toKolonner - bruges på alle sider -->
         <section class="toKolonner" class="baggrundBeige"> 
-            <div> <!--Her kan bruges id-->
-                <img src="" alt="">
+            <div class="toKolonnerBillede">
+                <img src="img/læsegrupper.svg" alt="">
             </div>
-            <div> 
-                <h1></h1>
-                <h2></h2>
-                <p></p>
-                <a class="storCTA" href=""></a> <!--CTA-->
+            <div class="toKolonnerTekst"> 
+                <h1>Læsefællesskab</h1>
+                <h2>Vi mener det er vigtigt at støtte op omkring <br>
+                    læsefællesskabet og -glæden.
+                    <br><br>
+                    Vi giver læseklubber, der er registreret hos Kristian F. <br>
+                    Møller 20% rabat i vores boghandel, når I køber bøger til <br>
+                    jeres klub.</h2>
             </div>
         </section>
 
 
         <!--VORES LÆSEKLUBBER-->
         <section>
-            <h1></h1>
-            <div>
+            <h1>Vores læseklubber</h1>
+            <div class="toKolonner">
                 <div><!--Læseklub 1 + 3-->
-                    <div> <!--læseklub 1 læser-->
+                    <div class="laeseklubberLaeserFlex"> <!--læseklub 1 læser-->
                         <div><!--Billede, titel , pris .. -->
-                            <div><img src="" alt=""></div>
-                            <h2></h2>
-                            <h3></h3>
+                            <div class="bogCover" id="bogCover1"></div>
+                            <h2>Det manglende lys</h2>
+                            <h3>Nino Haratischwili</h3>
                             <div>
-                                <a class="lilleCTA" href=""></a> <!--lille CTA-->
-                                <h2></h2>
+                                <a class="lilleCTA" href="">Læg i kurv</a> <!--lille CTA-->
+                                <h2>299,95 kr</h2>
                             </div>
                         </div> 
 
-                        <div><!--BEskrivelsen af bogen-->
-                            <h2></h2>
-                            <p></p>
+                        <div><!--Beskrivelsen af bogen-->
+                            <h2>Læseklub 1 læser</h2>
+                            <p>Vi læser lige nu romanen 'Det manglende lys', der
+                                er skrevet af den prisvindende forfatter Nino
+                                Haratischwili.
+                                <br><br>
+                                'Det manglende lys' er en kraftfuld fortælling om
+                                krig, kærlighed og venskabet mellem de fire
+                                kvinder Dina, Ira, Nene og Keto.</p>
                         </div> 
                     </div>
 
-                    <div> <!--læseklub 3 læser-->
+                    <div class="laeseklubberLaeserFlex"> <!--Læseklub 3 læser-->
                         <div><!--Billede, titel , pris .. -->
-                            <div><img src="" alt=""></div>
-                            <h2></h2>
-                            <h3></h3>
+                            <div class="bogCover" id="bogCover3"></div>
+                            <h2>Nøjsomheden</h2>
+                            <h3>Stine Askov</h3>
                             <div>
-                                <a class="lilleCTA" href=""></a> <!--lille CTA-->
-                                <h2></h2>
+                                <a class="lilleCTA" href="">Læg i kurv</a> <!--lille CTA-->
+                                <h2>249,95 kr</h2>
                             </div>
                         </div> 
 
-                        <div><!--BEskrivelsen af bogen-->
-                            <h2></h2>
-                            <p></p>
+                        <div><!--Beskrivelsen af bogen-->
+                            <h2>Læseklub 3 læser</h2>
+                            <p>Vi er i gang med at læse kærlighedsromanen
+                                'Nøjsomheden', der handler om Mona, som bor i
+                                ghettoen Nøjsomheden. 
+                                <br><br>
+                                'Nøjsomheden' er en rå og medrivende fortælling
+                                om at blive til som menneske gennem
+                                bevidstheden om, hvor man kommer fra.
+                                <br><br>
+                                Romanen er skrevet af Stine Askov.</p>
                         </div> 
                     </div>
                 </div> 
 
-                <div><!--LÆseklub 2-->
-                    <div> <!--læseklub 2 læser-->
-                        <div><!--BEskrivelsen af bogen-->
-                            <h2></h2>
-                            <p></p>
+                <div><!--Læseklub 2-->
+                    <div class="laeseklubberLaeserFlex" id="laeseklub2Flyt" > <!--læseklub 2 læser-->
+                        <div><!--Beskrivelsen af bogen-->
+                            <h2>Læseklub 2 læser</h2>
+                            <p>I vores læseklub er vi i gang med Maggie
+                                Shipteads historiske roman
+                                'Himmelstormere'.
+                                <br><br>
+                                Det er en gribende fortælling om to kvinders
+                                skæbne, der knyttes sammen på tværs af
+                                århundreder og kontinenter.</p>
                         </div> 
                         <div><!--Billede, titel , pris .. -->
-                            <div><img src="" alt=""></div>
-                            <h2></h2>
-                            <h3></h3>
+                            <div class="bogCover" id="bogCover2"></div>
+                            <h2>Himmelstormere</h2>
+                            <h3>Maggie Shiptead</h3>
                             <div>
-                                <a class="lilleCTA" href=""></a> <!--lille CTA-->
-                                <h2></h2>
+                                <a class="lilleCTA" href="">Læg i kurv</a> <!--lille CTA-->
+                                <h2>149,95 kr</h2>
                             </div>
                         </div> 
                     </div>

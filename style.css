@@ -1,3 +1,4 @@
+/*GENERELT*/
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@ img {
   width: 100%;
 }
 
+/*TYPOGRAFI*/
 h1,
 h2,
 h3 {
@@ -40,10 +42,12 @@ p {
   line-height: 24px;
 }
 
+/*LINKS/KNAPPER*/
 a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   color: #2a3c24;
 }
 
@@ -51,15 +55,26 @@ a {
 .storCTA {
   background-color: #f9dc5c;
   padding: 3%;
-  text-align: center;
-  border-radius: 35px;
   padding-left: 5%;
   padding-right: 5%;
+  text-align: center;
+  border-radius: 35px;
 }
 
-/* FORSIDE*/
+.lilleCTA {
+  font-size: 15px;
+}
 
-/* LÆSEKLUB BANNER */
+.storCTA {
+  font-size: 20px;
+}
+
+/*LISTE*/
+ul li {
+  list-style-type: none;
+}
+
+/* TO KOLONNER */
 
 .toKolonner {
   width: 90%;
@@ -165,4 +180,291 @@ footer {
 #aabningstiderHoejre {
   text-align: right;
   width: 30%;
+}
+/* HEADER*/
+
+header {
+  height: 8vw;
+  background-color: white;
+  opacity: 0.8;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  z-index: 100;
+}
+
+#logo {
+  width: 4.5%;
+  margin-left: 2.5vw;
+  margin-top: 1vw;
+}
+
+nav ul {
+  display: flex;
+  position: relative;
+  top: 5.5vw;
+}
+
+nav a {
+  padding: 0vw 0vw 1vw 1vw;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 3vw;
+}
+
+nav li {
+  margin-right: 2vw;
+}
+
+header li a:hover,
+.dropdown:hover .dropbtn {
+  color: #a690a4;
+}
+
+.dropdown-content {
+  display: none; /*Indhold i dropdown viser sig ikke*/
+  position: absolute;
+  top: 2vw;
+  background-color: white;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /*Indhold vises ved dropdown*/
+}
+
+.ikoner {
+  display: flex;
+  margin-right: 2vw;
+  position: relative;
+  top: 4.5vw;
+}
+
+.ikoner div i {
+  width: 60px;
+}
+
+/*FORSIDE*/
+
+#forsideIntro {
+  height: 970px;
+  background-image: url(img/baggrundForsideIllustration.svg);
+  background-size: cover;
+  position: relative;
+  top: -6vw;
+  left: -3vw;
+  width: 110%;
+}
+
+#forsideIntroTekst {
+  position: absolute;
+  top: 40vw;
+  left: 15vw;
+  width: 40%;
+  z-index: 15;
+}
+
+#baggrundIntroForside {
+  background-image: url(img/BaggrundBeige.svg);
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  top: 10vw;
+  z-index: 10;
+  width: 110%;
+  height: 970px;
+}
+
+/*CSS-animationer på forsiden*/
+
+#luftBallon {
+  width: 12vw;
+  position: absolute;
+  top: 13vw;
+  left: 13vw;
+  animation: 8s infinite luftBallon;
+}
+
+@keyframes luftBallon {
+  0% {
+    transform: translateY(0);
+  }
+  35% {
+    transform: translateY(1.5vw);
+  }
+  55% {
+    transform: translateY(0.5vw);
+  }
+  75% {
+    transform: translateY(1.5vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#planeter {
+  width: 16vw;
+  position: absolute;
+  top: 12vw;
+  left: 60vw;
+}
+
+#maane {
+  width: 9vw;
+  position: absolute;
+  top: 12vw;
+  left: 35vw;
+}
+
+#stjerneLille {
+  width: 1.5vw;
+  position: absolute;
+  top: 16vw;
+  left: 41vw;
+  animation: 5s infinite blinkendeStjerner;
+}
+
+#stjerneStor {
+  width: 3vw;
+  position: absolute;
+  top: 14vw;
+  left: 43vw;
+  animation: 2.5s infinite blinkendeStjerner;
+}
+
+@keyframes blinkendeStjerner {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  55% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#hval {
+  width: 18vw;
+  position: absolute;
+  z-index: 1;
+  top: 24vw;
+  left: 38vw;
+}
+
+#sky1 {
+  width: 13vw;
+  position: absolute;
+  top: 30vw;
+  left: 30vw;
+  z-index: 2;
+  animation: 120s infinite flyvendeSkyer;
+}
+
+@keyframes flyvendeSkyer {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(17vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#sky2 {
+  width: 13vw;
+  position: absolute;
+  top: 32vw;
+  left: 50vw;
+  z-index: 2;
+  animation: 180s infinite flyvendeSkyerModsat;
+}
+
+#sky3 {
+  width: 7vw;
+  position: absolute;
+  top: 26vw;
+  left: 57vw;
+  animation: 80s infinite flyvendeSkyerModsat;
+}
+
+#sky4 {
+  width: 6vw;
+  position: absolute;
+  top: 30vw;
+  left: 53vw;
+  z-index: 2;
+  animation: 120s infinite flyvendeSkyerModsat;
+}
+
+#sky5 {
+  width: 13vw;
+  position: absolute;
+  top: 26vw;
+  left: 35vw;
+  animation: 80s infinite flyvendeSkyer;
+}
+
+@keyframes flyvendeSkyerModsat {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-17vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#havFugle {
+  width: 18vw;
+  position: absolute;
+  top: 20vw;
+  z-index: 1;
+  left: 78vw;
+}
+
+#skib {
+  width: 8vw;
+  position: absolute;
+  top: 17vw;
+  left: 82.7vw;
+  animation: 7s infinite vippendeSkib;
+  transform-origin: bottom center;
+}
+
+@keyframes vippendeSkib {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-4deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.bogKarousselMidlertidig {
+  height: 700px;
+  background-color: #a690a4;
 }
