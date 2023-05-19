@@ -13,101 +13,91 @@ og have samme top og bottom margin*/
 }
 
 /*Flexer de forskellige events*/
-.eventFlex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.eventFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /*Justering af størrelse på hvert event i oversigten,
 så tekst og billede aligner både til højre og venstre*/
-.eventFlex div{
-    width: 33%;
-    min-width:400px;
-    max-width: 400px;
+.eventFlex div {
+  width: 33%;
+  min-width: 400px;
+  max-width: 400px;
 }
 
-.eventFlex h2{
-    text-align: center;
+.eventFlex h2 {
+  text-align: center;
 }
 
 /*ur-ikon og klokkeslæt*/
-.eventTidIkon{
-    display: flex;
-    justify-content: left;
-    width:max-content;
-    border: 1px solid black; /*border så jeg kan se linjerne for alle de div'ere*/
+.eventTidIkon {
+  display: flex;
+  justify-content: left;
+  width: max-content;
+  border: 1px solid black; /*border så jeg kan se linjerne for alle de div'ere*/
 }
 
 /*Laver afstand mellem ur-ikon og klokkeslæt*/
-.eventTidIkon h2{
-    margin-left: 4%;
+.eventTidIkon h2 {
+  margin-left: 4%;
 }
 
 /*Flexer tid og lilleCTA*/
-.eventTidKnap{
-    display: flex;
-    justify-content: center;
-    border: 1px solid black; /*border så jeg kan se linjerne for alle de div'ere*/
+.eventTidKnap {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black; /*border så jeg kan se linjerne for alle de div'ere*/
 }
 
-
-
-
 /*Hvordan styler vi størrelse og farve på fontawesomeikoner?!*/
-
-
-
-
 
 /*Event billeder
 - billederne til hvert event indsættes som background-image,
 hvor height og cover bruges til at give alle ens størrelse/format.
 Da width er samme som den tilhørende tekst (beskrivelsen af eventet)
 fastsættes denne oppe i .eventFlex div*/
-.eventBillede{
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 10px;
+.eventBillede {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
 }
-
 
 /*Event billeder i maj*/
-#maj1{
-    background-image: url(img/event/flyvende-signering-groen.svg);
+#maj1 {
+  background-image: url(img/event/flyvende-signering-groen.svg);
 }
 
-#maj2{
-    background-image: url(img/event/skrivemaskine-lilla.svg);
+#maj2 {
+  background-image: url(img/event/skrivemaskine-lilla.svg);
 }
 
-#maj3{
-    background-image: url(img/event/flyvende-boeger-gul.svg);
+#maj3 {
+  background-image: url(img/event/flyvende-boeger-gul.svg);
 }
 
-#maj4{
-    background-image: url(img/event/flyvende-skrivemaskiner-gul.svg);
+#maj4 {
+  background-image: url(img/event/flyvende-skrivemaskiner-gul.svg);
 }
 
-#maj5{
-    background-image: url(img/event/signering-groen.svg);
+#maj5 {
+  background-image: url(img/event/signering-groen.svg);
 }
 
-#maj6{
-    background-image: url(img/event/balloner-lilla.svg);
+#maj6 {
+  background-image: url(img/event/balloner-lilla.svg);
 }
 
 /*Event billeder i juni*/
-#juni1{
-    background-image: url(img/event/flyvende-boeger-lilla.svg);
+#juni1 {
+  background-image: url(img/event/flyvende-boeger-lilla.svg);
 }
 
-#juni2{
-    background-image: url(img/event/flyvende-boeger-gul.svg);
+#juni2 {
+  background-image: url(img/event/flyvende-boeger-gul.svg);
 }
-
-
 
 /*HTML: LÆSEKLUBBER*/
 
@@ -134,26 +124,118 @@ fastsættes denne oppe i .eventFlex div*/
 /*Styrer Læseklub 2 læser's placering
 så den centres i højden ift. læseklub 1
 og 3 på venstre side.*/
-#laeseklub2Flyt{
+#laeseklub2Flyt {
+  position: relative;
+  top: 25%;
+  bottom: 25%;
+}
+
+.bogCover {
+  height: 346px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#bogCover1 {
+  background-color: aquamarine; /*skift ud med background-image url*/
+}
+
+#bogCover2 {
+  background-color: aquamarine; /*skift ud med background-image url*/
+}
+
+#bogCover3 {
+  background-color: aquamarine; /*skift ud med background-image url*/
+}
+
+/*BOGBESKRIVELSE*/
+.bogOverBlob {
+    margin-left: 100px;
+  }
+  
+  #lillaBlob {
     position: relative;
-    top: 25%;
-    bottom: 25%;
-}
-
-.bogCover{
-    height: 346px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#bogCover1{
-    background-color: aquamarine; /*skift ud med background-image url*/
-}
-
-#bogCover2{
-    background-color: aquamarine; /*skift ud med background-image url*/
-}
-
-#bogCover3{
-    background-color: aquamarine; /*skift ud med background-image url*/
-}
+    width: 100%;
+    z-index: -10;
+    margin-left: -323px;
+    margin-bottom: -30px;
+  }
+  
+  #bogbeskrivelseCover {
+    width: 65%;
+    z-index: 1;
+  }
+  
+  /*EVENTBESKRIVELSE*/
+  
+  #gulBlob {
+    position: relative;
+    width: 130%;
+    z-index: -10;
+    margin-left: -160px;
+    margin-top: -310px;
+  }
+  
+  #eventbeskrivelseCover {
+    position: relative;
+    margin-left: -120px;
+    margin-bottom: -40px;
+    width: 110%;
+    z-index: 1;
+  }
+  
+  /*404*/
+  /*Bog animation + fejltekst*/
+  /*#bogAnimation {
+    width: 40%;
+    margin-left: 150px;
+  }*/
+  
+  #fejlTekst {
+    margin-top: 140px;
+  }
+  
+  #fejlTekst h6 {
+    color: #2a3c24;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-size: 50px;
+  }
+  
+  #fejlTekst h1 {
+    text-align: right;
+    margin-right: 140px;
+  }
+  
+  #tristSmiley {
+    width: 6%;
+    margin-left: 1.5%;
+  }
+  
+  /*CTA + pil*/
+  #fejlsideCTA {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 20%;
+  }
+  
+  #fejlsideKnap {
+    width: 50%;
+  }
+  
+  #fejlsideHaandskrift {
+    width: 50%;
+  }
+  
+  h5 {
+    font-family: "Indie Flower", sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  
+  #knapPil {
+    width: 20%;
+    position: relative;
+    margin-left: -30px;
+  }
