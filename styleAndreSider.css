@@ -10,28 +10,50 @@
     margin-bottom: 100px;
 }
 
+/*Flexer de forskellige events*/
 .eventFlex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-/*Justering af størrelse på hvert event i oversigten*/
+/*Justering af størrelse på hvert event i oversigten,
+så tekst og billede aligner både til højre og venstre*/
 .eventFlex div{
     width: 33%;
     min-width:400px;
     max-width: 400px;
 }
 
-.eventTidKnap{
+.eventFlex h2{
+    text-align: center;
+}
+
+/*ur-ikon og klokkeslæt*/
+.eventTidIkon{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    width:max-content;
     border: 1px solid black; /*border så jeg kan se linjerne for alle de div'ere*/
 }
 
-.eventTidKnap div{
-    width: 50%;
+/*Laver afstand mellem ur-ikon og klokkeslæt*/
+.eventTidIkon h2{
+    margin-left: 4%;
 }
+
+/*Flexer tid og lilleCTA*/
+.eventTidKnap{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black; /*border så jeg kan se linjerne for alle de div'ere*/
+}
+
+
+
+
+/*Hvordan styler vi størrelse og farve på fontawesomeikoner?!*/
+
 
 
 
@@ -45,6 +67,7 @@ fastsættes denne oppe i .eventFlex div*/
     height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 10px;
 }
 
 
