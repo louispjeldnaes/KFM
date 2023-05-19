@@ -1,4 +1,4 @@
-/*EVENTS OVERSIGT*/
+/*HTML: EVENTS*/
 .eventMaaned{
     width: 90%;
     margin: auto;
@@ -103,4 +103,48 @@ fastsættes denne oppe i .eventFlex div*/
 
 #juni2{
     background-image: url(img/event/flyvende-boeger-gul.svg);
+}
+
+
+
+/*HTML: LÆSEKLUBBER*/
+
+/*Vores læseklubber sektionen styles og flexes*/
+.laeseklubberLaeserFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.laeseklubberLaeserFlex div{
+    width: 45%;
+    width: 228px;
+    margin-inline-end: 30px;
+}
+
+
+/*Styrer Læseklub 2 læser's placering
+så den centres i højden ift. læseklub 1
+og 3 på venstre side.*/
+#laeseklub2Flyt{
+    position: relative;
+    top: 25%;
+    bottom: 25%;
+}
+
+.bogCover{
+    height: 346px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bogCover1{
+    background-color: aquamarine; /*skift ud med background-image url*/
+}
+
+#bogCover2{
+    background-color: aquamarine; /*skift ud med background-image url*/
+}
+
+#bogCover3{
+    background-color: aquamarine; /*skift ud med background-image url*/
 }
