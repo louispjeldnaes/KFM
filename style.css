@@ -1,87 +1,168 @@
 * {
-
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
-
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
-
-h1, h2, h3 {
-    color:#2A3C24;
-    font-family: 'Playfair Display', serif;
-    font-weight: 300;
-    margin-bottom: 15px;
+h1,
+h2,
+h3 {
+  color: #2a3c24;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  margin-bottom: 15px;
 }
 
 h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 h2 {
-    font-size: 25px;
+  font-size: 25px;
 }
- 
 
 h3 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #1f1f1f;
-    font-size: 15px;
-    line-height: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f1f1f;
+  font-size: 15px;
+  line-height: 24px;
 }
 
-    
 a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #2A3C24;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2a3c24;
 }
 
-.lilleCTA, .storCTA {
-    background-color: #f9dc5c;
-    padding: 3%;
-    text-align: center;
-    border-radius: 35px;
-    padding-left: 5%;
-    padding-right: 5%;
-
+.lilleCTA,
+.storCTA {
+  background-color: #f9dc5c;
+  padding: 3%;
+  text-align: center;
+  border-radius: 35px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-
 
 /* FORSIDE*/
 
 /* LÆSEKLUB BANNER */
 
 .toKolonner {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-
-
 .toKolonnerBillede {
-    width: 50%;
-    margin: auto;
+  width: 50%;
+  margin: auto;
 }
 
 .toKolonnerTekst {
-    width: 35%;
-    margin: auto;
+  width: 35%;
+  margin: auto;
 }
 
+/* BESKRIVELSER + 404 - KOLONNER */
+.toKolonnerMereMargin {
+  width: 63%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
 
+.toKolonnerMereMarginBillede {
+  width: 50%;
+  margin: auto;
+}
+
+.toKolonnerMereMarginTekst {
+  width: 67%;
+  margin: auto;
+  padding-top: 60px;
+}
+
+/*INSTAGRAM BANNER*/
+footer {
+  margin-top: 50px;
+}
+
+.toKolonnerInsta {
+  width: 63%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#toKolonnerInstaBillede {
+  position: relative;
+  width: 40%;
+  margin: auto;
+}
+
+#toKolonnerInstaTekst {
+  width: 60%;
+  margin: auto;
+}
+
+#SoMe {
+  display: flex;
+  width: 62%;
+  margin-top: 80px;
+}
+
+#SoMe img {
+  width: 80%;
+}
+
+#instagramUnderpunkter {
+  margin-top: 40px;
+}
+
+/*FOOTER*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 100px;
+}
+
+.footer div {
+  width: 20%;
+}
+
+.footer li {
+  list-style: none;
+}
+
+#aabningstider {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+#aabningstiderVenstre {
+  text-align: left;
+  width: 70%;
+}
+
+#aabningstiderHoejre {
+  text-align: right;
+  width: 30%;
+}

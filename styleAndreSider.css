@@ -1,0 +1,91 @@
+/*BOGBESKRIVELSE*/
+.bogOverBlob {
+  margin-left: 100px;
+}
+
+#lillaBlob {
+  position: relative;
+  width: 100%;
+  z-index: -10;
+  margin-left: -323px;
+  margin-bottom: -30px;
+}
+
+#bogbeskrivelseCover {
+  width: 65%;
+  z-index: 1;
+}
+
+/*EVENTBESKRIVELSE*/
+
+#gulBlob {
+  position: relative;
+  width: 130%;
+  z-index: -10;
+  margin-left: -160px;
+  margin-top: -310px;
+}
+
+#eventbeskrivelseCover {
+  position: relative;
+  margin-left: -120px;
+  margin-bottom: -40px;
+  width: 110%;
+  z-index: 1;
+}
+
+/*404*/
+/*Bog animation + fejltekst*/
+/*#bogAnimation {
+  width: 40%;
+  margin-left: 150px;
+}*/
+
+#fejlTekst {
+  margin-top: 140px;
+}
+
+#fejlTekst h6 {
+  color: #2a3c24;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  font-size: 50px;
+}
+
+#fejlTekst h1 {
+  text-align: right;
+  margin-right: 140px;
+}
+
+#tristSmiley {
+  width: 6%;
+  margin-left: 1.5%;
+}
+
+/*CTA + pil*/
+#fejlsideCTA {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 20%;
+}
+
+#fejlsideKnap {
+  width: 50%;
+}
+
+#fejlsideHaandskrift {
+  width: 50%;
+}
+
+h5 {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+#knapPil {
+  width: 20%;
+  position: relative;
+  margin-left: -30px;
+}
