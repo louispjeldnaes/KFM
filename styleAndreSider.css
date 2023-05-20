@@ -1,22 +1,22 @@
 /*Overskrifter der skal centreres
 og have samme top og bottom margin*/
-.overskriftCenter{
-    text-align: center;
-    margin-bottom: 100px;
-    margin-top: 100px;
+.overskriftCenter {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 /*sørger for at det første element på siden er
 100% synlig ved at lægge under headeren og
 ikke bagved*/
-main{
+main {
   margin-top: 130px;
 }
 
 /*HTML: EVENTS*/
-.eventMaaned{
-    width: 90%;
-    margin: auto;
+.eventMaaned {
+  width: 90%;
+  margin: auto;
 }
 
 /*Flexer de forskellige events*/
@@ -44,7 +44,7 @@ så tekst og billede aligner både til højre og venstre*/
   justify-content: space-between;
 }
 
-.eventKnap a{
+.eventKnap a {
   position: relative;
   top: 25%;
   bottom: 25%;
@@ -128,12 +128,12 @@ og skal have justify-content: space-between;*/
 /*Bogcover-billedet mm. og beskrivelsen af bogen får samme width
 - min-width bruges, så billedet får den korrekte bredde,
 imens teksten kan få lov at bredde sig mere*/
-.laeseklubberLaeserFlex div{
-    min-width: 228px;
-    width: 45%;
-    
-    /*det bliver jo meget mere end 10px, så hvordan får vi styringen over mellemrum mellem billede og tekst her????*/
-    margin-inline-end: 10px;
+.laeseklubberLaeserFlex div {
+  min-width: 228px;
+  width: 45%;
+
+  /*det bliver jo meget mere end 10px, så hvordan får vi styringen over mellemrum mellem billede og tekst her????*/
+  margin-inline-end: 10px;
 }
 
 
@@ -171,101 +171,149 @@ uden at det påvirker div'en med bogcover, pris osv. i*/
   background-color: aquamarine; /*skift ud med background-image url*/
 }
 
+/*BOGBESKRIVELSE*/
 
+#lillaBlob {
+  position: relative;
+  width: 100%;
+  z-index: -10;
+  margin-left: -407px;
+  margin-bottom: -30px;
+}
 
-/*HTML: BOGBESKRIVELSE*/
+#bogbeskrivelseCover {
+  width: 65%;
+  z-index: 1;
+}
+
+/*EVENTBESKRIVELSE*/
 .bogOverBlob {
-    margin-left: 100px;
-  }
-  
-  #lillaBlob {
-    position: relative;
-    width: 100%;
-    z-index: -10;
-    margin-left: -323px;
-    margin-bottom: -30px;
-  }
-  
-  #bogbeskrivelseCover {
-    width: 65%;
-    z-index: 1;
-  }
-  
+  margin-bottom: -70px;
+}
 
+#gulBlob {
+  position: relative;
+  width: 130%;
+  z-index: -10;
+  margin-left: -160px;
+  margin-top: -245px;
+}
 
-  /*HTML: EVENTBESKRIVELSE*/
-  
-  #gulBlob {
-    position: relative;
-    width: 130%;
-    z-index: -10;
-    margin-left: -160px;
-    margin-top: -310px;
-  }
-  
-  #eventbeskrivelseCover {
-    position: relative;
-    margin-left: -120px;
-    margin-bottom: -40px;
-    width: 110%;
-    z-index: 1;
-  }
-  
+#eventbeskrivelseCover {
+  position: relative;
+  margin-left: -113px;
+  margin-bottom: -200px;
+  width: 110%;
+  z-index: 1;
+}
 
+#gulBallon {
+  position: relative;
+  width: 7%;
+  margin-top: -600px;
+  margin-left: 50px;
+}
 
-  /*HTML: 404*/
+#groenBallon {
+  position: relative;
+  width: 6%;
+  margin-top: 200px;
+  margin-left: 120px;
+}
 
-  /*Bog animation + fejltekst*/
-  /*#bogAnimation {
+#lillaBallon {
+  position: relative;
+  width: 9%;
+  float: right;
+  margin-top: -960px;
+  margin-right: 150px;
+}
+
+#beigeBallon {
+  position: relative;
+  width: 8%;
+  float: right;
+  margin-top: -480px;
+  margin-right: 450px;
+}
+
+/*404*/
+/*Bog animation + fejltekst*/
+/*#bogAnimation {
     width: 40%;
     margin-left: 150px;
   }*/
-  
-  #fejlTekst {
-    margin-top: 140px;
-  }
-  
-  #fejlTekst h6 {
-    color: #2a3c24;
-    font-family: "Playfair Display", serif;
-    font-weight: 300;
-    font-size: 50px;
-  }
-  
-  #fejlTekst h1 {
-    text-align: right;
-    margin-right: 140px;
-  }
-  
-  #tristSmiley {
-    width: 6%;
-    margin-left: 1.5%;
-  }
-  
-  /*CTA + pil*/
-  #fejlsideCTA {
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-    width: 20%;
-  }
-  
-  #fejlsideKnap {
-    width: 50%;
-  }
-  
-  #fejlsideHaandskrift {
-    width: 50%;
-  }
-  
-  h5 {
-    font-family: "Indie Flower", sans-serif;
-    font-size: 18px;
-    font-weight: 100;
-  }
-  
-  #knapPil {
-    width: 20%;
-    position: relative;
-    margin-left: -30px;
-  }
+
+#fejlTekst {
+  margin-top: 140px;
+}
+
+#fejlTekst h6 {
+  color: #2a3c24;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  font-size: 50px;
+}
+
+#fejlTekst h1 {
+  text-align: right;
+  margin-right: 140px;
+}
+
+#tristSmiley {
+  width: 6%;
+  margin-left: 1.5%;
+}
+
+/*CTA + pil*/
+#fejlsideCTA {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 20%;
+}
+
+#fejlsideKnap {
+  width: 50%;
+}
+
+#fejlsideHaandskrift {
+  width: 50%;
+}
+
+h5 {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+#knapPil {
+  width: 20%;
+  position: relative;
+  margin-left: -30px;
+}
+
+
+/*INSPIRATIONSSIDE*/
+
+/*Inspirations intro*/
+
+#inspirationIntro {
+  margin-top: 10vw;
+  margin-bottom: 7vw;
+}
+
+#inspirationIntro .toKolonnerBillede {
+  padding: 1vw;
+}
+
+#inspirationIntro .toKolonnerTekst {
+  width: 50%;
+  margin-left: 5vw;
+}
+
+/*Rul en bog sektion*/
+#rulEnBog {
+  margin-top: 7vw;
+  margin-bottom: 7vw;
+}

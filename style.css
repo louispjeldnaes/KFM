@@ -35,11 +35,16 @@ h3 {
   font-size: 20px;
 }
 
-p {
+p,
+li {
   font-family: Arial, Helvetica, sans-serif;
   color: #1f1f1f;
   font-size: 15px;
   line-height: 24px;
+}
+
+li {
+  line-height: 33px;
 }
 
 /*LINKS/KNAPPER*/
@@ -54,16 +59,25 @@ a {
 .lilleCTA,
 .storCTA {
   background-color: #f9dc5c;
-  padding: 3%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 1.3vw 3vw 1.3vw 3vw;
   text-align: center;
   border-radius: 35px;
+  border: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #2a3c24;
+  cursor: pointer;
+}
 
-  /*tester lige med margin-top og -bottom her
-  for at se om det fixer CTA-problemerne - KBL*/
-  margin-top: 10px;
-  margin-bottom: 10px;
+.storCTA {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.lilleCTA:hover,  /*VED IKKE OM DETTE ER DET DER SKAL BRUGES???*/
+.storCTA:hover {
+  opacity: 0.7;
 }
 
 .lilleCTA {
@@ -124,7 +138,7 @@ footer {
 }
 
 .toKolonnerInsta {
-  width: 63%;
+  width: 65%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -166,6 +180,10 @@ footer {
 
 .footer div {
   width: 20%;
+}
+
+.footer h2 {
+  margin-bottom: 25px;
 }
 
 .footer li {
@@ -235,6 +253,7 @@ header li a:hover,
   top: 2vw;
   background-color: white;
   z-index: 1;
+  padding-top: 2vw;
 }
 
 .dropdown-content a {
@@ -481,8 +500,6 @@ header li a:hover,
   width: 40%;
 }
 
-
-
 /*EVENT BANNER - FORSIDE*/
 
 #eventBannerIMG {
@@ -494,19 +511,19 @@ header li a:hover,
   position: absolute;
 }
 
+/*Dele af illustration på eventbanner*/
+
 #eventReol1 {
-position: block;
-width: 40%;
-margin-top: 10vw;
-margin-left: 2vw;
-animation: 2s slideInVenstre;
+  position: block;
+  width: 40%;
+  margin-top: 10vw;
+  margin-left: 2vw;
 }
 
 #eventReol2 {
   width: 56%;
   top: 5vw;
   left: 20vw;
-  animation: 2s slideInHoejre;
 }
 
 #eventForfatter {
@@ -514,38 +531,12 @@ animation: 2s slideInVenstre;
   top: 19vw;
   left: 5vw;
   z-index: 1;
-  animation: 2s slideInVenstre;
-
 }
 
 #eventDeltagere {
   width: 70%;
   top: 14vw;
   left: 11vw;
-  animation: 2s slideInHoejre;
-}
-
-@keyframes slideInVenstre {
-  from {
-  transform: translateX(-1vw);
-  opacity: 0;
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-
-}
-
-  @keyframes slideInHoejre {
-    from {
-    transform: translateX(1vw);
-    opacity: 0;
-    }
-    to {
-      transform: translateX(0%);
-      opacity: 1;
-    }
 }
 
 

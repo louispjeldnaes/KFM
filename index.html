@@ -9,12 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png"> <!--FavIcon - skal laves!-->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <script src="https://kit.fontawesome.com/0396285b10.js" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script" defer></script>
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Animationer fra https://michalsnik.github.io/aos/-->
     <title>Kristian F. Møller - Aarhus' hyggeligeste boghandel</title>
 
 </head>
@@ -31,20 +30,20 @@
         <!--Navigation-->
         <nav>
             <ul>
-                <li class="dropdown">
-                    <a href="" class="dropbtn">Find bøger</a>
+                <li class="dropdown"> <!--Inpireret af løsning på https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+                    <a href="#">Find bøger</a>
                     <div class="dropdown-content">
                         <a href="#">Skønlitteratur</a>
                         <a href="#">Faglitteratur</a>
                         <a href="#">Engelske bøger</a>
                         <a href="#">Børne- og ungdomsbøger</a>
-                        <a href="#">Inspiration</a>
+                        <a href="inspiration.html">Inspiration</a>
                     </div>
                 </li>
                 <li >
-                    <a href="#">Læseklubber</a>
+                    <a href="laeseklubber.html">Læseklubber</a>
                 </li>
-                <li><a href="#">Events</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li><a href="#">Om Os</a></li>
             </ul>
         </nav>
@@ -61,12 +60,12 @@
     <main>
         <!--bigPhotoIntro-->
         <section id="forsideIntro">
-            <div id="forsideIntroTekst" >
+            <div data-aos="fade-right" data-aos-duration="3000" id="forsideIntroTekst" > <!--Animation fra https://michalsnik.github.io/aos/-->
                 <h1>Kristian F. Møller <br>
                     - din digitale boghandel</h1>
                 <h2>Vi har fyldt hylderne med nye aktuelle bøger og vores 
                     favoritter  - Så vi er klar til at du kan gå på opdagelse!</h2>
-                <a class="storCTA" href="">Bliv inspireret</a> <!--CTA-->
+                <a href="inspiration.html"><button class="storCTA">Bliv inspireret</button></a>
             </div>
             <!--Billeder til introbillede/animationer-->
             <div id="luftBallon"><img src="img/hotAirBalloon.svg" alt=""></div>
@@ -96,16 +95,16 @@
         
 
         <section id="laeseklubBanner" class="toKolonner"> 
-            <div id="laeseklubBannerIMG" class="toKolonnerBillede">
+            <div id="laeseklubBannerIMG" class="toKolonnerBillede"  data-aos="fade-right" data-aos-duration="3000"> <!--Animation fra https://michalsnik.github.io/aos/-->
                 <img src="img/læsegrupper.svg" alt="">
             </div>
-            <div class="toKolonnerTekst"> 
+            <div  data-aos="fade-left" data-aos-duration="3000" class="toKolonnerTekst"> <!--Animation fra https://michalsnik.github.io/aos/-->
                 <h1>Elsker du at læse bøger?</h1>
                 <h2>- Men savner nogen at snakke med om dem?</h2>
                 <p>Følg med i, hvilke bøger vores tre læseklubber læser 
                     for tiden og få tips til, hvordan du kan starte din 
                     egen læseklub og få 20% rabat i Kristian F. Møller.</p>
-                <a class="storCTA" href="">Læseklubber</a> 
+                    <a href="laeseklubber.html"><button class="storCTA">Læseklubber</button></a> 
             </div>
         </section>
 
@@ -124,13 +123,13 @@
                     spændende og inspirerende forfatter-arrangementer afholdt i vores egen 
                     lille hyggelige boghandel.</h2>
         
-                <a class="storCTA" href="">Kommende events</a> 
+                    <a href="events.html"><button class="storCTA">Kommende events</button></a>
             </div>
             <div id="eventBannerIMG" class="toKolonnerBillede">
-                <div id="eventReol1"><img src="img/EventReol1.svg" alt=""></div>
-                <div id="eventReol2" ><img src="img/EventReol2.svg" alt=""></div>
-                <div id="eventForfatter"><img src="img/EventForfatter.svg" alt=""></div>
-                <div id="eventDeltagere"><img src="img/EventDeltagere.svg" alt=""></div>
+                <div id="eventReol1"  data-aos="fade-right" data-aos-duration="3000"><img src="img/EventReol1.svg" alt=""></div><!--Animation fra https://michalsnik.github.io/aos/-->
+                <div id="eventReol2" data-aos="fade-left" data-aos-duration="3000"><img src="img/EventReol2.svg" alt=""></div><!--Animation fra https://michalsnik.github.io/aos/-->
+                <div id="eventForfatter" data-aos="fade-right" data-aos-duration="3000"><img src="img/EventForfatter.svg" alt=""></div><!--Animation fra https://michalsnik.github.io/aos/-->
+                <div id="eventDeltagere" data-aos="fade-left" data-aos-duration="3000"><img src="img/EventDeltagere.svg" alt=""></div><!--Animation fra https://michalsnik.github.io/aos/-->
             </div>
         </section>
 
@@ -206,6 +205,9 @@
 
         </section>
     </footer>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script> 
 </body>
 </html>
