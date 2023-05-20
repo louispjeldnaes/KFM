@@ -286,3 +286,28 @@ h5 {
   position: relative;
   margin-left: -30px;
 }
+
+
+/*INSPIRATIONSSIDE*/
+
+/*Inspirations intro*/
+
+#inspirationIntro {
+  margin-top: 10vw;
+  margin-bottom: 7vw;
+}
+
+#inspirationIntro .toKolonnerBillede {
+  padding: 1vw;
+}
+
+#inspirationIntro .toKolonnerTekst {
+  width: 50%;
+  margin-left: 5vw;
+}
+
+/*Rul en bog sektion*/
+#rulEnBog {
+  margin-top: 7vw;
+  margin-bottom: 7vw;
+}

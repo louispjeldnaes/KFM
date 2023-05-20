@@ -496,6 +496,8 @@ header li a:hover,
   position: absolute;
 }
 
+/*Dele af illustration på eventbanner*/
+
 #eventReol1 {
   position: block;
   width: 40%;
@@ -525,6 +527,7 @@ header li a:hover,
   left: 11vw;
   animation: 2s slideInHoejre;
 }
+
 
 @keyframes slideInVenstre {
   from {
