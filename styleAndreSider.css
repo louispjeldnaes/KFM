@@ -6,6 +6,13 @@ og have samme top og bottom margin*/
     margin-top: 100px;
 }
 
+/*sørger for at det første element på siden er
+100% synlig ved at lægge under headeren og
+ikke bagved*/
+main{
+  margin-top: 130px;
+}
+
 /*HTML: EVENTS*/
 .eventMaaned{
     width: 90%;
@@ -22,33 +29,37 @@ og have samme top og bottom margin*/
 /*Justering af størrelse på hvert event i oversigten,
 så tekst og billede aligner både til højre og venstre*/
 .eventFlex div {
-  width: 33%;
+  width: 30%;
   min-width: 400px;
-  max-width: 400px;
+  max-width: 40px;
 }
 
 .eventFlex h2 {
   text-align: center;
 }
 
-/*ur-ikon og klokkeslæt*/
+/*Flexer tid og lilleCTA*/
+.eventTidKnap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eventKnap a{
+  position: relative;
+  top: 25%;
+  bottom: 25%;
+  left: -30%;
+}
+
+/*ur-ikon og klokkeslæt flexes*/
 .eventTidIkon {
   display: flex;
   justify-content: left;
-  width: max-content;
-  border: 1px solid black; /*border så jeg kan se linjerne for alle de div'ere*/
 }
 
 /*Laver afstand mellem ur-ikon og klokkeslæt*/
 .eventTidIkon h2 {
   margin-left: 4%;
-}
-
-/*Flexer tid og lilleCTA*/
-.eventTidKnap {
-  display: flex;
-  justify-content: center;
-  border: 1px solid black; /*border så jeg kan se linjerne for alle de div'ere*/
 }
 
 /*Hvordan styler vi størrelse og farve på fontawesomeikoner?!*/
@@ -104,10 +115,13 @@ fastsættes denne oppe i .eventFlex div*/
 /*Vores læseklubber sektionen styles og flexes*/
 .laeseklubberLaeserFlex{
     display: flex;
-    justify-content: left;
+    justify-content: space-around;
     margin-bottom: 100px;
 }
 
+/*Bogcover-billedet mm. og beskrivelsen af bogen får samme width
+- min-width bruges, så billedet får den korrekte bredde,
+imens teksten kan få lov at bredde sig mere*/
 .laeseklubberLaeserFlex div{
     min-width: 228px;
     width: 45%;
@@ -116,7 +130,9 @@ fastsættes denne oppe i .eventFlex div*/
     margin-inline-end: 10px;
 }
 
-.bogFlex{
+/*Får 'Læg i kurv'-knappen og prisen på varen
+til at placere sig ved siden af hinanden*/
+.knapPrisFlex{
     display: flex;
     justify-content: space-between;
 }
@@ -128,6 +144,7 @@ og 3 på venstre side.*/
   position: relative;
   top: 25%;
   bottom: 25%;
+  justify-content: right;
 }
 
 .bogCover {
