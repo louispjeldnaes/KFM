@@ -59,11 +59,27 @@ a {
 .lilleCTA,
 .storCTA {
   background-color: #f9dc5c;
-  padding: 3%;
+  padding: 2.5%;
   padding-left: 5%;
   padding-right: 5%;
   text-align: center;
   border-radius: 35px;
+  border: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #2a3c24;
+  cursor: pointer;
+}
+
+.storCTA {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.lilleCTA:hover,  /*VED IKKE OM DETTE ER DET DER SKAL BRUGES???*/
+.storCTA:hover {
+  opacity: 0.7;
 }
 
 .lilleCTA {
