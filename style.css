@@ -59,6 +59,11 @@ a {
   padding-right: 5%;
   text-align: center;
   border-radius: 35px;
+
+  /*tester lige med margin-top og -bottom her
+  for at se om det fixer CTA-problemerne - KBL*/
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .lilleCTA {

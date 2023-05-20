@@ -110,13 +110,19 @@ fastsættes denne oppe i .eventFlex div*/
   background-image: url(img/event/flyvende-boeger-gul.svg);
 }
 
+
+
 /*HTML: LÆSEKLUBBER*/
 
-/*Vores læseklubber sektionen styles og flexes*/
-.laeseklubberLaeserFlex{
+/*her flexes alt på siden Læseklubber, som flexes skal
+og skal have justify-content: space-between;*/
+.laeseklubberLaeserFlex, .knapPrisFlex{
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 100px;
+    justify-content: space-between;
+}
+
+.laeseklubberLaeserFlex{
+  margin-bottom: 100px;
 }
 
 /*Bogcover-billedet mm. og beskrivelsen af bogen får samme width
@@ -130,12 +136,6 @@ imens teksten kan få lov at bredde sig mere*/
     margin-inline-end: 10px;
 }
 
-/*Får 'Læg i kurv'-knappen og prisen på varen
-til at placere sig ved siden af hinanden*/
-.knapPrisFlex{
-    display: flex;
-    justify-content: space-between;
-}
 
 /*Styrer Læseklub 2 læser's placering
 så den centres i højden ift. læseklub 1
@@ -144,9 +144,15 @@ og 3 på venstre side.*/
   position: relative;
   top: 25%;
   bottom: 25%;
-  justify-content: right;
 }
 
+/*Læseklub 2 læser - overskrift og tekst højrestilles
+uden at det påvirker div'en med bogcover, pris osv. i*/
+#laeseklub2Hoejre{
+  text-align: right;
+}
+
+/*Herunder styles bog-covers*/
 .bogCover {
   height: 346px;
   background-size: cover;
@@ -165,7 +171,9 @@ og 3 på venstre side.*/
   background-color: aquamarine; /*skift ud med background-image url*/
 }
 
-/*BOGBESKRIVELSE*/
+
+
+/*HTML: BOGBESKRIVELSE*/
 .bogOverBlob {
     margin-left: 100px;
   }
@@ -183,7 +191,9 @@ og 3 på venstre side.*/
     z-index: 1;
   }
   
-  /*EVENTBESKRIVELSE*/
+
+
+  /*HTML: EVENTBESKRIVELSE*/
   
   #gulBlob {
     position: relative;
@@ -201,7 +211,10 @@ og 3 på venstre side.*/
     z-index: 1;
   }
   
-  /*404*/
+
+
+  /*HTML: 404*/
+
   /*Bog animation + fejltekst*/
   /*#bogAnimation {
     width: 40%;
