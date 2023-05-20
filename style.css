@@ -35,11 +35,16 @@ h3 {
   font-size: 20px;
 }
 
-p {
+p,
+li {
   font-family: Arial, Helvetica, sans-serif;
   color: #1f1f1f;
   font-size: 15px;
   line-height: 24px;
+}
+
+li {
+  line-height: 33px;
 }
 
 /*LINKS/KNAPPER*/
@@ -119,7 +124,7 @@ footer {
 }
 
 .toKolonnerInsta {
-  width: 63%;
+  width: 65%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -161,6 +166,10 @@ footer {
 
 .footer div {
   width: 20%;
+}
+
+.footer h2 {
+  margin-bottom: 25px;
 }
 
 .footer li {
@@ -476,8 +485,6 @@ header li a:hover,
   width: 40%;
 }
 
-
-
 /*EVENT BANNER - FORSIDE*/
 
 #eventBannerIMG {
@@ -490,11 +497,11 @@ header li a:hover,
 }
 
 #eventReol1 {
-position: block;
-width: 40%;
-margin-top: 10vw;
-margin-left: 2vw;
-animation: 2s slideInVenstre;
+  position: block;
+  width: 40%;
+  margin-top: 10vw;
+  margin-left: 2vw;
+  animation: 2s slideInVenstre;
 }
 
 #eventReol2 {
@@ -510,7 +517,6 @@ animation: 2s slideInVenstre;
   left: 5vw;
   z-index: 1;
   animation: 2s slideInVenstre;
-
 }
 
 #eventDeltagere {
@@ -522,28 +528,25 @@ animation: 2s slideInVenstre;
 
 @keyframes slideInVenstre {
   from {
-  transform: translateX(-1vw);
-  opacity: 0;
+    transform: translateX(-1vw);
+    opacity: 0;
   }
   to {
     transform: translateX(0%);
     opacity: 1;
   }
-
 }
 
-  @keyframes slideInHoejre {
-    from {
+@keyframes slideInHoejre {
+  from {
     transform: translateX(1vw);
     opacity: 0;
-    }
-    to {
-      transform: translateX(0%);
-      opacity: 1;
-    }
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
-
-
 
 .bogKarousselMidlertidig {
   height: 700px;
