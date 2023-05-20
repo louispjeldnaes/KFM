@@ -253,6 +253,7 @@ header li a:hover,
   top: 2vw;
   background-color: white;
   z-index: 1;
+  padding-top: 2vw;
 }
 
 .dropdown-content a {
@@ -517,14 +518,12 @@ header li a:hover,
   width: 40%;
   margin-top: 10vw;
   margin-left: 2vw;
-  animation: 2s slideInVenstre;
 }
 
 #eventReol2 {
   width: 56%;
   top: 5vw;
   left: 20vw;
-  animation: 2s slideInHoejre;
 }
 
 #eventForfatter {
@@ -532,38 +531,15 @@ header li a:hover,
   top: 19vw;
   left: 5vw;
   z-index: 1;
-  animation: 2s slideInVenstre;
 }
 
 #eventDeltagere {
   width: 70%;
   top: 14vw;
   left: 11vw;
-  animation: 2s slideInHoejre;
 }
 
 
-@keyframes slideInVenstre {
-  from {
-    transform: translateX(-1vw);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInHoejre {
-  from {
-    transform: translateX(1vw);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
 
 .bogKarousselMidlertidig {
   height: 700px;
