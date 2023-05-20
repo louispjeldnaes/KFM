@@ -91,6 +91,7 @@ ul li {
 .toKolonnerTekst {
   width: 35%;
   margin: auto;
+  z-index: 10;
 }
 
 /* BESKRIVELSER + 404 - KOLONNER */
@@ -463,6 +464,86 @@ header li a:hover,
     transform: rotate(0deg);
   }
 }
+
+/*LÆSEKLUB BANNER - FORSIDE*/
+
+#laeseklubBanner {
+  margin-top: 7vw;
+  margin-bottom: 7vw;
+}
+
+#laeseklubBannerIMG {
+  width: 40%;
+}
+
+
+
+/*EVENT BANNER - FORSIDE*/
+
+#eventBannerIMG {
+  height: 43vw;
+  position: relative;
+}
+
+#eventBannerIMG div {
+  position: absolute;
+}
+
+#eventReol1 {
+position: block;
+width: 40%;
+margin-top: 10vw;
+margin-left: 2vw;
+animation: 2s slideInVenstre;
+}
+
+#eventReol2 {
+  width: 56%;
+  top: 5vw;
+  left: 20vw;
+  animation: 2s slideInHoejre;
+}
+
+#eventForfatter {
+  width: 33%;
+  top: 19vw;
+  left: 5vw;
+  z-index: 1;
+  animation: 2s slideInVenstre;
+
+}
+
+#eventDeltagere {
+  width: 70%;
+  top: 14vw;
+  left: 11vw;
+  animation: 2s slideInHoejre;
+}
+
+@keyframes slideInVenstre {
+  from {
+  transform: translateX(-1vw);
+  opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+}
+
+  @keyframes slideInHoejre {
+    from {
+    transform: translateX(1vw);
+    opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
+
+
 
 .bogKarousselMidlertidig {
   height: 700px;
