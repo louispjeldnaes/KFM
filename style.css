@@ -59,7 +59,7 @@ a {
 .lilleCTA,
 .storCTA {
   background-color: #f9dc5c;
-  padding: 1.3vw 3vw 1.3vw 3vw;
+  padding: 1.3vw 3vw 1.3vw 3vw; /*tror ikke vi skal bruge vw her, det ser helt tosset ud på min skærm - KBL*/
   text-align: center;
   border-radius: 35px;
   border: none;
