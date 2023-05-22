@@ -33,15 +33,76 @@
     <!---->
     <header>
       <!--Logo-->
-      <!--Navigation-->
-      <!--Ikoner-->
+      <div class="header">
+        <div id="logo">
+          <a href="index.html">
+            <img src="img/logo-ny-grøn.svg" alt="" />
+          </a>
+        </div>
+        <!--Navigation-->
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <!--Inpireret af løsning på https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+              <a href="#"
+                >Find bøger <i class="fa-sharp fa-solid fa-caret-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">Skønlitteratur</a>
+                <a href="#">Faglitteratur</a>
+                <a href="#">Engelske bøger</a>
+                <a href="#">Børne- og ungdomsbøger</a>
+                <a href="inspiration.html">Inspiration</a>
+              </div>
+            </li>
+            <li>
+              <a href="laeseklubber.html">Læseklubber</a>
+            </li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#">Om Os</a></li>
+          </ul>
+        </nav>
+
+        <!--Ikoner-->
+        <div class="ikoner">
+          <div><i class="fa-solid fa-2x fa-magnifying-glass"></i></div>
+          <div><i class="fa-solid fa-2x fa-heart"></i></div>
+          <div><i class="fa-solid fa-2x fa-basket-shopping"></i></div>
+        </div>
+      </div>
+
+      <div id="headerMobil">
+        <div id="overlayNav" class="overlay">
+          <!--Knap der lukker menuen-->
+          <div class="closebtn" onclick="closeNav()">
+            <i class="fa-solid fa-xmark fa-2xl"></i>
+          </div>
+
+          <!--Menupunkter-->
+
+          <div class="overlay_content">
+            <div class="logoMobilMenu">
+              <img src="img/logo-ny-grøn.svg" alt="" />
+            </div>
+            <a href="#">Find bøger</a>
+            <a href="laeseklubber.html">Læseklubber</a>
+            <a href="events.html">Events</a>
+            <a href="#">Om Os</a>
+          </div>
+        </div>
+
+        <!--Element der åbner menuen-->
+        <div id="overlay_burgermenu" onclick="openNav()">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
+      </div>
     </header>
 
     <main>
-      <!--BOGBESKRIVELSE BANNER-->
+      <!--EVENTBESKRIVELSE BANNER-->
 
-      <section class="toKolonnerMereMargin" class="baggrundBeige">
-        <div class="toKolonnerMereMarginBillede">
+      <section class="toKolonner" class="baggrundBeige">
+        <div class="toKolonnerTekst">
           <!--Her kan bruges id-->
           <div class="bogOverBlob">
             <!--Bog-->
@@ -58,7 +119,7 @@
             />
           </div>
         </div>
-        <div class="toKolonnerMereMarginTekst">
+        <div class="toKolonnerBillede">
           <h1>Bogreception for Legendens Ridder</h1>
           <h2>med besøg af forfatteren Jeanette Sigtenborg.</h2>
           <h2>6. juni kl. 16.30</h2>
@@ -72,24 +133,25 @@
           <h2>30 kr</h2>
 
           <br />
-          <br />
           <a href="#"><button class="storCTA">Billetter</button></a>
           <!--CTA-->
         </div>
       </section>
 
       <!--BALLONER-->
-      <div id="gulBallon">
-        <img src="img/ballon-fri-gul.svg" alt="Gul ballon" />
-      </div>
-      <div id="groenBallon">
-        <img src="img/ballon-fri-green.svg" alt="Groen ballon" />
-      </div>
-      <div id="lillaBallon">
-        <img src="img/ballon-fri-lilla.svg" alt="Lilla ballon" />
-      </div>
-      <div id="beigeBallon">
-        <img src="img/ballon-fri-creme.svg" alt="Beige ballon" />
+      <div id="balloner">
+        <div id="gulBallon">
+          <img src="img/ballon-fri-gul.svg" alt="Gul ballon" />
+        </div>
+        <div id="groenBallon">
+          <img src="img/ballon-fri-green.svg" alt="Groen ballon" />
+        </div>
+        <div id="lillaBallon">
+          <img src="img/ballon-fri-lilla.svg" alt="Lilla ballon" />
+        </div>
+        <div id="beigeBallon">
+          <img src="img/ballon-fri-creme.svg" alt="Beige ballon" />
+        </div>
       </div>
     </main>
     <footer>

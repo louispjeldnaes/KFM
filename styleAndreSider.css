@@ -146,7 +146,7 @@ uden at det påvirker pris osv. i div'en med bogcover*/
 }
 
 /*Infographic*/
-#infographicBaggrund{
+#infographicBaggrund {
   background-image: url(img/bogklub.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -159,106 +159,124 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   margin-bottom: 100px;
 }
 
-#igHoejde{
+#igHoejde {
   height: 40vw;
 }
 
 /*styrer bredden for Infographic punkterne,
 så p ved hvor den skal break*/
-#infographicBaggrund div{
+#infographicBaggrund div {
   width: 21vw;
 }
 
 /*Styr positionen på det enkelte ig/infographic-punkt
 i følgende id'er:*/
-#igOverskrift{
+#igOverskrift {
   min-width: 100%;
   position: absolute;
   top: 0;
   left: 8%;
 }
 
-#igHvem{
+#igHvem {
   position: absolute;
   top: 26%;
   left: 11%;
 }
 
-#igHvornaar{
+#igHvornaar {
   position: absolute;
   top: 46%;
   left: 5%;
 }
 
-#igHvorhenne{
+#igHvorhenne {
   position: absolute;
   top: 64%;
   left: 10%;
 }
 
-#igHvad{
+#igHvad {
   position: absolute;
   top: 82%;
   left: 17%;
 }
 
-#igTovholder{
+#igTovholder {
   position: absolute;
   top: 38%;
   right: 10%;
 }
 
-#igHygge{
+#igHygge {
   position: absolute;
   top: 72%;
   right: 13%;
 }
 
-#igRegistrer{
+#igRegistrer {
   position: absolute;
   top: 10%;
   right: 10%;
 }
 
+/* BESKRIVELSER + 404 - KOLONNER */
+.toKolonnerMereMargin {
+  width: 63%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toKolonnerMereMarginBillede {
+  width: 50%;
+  margin: auto;
+}
+
+.toKolonnerMereMarginTekst {
+  width: 67%;
+  margin: auto;
+  padding-top: 60px;
+}
 /*pilenes størrelse styres her*/
-.igPile{
+.igPile {
   scale: 0.2;
 }
 
 /*Styr positionen på den enkelte pil i ig
 i følgende id'er:*/
-#igPil1{
+#igPil1 {
   position: absolute;
   top: 26%;
   left: 23%;
 }
 
-#igPil2{
+#igPil2 {
   position: absolute;
   top: 55%;
   left: 20%;
 }
 
-#igPil3{
+#igPil3 {
   position: absolute;
   top: 70%;
   left: 25%;
 }
-  
-#igPil4{
+
+#igPil4 {
   position: absolute;
   top: 87%;
   left: 30%;
   rotate: -13deg;
 }
-  
-#igPil5{
+
+#igPil5 {
   position: absolute;
   top: 59%;
   right: 24%;
 }
-    
-#igPil6{
+
+#igPil6 {
   position: absolute;
   top: 86%;
   right: 27%;
@@ -273,61 +291,61 @@ i følgende id'er:*/
 }
 
 /*ikon-illustrationernes størrelse styres her*/
-.igIkon{
+.igIkon {
   scale: 0.4;
 }
 
 /*Styr positionen på den enkelte ikon-illustration i ig
 i følgende id'er:*/
-#igKalender{
+#igKalender {
   position: absolute;
   top: 34%;
   left: 19%;
 }
 
-#igKrimi{
+#igKrimi {
   position: absolute;
   top: 72%;
   left: 16%;
   rotate: 13deg;
 }
 
-#igFodspor{
+#igFodspor {
   position: absolute;
   top: 75%;
   left: 18%;
   rotate: 13deg;
 }
 
-#igUFO{
+#igUFO {
   position: absolute;
   top: 67%;
   left: 1%;
   rotate: -13deg;
 }
 
-#igKager{
+#igKager {
   position: absolute;
   top: 94%;
   right: 6%;
 }
 
-#igKop{
+#igKop {
   position: absolute;
   top: 95%;
   right: 8%;
 }
 
-
-
 /*BOGBESKRIVELSE*/
 
 #lillaBlob {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  width: 27%;
   z-index: -10;
-  margin-left: -407px;
-  margin-bottom: -30px;
+  left: 0;
+  top: 0;
+  margin-left: 13.4%;
+  margin-top: 7%;
 }
 
 #bogbeskrivelseCover {
@@ -341,18 +359,22 @@ i følgende id'er:*/
 }
 
 #gulBlob {
-  position: relative;
-  width: 130%;
+  position: absolute;
+  width: 36%;
   z-index: -10;
-  margin-left: -160px;
-  margin-top: -245px;
+  left: 0;
+  top: 0;
+  margin-left: 8%;
+  margin-top: 2%;
 }
 
 #eventbeskrivelseCover {
-  position: relative;
-  margin-left: -113px;
-  margin-bottom: -200px;
-  width: 110%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  margin-left: 11%;
+  margin-top: 6%;
   z-index: 1;
 }
 
@@ -371,11 +393,11 @@ i følgende id'er:*/
 }
 
 #lillaBallon {
-  position: relative;
+  position: absolute;
   width: 9%;
-  float: right;
-  margin-top: -960px;
-  margin-right: 150px;
+  top: 0;
+  right: 0;
+  margin-right: 5%;
 }
 
 #beigeBallon {
@@ -415,19 +437,25 @@ i følgende id'er:*/
 }
 
 /*CTA + pil*/
-#fejlsideCTA {
+/*#fejlsideCTA {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: auto;
-  width: 20%;
-}
+  width: 40%;
+}*/
 
 #fejlsideKnap {
-  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 #fejlsideHaandskrift {
-  width: 50%;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 35.5%;
+  margin-right: 10.5%;
 }
 
 h5 {
@@ -437,9 +465,12 @@ h5 {
 }
 
 #knapPil {
-  width: 20%;
-  position: relative;
-  margin-left: -30px;
+  width: 2.5%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 37.3%;
+  margin-right: 40.2%;
 }
 
 /*INSPIRATIONSSIDE*/
@@ -472,4 +503,77 @@ h5 {
   right: 0;
   margin-right: 429px;
   margin-top: 150px;
+}
+
+/*MEDIA QUERIES*/
+
+/*LAPTOP*/
+
+@media screen and (min-width: 768px) {
+  .beskrivelsePrisMobil {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* BESKRIVELSER + 404 - KOLONNER */
+  .toKolonnerMereMargin {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .toKolonnerMereMarginBillede {
+    width: 80%;
+    margin-bottom: 10%;
+  }
+
+  #bogbeskrivelseCover {
+    position: relative;
+    margin-left: 23%;
+    width: 55%;
+  }
+
+  #lillaBlob {
+    width: 68%;
+    margin-top: 15%;
+    margin-left: 15.7%;
+  }
+
+  .toKolonnerMereMarginTekst {
+    width: 85%;
+    padding-top: 60px;
+  }
+
+  /*Hvis ikke class navnet bliver skrevet inden hver ny teksttype, ændrer det også på teksten i footer*/
+  .toKolonnerMereMarginTekst h1,
+  .toKolonnerMereMarginTekst h2,
+  .toKolonnerMereMarginTekst p {
+    text-align: center;
+  }
+
+  .beskrivelsePrisLap {
+    display: none;
+  }
+
+  .knapOgPris {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 65%;
+  }
+
+  /*EVENTBESKRIVELSE*/
+  #balloner {
+    display: none;
+  }
+
+  #eventbeskrivelseCover {
+    position: relative;
+    margin-left: 23%;
+    width: 55%;
+  }
+
+  #gulBlob {
+    width: 80%;
+  }
 }
