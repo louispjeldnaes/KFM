@@ -311,9 +311,18 @@ header li a:hover,
 
 #overlay_burgermenu {
   position: fixed;
-  width: 40px;
-  bottom: 4vw;
+  width: 9vw;
+  bottom: 3vw;
   right: 2vw;
+  cursor: pointer;
+  z-index: 101;
+}
+
+#burgerCirkel, #burgerCirkelLuk {
+  position: fixed;
+  width: 20vw;
+  bottom: -1vw;
+  right: -1vw;
   cursor: pointer;
   z-index: 100;
 }
@@ -358,7 +367,7 @@ header li a:hover,
   bottom: 4vw;
   right: 2vw;
   cursor: pointer;
-  z-index: 100;
+  z-index: 101;
 }
 
 /*FORSIDE*/
@@ -700,8 +709,8 @@ header li a:hover,
   .storCTA {
     font-size: 3.7vw;
     padding: 3vw 7vw 3vw 7vw;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
   }
 
   /*HEADER*/
@@ -877,41 +886,43 @@ header li a:hover,
 
   #maane {
     width: 20vw;
-    top: 85vw;
+    top: 78vw;
     left: 40vw;
   }
 
+
   #hval {
     width: 35vw;
-    top: 110vw;
+    top: 105vw;
+    left: 45vw;
   }
 
   #sky1 {
     width: 25vw;
-    top: 120vw;
+    top: 115vw;
   }
 
   #sky2 {
     width: 25vw;
-    top: 125vw;
-    left: 50vw;
+    top: 120vw;
+    left: 53vw;
   }
 
   #sky3 {
     width: 20vw;
-    top: 110vw;
-    left: 57vw;
+    top: 105vw;
+    left: 60vw;
   }
 
   #sky4 {
     width: 17vw;
-    top: 119vw;
-    left: 73vw;
+    top: 115vw;
+    left: 75vw;
   }
 
   #sky5 {
     width: 15vw;
-    top: 113vw;
+    top: 108vw;
     left: 45vw;
   }
 
@@ -922,6 +933,41 @@ header li a:hover,
   }
 
   #eventBannerIMG {
-    height: 55vw;
+    height: 65vw;
   }
+
+  
+  /*Dele af illustration på eventbanner*/
+  
+  #eventReol1 {
+    position: block;
+    width: 37%;
+    margin-top: 10vw;
+    margin-left: 5vw;
+  }
+  
+  #eventReol2 {
+    width: 53%;
+    top: 5vw;
+    left: 37vw;
+  }
+  
+  #eventForfatter {
+    width: 30%;
+    top: 32vw;
+    left: 13vw;
+    z-index: 1;
+  }
+  
+  #eventDeltagere {
+    width: 65%;
+    top: 24vw;
+    left: 25vw;
+  }
+  
+  .bogKarousselMidlertidig {
+    height: 700px;
+    background-color: #a690a4;
+  }
+  
 }
