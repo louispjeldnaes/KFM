@@ -20,31 +20,31 @@ h3 {
   color: #2a3c24;
   font-family: "Playfair Display", serif;
   font-weight: 300;
-  margin-bottom: 15px;
+  margin-bottom: 0.8vw;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.5vw;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 1.4vw;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.2vw;
 }
 
 p,
 li {
   font-family: Arial, Helvetica, sans-serif;
   color: #1f1f1f;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 0.9vw;
+  line-height: 1.3vw;
 }
 
 li {
-  line-height: 33px;
+  line-height: 1.8vw;
 }
 
 /*LINKS/KNAPPER*/
@@ -59,7 +59,6 @@ a {
 .lilleCTA,
 .storCTA {
   background-color: #f9dc5c;
-  padding: 1.3vw 3vw 1.3vw 3vw; /*tror ikke vi skal bruge vw her, det ser helt tosset ud på min skærm - KBL*/
   text-align: center;
   border-radius: 35px;
   border: none;
@@ -70,22 +69,24 @@ a {
   cursor: pointer;
 }
 
-.storCTA {
-  margin-top: 1vw;
-  margin-bottom: 1vw;
-}
 
-.lilleCTA:hover,  /*VED IKKE OM DETTE ER DET DER SKAL BRUGES???*/
+.lilleCTA:hover,
 .storCTA:hover {
   opacity: 0.7;
 }
 
 .lilleCTA {
-  font-size: 15px;
+  font-size: 0.9vw;
+  padding: 0.5vw 1.3vw 0.5vw 1.3vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
 }
 
 .storCTA {
-  font-size: 20px;
+  font-size: 1.1vw;
+  padding: 1.3vw 3vw 1.3vw 3vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
 /*LISTE*/
@@ -207,7 +208,7 @@ footer {
 }
 /* HEADER*/
 
-header {
+.header {
   height: 8vw;
   background-color: white;
   opacity: 0.8;
@@ -275,6 +276,82 @@ header li a:hover,
   width: 60px;
 }
 
+
+
+/*HEADER MOBIL */
+
+/*OVERLAY/CURTAIN MENU - SLIDE IN LEFT*/ 
+
+/*Overlay baggrund - Eksempel*/ 
+
+.overlay {
+  height: 100%; 
+  width: 0; 
+  z-index: 100; 
+  position: fixed;
+  right: 0; /*Ændr 'right' til 'left' for at få SLIDE IN RIGHT*/ 
+  top: 0; 
+  background-color: #DBECD9; 
+  overflow-x: hidden; /*Horisontal scroll-bar BE GONE!!*/ 
+  transition: 0.5s; 
+  } 
+
+  /*Åbn menu knap*/ 
+  
+  #overlay_burgermenu { 
+    position: fixed; 
+    width: 40px; 
+    bottom: 4vw; 
+    right: 2vw; 
+    cursor: pointer; 
+    z-index: 100;
+  } 
+  
+  /*Overlay content*/ 
+  
+  .overlay_content { 
+    position: relative;
+    top: 20%; 
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: left; 
+  } 
+
+  .logoMobilMenu {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 5vw;
+  }
+
+  /*Links i overlay*/ 
+  
+  .overlay a { 
+    padding: 35px; 
+    text-decoration: none; 
+    font-size: 5vw; 
+    color: #2a3c24;
+    display: block; 
+    transition: 0.3s; 
+    margin-left: 5vw;
+  } 
+
+  .overlay a:hover { 
+    color: #a690a4; 
+  } 
+  
+  /*Luk menu knap*/ 
+  
+  .closebtn { 
+    position: absolute; 
+    width: 40px; 
+    bottom: 4vw; 
+    right: 2vw; 
+    cursor: pointer; 
+    z-index: 100;
+  } 
+
+  
+  
 /*FORSIDE*/
 
 #forsideIntro {
@@ -542,4 +619,112 @@ header li a:hover,
 .bogKarousselMidlertidig {
   height: 700px;
   background-color: #a690a4;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*LAPTOP*/
+
+@media screen and (min-width: 768px) {
+  #headerMobil {
+    display: none;
+  }
+}
+
+/*MOBIL*/
+
+@media screen and (max-width: 768px) {
+
+  /*GENERELT*/
+  
+
+  nav ul { 
+    display: none;
+  }
+
+  .header {
+    height: 20vw;
+    background-color: white;
+    opacity: 0.8;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 100;
+  }
+
+  #logo {
+    width: 12%;
+    margin-left: 2.5vw;
+    margin-top: 1vw;
+  }
+
+
+  /*FORSIDE*/
+#forsideIntro {
+  background-image: url(img/ForsideIllustrationMobil.svg);
+width: 100%;
+top: -36vw;
+}
+
+/*CSS-animationer på forsiden*/
+#skib, #havfugle, #stjerneStor, #stjerneLille {
+  display: none;
+} 
+
+#luftBallon {
+  width: 25vw;
+  top: 65vw;
+  left: 13vw;
+}
+
+#planeter {
+  width: 45vw;
+  top: 50vw;
+  left: 50vw;
+}
+
+#maane {
+  width: 20vw;
+  top: 85vw;
+  left: 40vw;
+}
+
+#hval {
+  width: 35vw;
+  top: 110vw;
+}
+
+#sky1 {
+  width: 25vw;
+  top: 120vw;
+}
+
+#sky2 {
+  width: 25vw;
+  top: 125vw;
+  left: 50vw;
+}
+
+#sky3 {
+  width: 20vw;
+  top: 110vw;
+  left: 57vw;
+}
+
+#sky4 {
+  width: 17vw;
+  top: 119vw;
+  left: 73vw;
+
+}
+
+#sky5 {
+  width: 15vw;
+  top: 113vw;
+  left: 45vw;
+}
+
 }

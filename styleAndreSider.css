@@ -13,6 +13,11 @@ main {
   margin-top: 130px;
 }
 
+/*styrer farve på alle i'er (ikoner fra Fontawesome)*/
+i {
+  color: #2a3c24;
+}
+
 /*HTML: EVENTS*/
 .eventMaaned {
   width: 90%;
@@ -26,16 +31,18 @@ main {
   justify-content: space-between;
 }
 
-/*Justering af størrelse på hvert event i oversigten,
+/*Justering af width på hvert event i oversigten,
 så tekst og billede aligner både til højre og venstre*/
-.eventFlex div {
+.eventKort {
   width: 30%;
-  min-width: 400px;
-  max-width: 40px;
 }
 
 .eventFlex h2 {
   text-align: center;
+}
+
+.eventFlex p {
+  margin-bottom: 10px;
 }
 
 /*Flexer tid og lilleCTA*/
@@ -44,17 +51,12 @@ så tekst og billede aligner både til højre og venstre*/
   justify-content: space-between;
 }
 
-.eventKnap a {
-  position: relative;
-  top: 25%;
-  bottom: 25%;
-  left: -30%;
-}
-
 /*ur-ikon og klokkeslæt flexes*/
 .eventTidIkon {
   display: flex;
   justify-content: left;
+  width: 60%;
+  margin-top: 20px;
 }
 
 /*Laver afstand mellem ur-ikon og klokkeslæt*/
@@ -62,52 +64,50 @@ så tekst og billede aligner både til højre og venstre*/
   margin-left: 4%;
 }
 
-/*Hvordan styler vi størrelse og farve på fontawesomeikoner?!*/
-
 /*Event billeder
 - billederne til hvert event indsættes som background-image,
 hvor height og cover bruges til at give alle ens størrelse/format.
 Da width er samme som den tilhørende tekst (beskrivelsen af eventet)
-fastsættes denne oppe i .eventFlex div*/
+fastsættes denne oppe i .eventKort */
 .eventBillede {
-  height: 300px;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 20vw;
   margin-bottom: 10px;
 }
 
 /*Event billeder i maj*/
 #maj1 {
-  background-image: url(img/event/flyvende-signering-groen.svg);
+  background-image: url(img/event/flyvende-signering-groen.png);
 }
 
 #maj2 {
-  background-image: url(img/event/skrivemaskine-lilla.svg);
+  background-image: url(img/event/skrivemaskine-lilla.png);
 }
 
 #maj3 {
-  background-image: url(img/event/flyvende-boeger-gul.svg);
+  background-image: url(img/event/flyvende-boeger-gul.png);
 }
 
 #maj4 {
-  background-image: url(img/event/flyvende-skrivemaskiner-gul.svg);
+  background-image: url(img/event/flyvende-skrivemaskiner-gul.png);
 }
 
 #maj5 {
-  background-image: url(img/event/signering-groen.svg);
+  background-image: url(img/event/signering-groen.png);
 }
 
 #maj6 {
-  background-image: url(img/event/balloner-lilla.svg);
+  background-image: url(img/event/balloner-lilla.png);
 }
 
 /*Event billeder i juni*/
 #juni1 {
-  background-image: url(img/event/flyvende-boeger-lilla.svg);
+  background-image: url(img/event/flyvende-boeger-lilla.png);
 }
 
 #juni2 {
-  background-image: url(img/event/flyvende-boeger-gul.svg);
+  background-image: url(img/event/flyvende-boeger-gul.png);
 }
 
 /*HTML: LÆSEKLUBBER*/
@@ -124,15 +124,9 @@ og skal have justify-content: space-between;*/
   margin-bottom: 100px;
 }
 
-/*Bogcover-billedet mm. og beskrivelsen af bogen får samme width
-- min-width bruges, så billedet får den korrekte bredde,
-imens teksten kan få lov at bredde sig mere*/
-.laeseklubberLaeserFlex div {
-  min-width: 228px;
-  width: 45%;
-
-  /*det bliver jo meget mere end 10px, så hvordan får vi styringen over mellemrum mellem billede og tekst her????*/
-  margin-inline-end: 10px;
+.bogCover {
+  width: 30vw;
+  margin-right: 30px;
 }
 
 /*Styrer Læseklub 2 læser's placering
@@ -145,28 +139,10 @@ og 3 på venstre side.*/
 }
 
 /*Læseklub 2 læser - overskrift og tekst højrestilles
-uden at det påvirker div'en med bogcover, pris osv. i*/
+uden at det påvirker pris osv. i div'en med bogcover*/
 #laeseklub2Hoejre {
   text-align: right;
-}
-
-/*Herunder styles bog-covers*/
-.bogCover {
-  height: 346px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#bogCover1 {
-  background-color: aquamarine; /*skift ud med background-image url*/
-}
-
-#bogCover2 {
-  background-color: aquamarine; /*skift ud med background-image url*/
-}
-
-#bogCover3 {
-  background-color: aquamarine; /*skift ud med background-image url*/
+  margin-right: 20px;
 }
 
 /*BOGBESKRIVELSE*/
