@@ -156,6 +156,7 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   position: relative; /*Så punkterne der placeres med position; absolute
   placeres ift. infographic'ens sektions position,
   fremfor hele body*/
+  margin-bottom: 100px;
 }
 
 #igHoejde{
@@ -168,56 +169,147 @@ så p ved hvor den skal break*/
   width: 21vw;
 }
 
-/*Styr positionen på det enkelte ig/infographic-punkt i følgende id'er:*/
+/*Styr positionen på det enkelte ig/infographic-punkt
+i følgende id'er:*/
 #igOverskrift{
   min-width: 100%;
   position: absolute;
   top: 0;
   left: 8%;
-  
 }
 
 #igHvem{
   position: absolute;
   top: 26%;
-  left: 16%;
+  left: 11%;
 }
 
 #igHvornaar{
   position: absolute;
-  top: 44%;
-  left: 6%;
+  top: 46%;
+  left: 5%;
 }
 
 #igHvorhenne{
   position: absolute;
-  top: 62%;
-  left: 11%;
+  top: 64%;
+  left: 10%;
 }
 
 #igHvad{
   position: absolute;
-  top: 80%;
-  left: 18%;
+  top: 82%;
+  left: 17%;
 }
 
 #igTovholder{
   position: absolute;
   top: 38%;
-  right: 11%;
+  right: 10%;
 }
 
 #igHygge{
   position: absolute;
   top: 72%;
-  right: 14%;
+  right: 13%;
 }
 
 #igRegistrer{
   position: absolute;
   top: 10%;
-  right: 11%;
+  right: 10%;
 }
+
+/*pilenes størrelse styres her*/
+.igPile{
+  scale: 0.2;
+}
+
+/*Styr positionen på den enkelte pil i ig
+i følgende id'er:*/
+#igPil1{
+  position: absolute;
+  top: 26%;
+  left: 23%;
+}
+
+#igPil2{
+  position: absolute;
+  top: 55%;
+  left: 20%;
+}
+
+#igPil3{
+  position: absolute;
+  top: 70%;
+  left: 25%;
+}
+  
+#igPil4{
+  position: absolute;
+  top: 87%;
+  left: 30%;
+  rotate: -13deg;
+}
+  
+#igPil5{
+  position: absolute;
+  top: 59%;
+  right: 24%;
+}
+    
+#igPil6{
+  position: absolute;
+  top: 86%;
+  right: 27%;
+}
+
+/*ikon-illustrationernes størrelse styres her*/
+.igIkon{
+  scale: 0.4;
+}
+
+/*Styr positionen på den enkelte ikon-illustration i ig
+i følgende id'er:*/
+#igKalender{
+  position: absolute;
+  top: 34%;
+  left: 19%;
+}
+
+#igKrimi{
+  position: absolute;
+  top: 72%;
+  left: 16%;
+  rotate: 13deg;
+}
+
+#igFodspor{
+  position: absolute;
+  top: 75%;
+  left: 18%;
+  rotate: 13deg;
+}
+
+#igUFO{
+  position: absolute;
+  top: 67%;
+  left: 1%;
+  rotate: -13deg;
+}
+
+#igKager{
+  position: absolute;
+  top: 94%;
+  right: 6%;
+}
+
+#igKop{
+  position: absolute;
+  top: 95%;
+  right: 8%;
+}
+
 
 
 /*BOGBESKRIVELSE*/
