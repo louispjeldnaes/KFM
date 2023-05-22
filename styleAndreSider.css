@@ -113,7 +113,7 @@ fastsættes denne oppe i .eventKort */
 /*HTML: LÆSEKLUBBER*/
 
 /*her flexes alt på siden Læseklubber, som flexes skal
-og skal have justify-content: space-between;*/
+OG skal have justify-content: space-between;*/
 .laeseklubberLaeserFlex,
 .knapPrisFlex {
   display: flex;
@@ -144,6 +144,81 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   text-align: right;
   margin-right: 20px;
 }
+
+/*Infographic*/
+#infographicBaggrund{
+  background-image: url(img/bogklub.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+  background-size: 28vw 28vw;
+  position: relative; /*Så punkterne der placeres med position; absolute
+  placeres ift. infographic'ens sektions position,
+  fremfor hele body*/
+}
+
+#igHoejde{
+  height: 40vw;
+}
+
+/*styrer bredden for Infographic punkterne,
+så p ved hvor den skal break*/
+#infographicBaggrund div{
+  width: 21vw;
+}
+
+/*Styr positionen på det enkelte ig/infographic-punkt i følgende id'er:*/
+#igOverskrift{
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 8%;
+  
+}
+
+#igHvem{
+  position: absolute;
+  top: 26%;
+  left: 16%;
+}
+
+#igHvornaar{
+  position: absolute;
+  top: 44%;
+  left: 6%;
+}
+
+#igHvorhenne{
+  position: absolute;
+  top: 62%;
+  left: 11%;
+}
+
+#igHvad{
+  position: absolute;
+  top: 80%;
+  left: 18%;
+}
+
+#igTovholder{
+  position: absolute;
+  top: 38%;
+  right: 11%;
+}
+
+#igHygge{
+  position: absolute;
+  top: 72%;
+  right: 14%;
+}
+
+#igRegistrer{
+  position: absolute;
+  top: 10%;
+  right: 11%;
+}
+
 
 /*BOGBESKRIVELSE*/
 
