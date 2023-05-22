@@ -14,7 +14,7 @@ main {
 }
 
 /*styrer farve på alle i'er (ikoner fra Fontawesome)*/
-i{
+i {
   color: #2a3c24;
 }
 
@@ -25,7 +25,7 @@ i{
 }
 
 /*Flexer de forskellige events*/
-.eventFlex{
+.eventFlex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -33,7 +33,7 @@ i{
 
 /*Justering af width på hvert event i oversigten,
 så tekst og billede aligner både til højre og venstre*/
-.eventKort{
+.eventKort {
   width: 30%;
 }
 
@@ -41,7 +41,7 @@ så tekst og billede aligner både til højre og venstre*/
   text-align: center;
 }
 
-.eventFlex p{
+.eventFlex p {
   margin-bottom: 10px;
 }
 
@@ -69,7 +69,7 @@ så tekst og billede aligner både til højre og venstre*/
 hvor height og cover bruges til at give alle ens størrelse/format.
 Da width er samme som den tilhørende tekst (beskrivelsen af eventet)
 fastsættes denne oppe i .eventKort */
-.eventBillede{
+.eventBillede {
   background-size: cover;
   background-repeat: no-repeat;
   height: 20vw;
@@ -110,26 +110,24 @@ fastsættes denne oppe i .eventKort */
   background-image: url(img/event/flyvende-boeger-gul.png);
 }
 
-
-
 /*HTML: LÆSEKLUBBER*/
 
 /*her flexes alt på siden Læseklubber, som flexes skal
 og skal have justify-content: space-between;*/
-.laeseklubberLaeserFlex, .knapPrisFlex{
-    display: flex;
-    justify-content: space-between;
+.laeseklubberLaeserFlex,
+.knapPrisFlex {
+  display: flex;
+  justify-content: space-between;
 }
 
-.laeseklubberLaeserFlex{
+.laeseklubberLaeserFlex {
   margin-bottom: 100px;
 }
 
-.bogCover{
+.bogCover {
   width: 30vw;
   margin-right: 30px;
 }
-
 
 /*Styrer Læseklub 2 læser's placering
 så den centres i højden ift. læseklub 1
@@ -142,12 +140,10 @@ og 3 på venstre side.*/
 
 /*Læseklub 2 læser - overskrift og tekst højrestilles
 uden at det påvirker pris osv. i div'en med bogcover*/
-#laeseklub2Hoejre{
+#laeseklub2Hoejre {
   text-align: right;
   margin-right: 20px;
 }
-
-
 
 /*BOGBESKRIVELSE*/
 
@@ -163,8 +159,6 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   width: 65%;
   z-index: 1;
 }
-
-
 
 /*EVENTBESKRIVELSE*/
 .bogOverBlob {
@@ -273,8 +267,6 @@ h5 {
   margin-left: -30px;
 }
 
-
-
 /*INSPIRATIONSSIDE*/
 
 /*Inspirations intro*/
@@ -297,4 +289,12 @@ h5 {
 #rulEnBog {
   margin-top: 7vw;
   margin-bottom: 7vw;
+}
+
+#rulEnBogMedKnap {
+  position: absolute;
+  width: 13%;
+  right: 0;
+  margin-right: 429px;
+  margin-top: 150px;
 }

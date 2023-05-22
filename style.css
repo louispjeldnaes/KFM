@@ -20,31 +20,31 @@ h3 {
   color: #2a3c24;
   font-family: "Playfair Display", serif;
   font-weight: 300;
-  margin-bottom: 15px;
+  margin-bottom: 0.8vw;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.5vw;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 1.4vw;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.2vw;
 }
 
 p,
 li {
   font-family: Arial, Helvetica, sans-serif;
   color: #1f1f1f;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 0.9vw;
+  line-height: 1.3vw;
 }
 
 li {
-  line-height: 33px;
+  line-height: 1.8vw;
 }
 
 /*LINKS/KNAPPER*/
@@ -69,20 +69,21 @@ a {
   cursor: pointer;
 }
 
+
 .lilleCTA:hover,
 .storCTA:hover {
   opacity: 0.7;
 }
 
 .lilleCTA {
-  font-size: 15px;
+  font-size: 0.9vw;
   padding: 0.5vw 1.3vw 0.5vw 1.3vw;
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
 }
 
 .storCTA {
-  font-size: 20px;
+  font-size: 1.1vw;
   padding: 1.3vw 3vw 1.3vw 3vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
@@ -634,6 +635,10 @@ header li a:hover,
 /*MOBIL*/
 
 @media screen and (max-width: 768px) {
+
+  /*GENERELT*/
+  
+
   nav ul { 
     display: none;
   }
@@ -655,4 +660,71 @@ header li a:hover,
     margin-left: 2.5vw;
     margin-top: 1vw;
   }
+
+
+  /*FORSIDE*/
+#forsideIntro {
+  background-image: url(img/ForsideIllustrationMobil.svg);
+width: 100%;
+top: -36vw;
+}
+
+/*CSS-animationer på forsiden*/
+#skib, #havfugle, #stjerneStor, #stjerneLille {
+  display: none;
+} 
+
+#luftBallon {
+  width: 25vw;
+  top: 65vw;
+  left: 13vw;
+}
+
+#planeter {
+  width: 45vw;
+  top: 50vw;
+  left: 50vw;
+}
+
+#maane {
+  width: 20vw;
+  top: 85vw;
+  left: 40vw;
+}
+
+#hval {
+  width: 35vw;
+  top: 110vw;
+}
+
+#sky1 {
+  width: 25vw;
+  top: 120vw;
+}
+
+#sky2 {
+  width: 25vw;
+  top: 125vw;
+  left: 50vw;
+}
+
+#sky3 {
+  width: 20vw;
+  top: 110vw;
+  left: 57vw;
+}
+
+#sky4 {
+  width: 17vw;
+  top: 119vw;
+  left: 73vw;
+
+}
+
+#sky5 {
+  width: 15vw;
+  top: 113vw;
+  left: 45vw;
+}
+
 }
