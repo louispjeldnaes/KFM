@@ -20,35 +20,35 @@ function rul() {
   switch (resultat) {
     case 1:
       vistBog.innerHTML =
-        '<img src="img/citronbjerget.jpg" alt="Citronbjerget af Eva Tind">';
+        '<a href="bogbeskrivelse.html"><img src="img/citronbjerget.jpg" alt="Citronbjerget af Eva Tind"></a>';
       break;
     case 2:
       vistBog.innerHTML =
-        '<img src= "img/deBedsteFamilier.jpg" alt="De bedste familier af Kim Blæsbjerg">';
+        '<a href="bogbeskrivelse.html"><img src= "img/deBedsteFamilier.jpg" alt="De bedste familier af Kim Blæsbjerg"></a>';
       break;
     case 3:
       vistBog.innerHTML =
-        '<img src="img/deForsvundneTræersØ.jpg" alt="De forsvundne træers ø af Elif Shafak">';
+        '<a href="bogbeskrivelse.html"><img src="img/deForsvundneTræersØ.jpg" alt="De forsvundne træers ø af Elif Shafak"></a>';
       break;
     case 4:
       vistBog.innerHTML =
-        '<img src="img/mrLoverman.jpg" alt="Mr. Loverman af Bernardine Evaristo">';
+        '<a href="bogbeskrivelse.html"><img src="img/mrLoverman.jpg" alt="Mr. Loverman af Bernardine Evaristo"></a>';
       break;
     case 5:
       vistBog.innerHTML =
-        '<img src="img/detTredjeRige.jpg" alt="Det tredje rige af Karl Ove Knausgård">';
+        '<a href="bogbeskrivelse.html"><img src="img/detTredjeRige.jpg" alt="Det tredje rige af Karl Ove Knausgård"></a>';
       break;
     case 6:
       vistBog.innerHTML =
-        '<img src="img/enVejUdAfTågen.jpg" alt="En vej ud af tågen af Kristian Leth">';
+        '<a href="bogbeskrivelse.html"><img src="img/enVejUdAfTågen.jpg" alt="En vej ud af tågen af Kristian Leth"></a>';
       break;
     case 7:
       vistBog.innerHTML =
-        '<img src="img/fremtidenErDer.jpg" alt="Fremtiden er der også i morgen af Kristian Leth">';
+        '<a href="bogbeskrivelse.html"><img src="img/fremtidenErDer.jpg" alt="Fremtiden er der også i morgen af Kristian Leth"></a>';
       break;
     case 8:
       vistBog.innerHTML =
-        '<img src="img/fyrsterneAfFinntjern.jpg" alt="Fyrsterne af Finntjern af Lars Elling">';
+        '<a href="bogbeskrivelse.html"><img src="img/fyrsterneAfFinntjern.jpg" alt="Fyrsterne af Finntjern af Lars Elling"></a>';
       break;
     default: //???
   }
