@@ -18,6 +18,8 @@ i {
   color: #2a3c24;
 }
 
+
+
 /*HTML: EVENTS*/
 .eventMaaned {
   width: 90%;
@@ -145,80 +147,13 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   margin-right: 20px;
 }
 
-/*Infographic*/
 #infographicBaggrund {
-  background-image: url(img/bogklub.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: bottom;
-  background-size: 28vw 28vw;
-  position: relative; /*Så punkterne der placeres med position; absolute
+  position: relative; /*Så elementerne, der placeres med
+  position; absolute nede i media queries
   placeres ift. infographic'ens sektions position,
   fremfor hele body*/
-  margin-bottom: 100px;
 }
 
-#igHoejde {
-  height: 40vw;
-}
-
-/*styrer bredden for Infographic punkterne,
-så p ved hvor den skal break*/
-#infographicBaggrund div {
-  width: 21vw;
-}
-
-/*Styr positionen på det enkelte ig/infographic-punkt
-i følgende id'er:*/
-#igOverskrift {
-  min-width: 100%;
-  position: absolute;
-  top: 0;
-  left: 8%;
-}
-
-#igHvem {
-  position: absolute;
-  top: 26%;
-  left: 11%;
-}
-
-#igHvornaar {
-  position: absolute;
-  top: 46%;
-  left: 5%;
-}
-
-#igHvorhenne {
-  position: absolute;
-  top: 64%;
-  left: 10%;
-}
-
-#igHvad {
-  position: absolute;
-  top: 82%;
-  left: 17%;
-}
-
-#igTovholder {
-  position: absolute;
-  top: 38%;
-  right: 10%;
-}
-
-#igHygge {
-  position: absolute;
-  top: 72%;
-  right: 13%;
-}
-
-#igRegistrer {
-  position: absolute;
-  top: 10%;
-  right: 10%;
-}
 
 /* BESKRIVELSER + 404 - KOLONNER */
 .toKolonnerMereMargin {
@@ -238,103 +173,7 @@ i følgende id'er:*/
   margin: auto;
   padding-top: 60px;
 }
-/*pilenes størrelse styres her*/
-.igPile {
-  scale: 0.2;
-}
 
-/*Styr positionen på den enkelte pil i ig
-i følgende id'er:*/
-#igPil1 {
-  position: absolute;
-  top: 26%;
-  left: 23%;
-}
-
-#igPil2 {
-  position: absolute;
-  top: 55%;
-  left: 20%;
-}
-
-#igPil3 {
-  position: absolute;
-  top: 70%;
-  left: 25%;
-}
-
-#igPil4 {
-  position: absolute;
-  top: 87%;
-  left: 30%;
-  rotate: -13deg;
-}
-
-#igPil5 {
-  position: absolute;
-  top: 59%;
-  right: 24%;
-}
-
-#igPil6 {
-  position: absolute;
-  top: 86%;
-  right: 27%;
-}
-
-#rabatBlob{
-  background: url();
-  height: 5vw;
-  position: absolute;
-  top: 3%;
-  right: -3%;
-}
-
-/*ikon-illustrationernes størrelse styres her*/
-.igIkon {
-  scale: 0.4;
-}
-
-/*Styr positionen på den enkelte ikon-illustration i ig
-i følgende id'er:*/
-#igKalender {
-  position: absolute;
-  top: 34%;
-  left: 19%;
-}
-
-#igKrimi {
-  position: absolute;
-  top: 72%;
-  left: 16%;
-  rotate: 13deg;
-}
-
-#igFodspor {
-  position: absolute;
-  top: 75%;
-  left: 18%;
-  rotate: 13deg;
-}
-
-#igUFO {
-  position: absolute;
-  top: 67%;
-  left: 1%;
-  rotate: -13deg;
-}
-
-#igKager {
-  position: absolute;
-  top: 94%;
-  right: 6%;
-}
-
-#igKop {
-  position: absolute;
-  top: 95%;
-  right: 8%;
-}
 
 /*BOGBESKRIVELSE*/
 
@@ -505,7 +344,17 @@ h5 {
   margin-top: 150px;
 }
 
+
+
+
+
+
 /*MEDIA QUERIES*/
+
+
+
+
+
 
 /*LAPTOP*/
 
@@ -513,9 +362,221 @@ h5 {
   .beskrivelsePrisMobil {
     display: none;
   }
+
+  /*LAESEKLUBBER*/
+
+    /*Infographic*/
+    #mobilBogklubImg{
+      display: none;
+    }
+
+    #infographicBaggrund {
+    background-image: url(img/bogklub.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: bottom;
+    background-size: 28vw 28vw;
+  }
+
+    #igHoejde {
+      height: 40vw;
+    }
+
+    /*styrer bredden for Infographic punkterne,
+    så p ved hvor den skal break*/
+    #infographicBaggrund div {
+      width: 21vw;
+    }
+
+    /*Styr positionen på det enkelte ig/infographic-punkt
+    i følgende id'er:*/
+    #igOverskrift {
+      min-width: 100%;
+      position: absolute;
+      top: 0;
+      left: 8%;
+    }
+
+    #igHvem {
+      position: absolute;
+      top: 26%;
+      left: 11%;
+    }
+
+    #igHvornaar {
+      position: absolute;
+      top: 46%;
+      left: 5%;
+    }
+
+    #igHvorhenne {
+      position: absolute;
+      top: 64%;
+      left: 10%;
+    }
+
+    #igHvad {
+      position: absolute;
+      top: 82%;
+      left: 17%;
+    }
+
+    #igTovholder {
+      position: absolute;
+      top: 38%;
+      right: 10%;
+    }
+
+    #igHygge {
+      position: absolute;
+      top: 72%;
+      right: 13%;
+    }
+
+    #igRegistrer {
+      position: absolute;
+      top: 10%;
+      right: 10%;
+    }
+
+    /*pilenes størrelse styres her*/
+    .igPile {
+      scale: 0.2;
+    }
+
+    /*Styr positionen på den enkelte pil i ig
+    i følgende id'er:*/
+    #igPil1 {
+      position: absolute;
+      top: 26%;
+      left: 23%;
+    }
+
+    #igPil2 {
+      position: absolute;
+      top: 55%;
+      left: 20%;
+    }
+
+    #igPil3 {
+      position: absolute;
+      top: 70%;
+      left: 25%;
+    }
+
+    #igPil4 {
+      position: absolute;
+      top: 87%;
+      left: 30%;
+      rotate: -13deg;
+    }
+
+    #igPil5 {
+      position: absolute;
+      top: 59%;
+      right: 24%;
+    }
+
+    #igPil6 {
+      position: absolute;
+      top: 86%;
+      right: 27%;
+    }
+
+    /*ikon-illustrationernes størrelse styres her*/
+    .igIkon {
+      scale: 0.4;
+    }
+
+    /*Styrer positionen på den enkelte ikon-illustration i ig
+    i følgende id'er:*/
+    #igKalender {
+      position: absolute;
+      top: 34%;
+      left: 19%;
+    }
+
+    #igKrimi {
+      position: absolute;
+      top: 79%;
+      left: 12%;
+      rotate: 13deg;
+      scale: 0.3;
+    }
+
+    #igFodspor {
+      position: absolute;
+      top: 88%;
+      left: 17%;
+      rotate: 13deg;
+      scale: 0.3;
+    }
+
+    #igUFO {
+      position: absolute;
+      top: 67%;
+      left: 1%;
+      rotate: -13deg;
+    }
+
+    #igKager {
+      position: absolute;
+      top: 76%;
+      right: 8%;
+      scale: 0.2;
+    }
+
+    #igKop {
+      position: absolute;
+      top: 81%;
+      right: 13%;
+      scale: 0.2;
+    }
+
+    #rabatBlob{
+      background: url(img/rabat-blob.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 3%;
+      right: -3%;
+    }
+
+
+
 }
 
+
+
+
+/*MOBIL*/
+
 @media screen and (max-width: 768px) {
+  .lilleCTA {
+    font-size: 1.5vw;
+    padding: 1vw 1.8vw 1vw 1.8vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+  }
+  
+
+
+  /*Overskrifter der skal centreres
+  og have samme top og bottom margin*/
+  .overskriftCenter {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  /*sørger for at det første element på siden er
+  100% synlig ved at lægge under headeren og
+  ikke bagved*/
+  main {
+  margin-top: 60px;
+  }
+
+
   /* BESKRIVELSER + 404 - KOLONNER */
   .toKolonnerMereMargin {
     width: 100%;
@@ -544,7 +605,8 @@ h5 {
     padding-top: 60px;
   }
 
-  /*Hvis ikke class navnet bliver skrevet inden hver ny teksttype, ændrer det også på teksten i footer*/
+  /*Hvis ikke class navnet bliver skrevet inden
+  hver ny teksttype, ændrer det også på teksten i footer*/
   .toKolonnerMereMarginTekst h1,
   .toKolonnerMereMarginTekst h2,
   .toKolonnerMereMarginTekst p {
@@ -576,4 +638,122 @@ h5 {
   #gulBlob {
     width: 80%;
   }
+
+
+  /*LAESEKLUBBER*/
+  .laeseklubberLaeserFlex{
+    flex-wrap: wrap-reverse;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+  }
+
+  #laeseklub2Flyt{
+    flex-wrap: wrap;
+    margin-top: -150px;
+    margin-bottom: 80px;
+  }
+
+  .laeseklubberLaeserFlex p{
+    margin-bottom: 100px;
+  }
+
+  .laeseklubberLaeserFlex p, .mobilCentrer{
+    text-align: center;}
+  
+  .bogCover{
+    margin-bottom: 70px;
+    margin-top: -50px;
+  }
+
+    /*Infographic*/
+      #infographicBaggrund, #infographicBaggrund h2{
+        margin-top: 55px;
+      }
+
+      #mobilBogklubImg{
+        scale: 0.8;
+        margin-top: -40px;
+      }
+
+      #igOverskrift h2{
+        margin-top: 10px;
+      }
+
+      #igHvem h2{
+        margin-top: -40px;
+      }
+
+      /*styrer bredden for Infographic punkterne,
+      så p ved hvor den skal break*/
+      #infographicBaggrund div {
+        width: 80%;
+        margin: auto;
+      }
+
+      .igPile{
+      display: none;
+      }
+
+         
+      /*ikon-illustrationernes størrelse styres her*/
+      .igIkon {
+        scale: 0.3;
+      }
+    
+      /*Styrer positionen på den enkelte ikon-illustration i ig
+      i følgende id'er:*/    
+      #igKalender {
+        position: absolute;
+        top: 34%;
+        right: -12%;
+      }
+    
+      #igKrimi {
+        position: absolute;
+        top: 48%;
+        right: -5%;
+        rotate: 13deg;
+        scale: 0.15;
+      }
+    
+      #igFodspor {
+        position: absolute;
+        top: 51.5%;
+        right: -12%;
+        rotate: 13deg;
+        scale: 0.1;
+      }
+    
+      #igUFO {
+        position: absolute;
+        top: 48%;
+        right: 14%;
+        rotate: -13deg;
+        scale: 0.2;
+      }
+    
+      #igKager {
+        position: absolute;
+        top: 72.5%;
+        right: -13%;
+        scale: 0.15;
+      }
+    
+      #igKop {
+        position: absolute;
+        top: 75%;
+        right: -2%;
+        scale: 0.15;
+      }
+
+      #rabatBlob{
+        background: url(img/rabat-blob.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 92%;
+        right: -45%;
+      }
 }
+
+
