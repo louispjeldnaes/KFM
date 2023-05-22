@@ -59,7 +59,6 @@ a {
 .lilleCTA,
 .storCTA {
   background-color: #f9dc5c;
-  padding: 1.3vw 3vw 1.3vw 3vw; /*tror ikke vi skal bruge vw her, det ser helt tosset ud på min skærm - KBL*/
   text-align: center;
   border-radius: 35px;
   border: none;
@@ -70,22 +69,23 @@ a {
   cursor: pointer;
 }
 
-.storCTA {
-  margin-top: 1vw;
-  margin-bottom: 1vw;
-}
-
-.lilleCTA:hover,  /*VED IKKE OM DETTE ER DET DER SKAL BRUGES???*/
+.lilleCTA:hover,
 .storCTA:hover {
   opacity: 0.7;
 }
 
 .lilleCTA {
   font-size: 15px;
+  padding: 0.5vw 1.8vw 0.5vw 1.8vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
 }
 
 .storCTA {
   font-size: 20px;
+  padding: 1.3vw 3vw 1.3vw 3vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
 /*LISTE*/
