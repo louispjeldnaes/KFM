@@ -207,7 +207,7 @@ footer {
 }
 /* HEADER*/
 
-header {
+.header {
   height: 8vw;
   background-color: white;
   opacity: 0.8;
@@ -275,6 +275,82 @@ header li a:hover,
   width: 60px;
 }
 
+
+
+/*HEADER MOBIL */
+
+/*OVERLAY/CURTAIN MENU - SLIDE IN LEFT*/ 
+
+/*Overlay baggrund - Eksempel*/ 
+
+.overlay {
+  height: 100%; 
+  width: 0; 
+  z-index: 100; 
+  position: fixed;
+  right: 0; /*Ændr 'right' til 'left' for at få SLIDE IN RIGHT*/ 
+  top: 0; 
+  background-color: #DBECD9; 
+  overflow-x: hidden; /*Horisontal scroll-bar BE GONE!!*/ 
+  transition: 0.5s; 
+  } 
+
+  /*Åbn menu knap*/ 
+  
+  #overlay_burgermenu { 
+    position: fixed; 
+    width: 40px; 
+    bottom: 4vw; 
+    right: 2vw; 
+    cursor: pointer; 
+    z-index: 100;
+  } 
+  
+  /*Overlay content*/ 
+  
+  .overlay_content { 
+    position: relative;
+    top: 20%; 
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: left; 
+  } 
+
+  .logoMobilMenu {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 5vw;
+  }
+
+  /*Links i overlay*/ 
+  
+  .overlay a { 
+    padding: 35px; 
+    text-decoration: none; 
+    font-size: 5vw; 
+    color: #2a3c24;
+    display: block; 
+    transition: 0.3s; 
+    margin-left: 5vw;
+  } 
+
+  .overlay a:hover { 
+    color: #a690a4; 
+  } 
+  
+  /*Luk menu knap*/ 
+  
+  .closebtn { 
+    position: absolute; 
+    width: 40px; 
+    bottom: 4vw; 
+    right: 2vw; 
+    cursor: pointer; 
+    z-index: 100;
+  } 
+
+  
+  
 /*FORSIDE*/
 
 #forsideIntro {
@@ -542,4 +618,41 @@ header li a:hover,
 .bogKarousselMidlertidig {
   height: 700px;
   background-color: #a690a4;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*LAPTOP*/
+
+@media screen and (min-width: 768px) {
+  #headerMobil {
+    display: none;
+  }
+}
+
+/*MOBIL*/
+
+@media screen and (max-width: 768px) {
+  nav ul { 
+    display: none;
+  }
+
+  .header {
+    height: 20vw;
+    background-color: white;
+    opacity: 0.8;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 100;
+  }
+
+  #logo {
+    width: 12%;
+    margin-left: 2.5vw;
+    margin-top: 1vw;
+  }
 }
