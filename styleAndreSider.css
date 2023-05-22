@@ -110,18 +110,17 @@ fastsættes denne oppe i .eventFlex div*/
   background-image: url(img/event/flyvende-boeger-gul.svg);
 }
 
-
-
 /*HTML: LÆSEKLUBBER*/
 
 /*her flexes alt på siden Læseklubber, som flexes skal
 og skal have justify-content: space-between;*/
-.laeseklubberLaeserFlex, .knapPrisFlex{
-    display: flex;
-    justify-content: space-between;
+.laeseklubberLaeserFlex,
+.knapPrisFlex {
+  display: flex;
+  justify-content: space-between;
 }
 
-.laeseklubberLaeserFlex{
+.laeseklubberLaeserFlex {
   margin-bottom: 100px;
 }
 
@@ -136,7 +135,6 @@ imens teksten kan få lov at bredde sig mere*/
   margin-inline-end: 10px;
 }
 
-
 /*Styrer Læseklub 2 læser's placering
 så den centres i højden ift. læseklub 1
 og 3 på venstre side.*/
@@ -148,7 +146,7 @@ og 3 på venstre side.*/
 
 /*Læseklub 2 læser - overskrift og tekst højrestilles
 uden at det påvirker div'en med bogcover, pris osv. i*/
-#laeseklub2Hoejre{
+#laeseklub2Hoejre {
   text-align: right;
 }
 
@@ -293,7 +291,6 @@ h5 {
   margin-left: -30px;
 }
 
-
 /*INSPIRATIONSSIDE*/
 
 /*Inspirations intro*/
@@ -316,4 +313,12 @@ h5 {
 #rulEnBog {
   margin-top: 7vw;
   margin-bottom: 7vw;
+}
+
+#rulEnBogMedKnap {
+  position: absolute;
+  width: 13%;
+  right: 0;
+  margin-right: 429px;
+  margin-top: 150px;
 }
