@@ -113,25 +113,6 @@ ul li {
   z-index: 10;
 }
 
-/* BESKRIVELSER + 404 - KOLONNER */
-.toKolonnerMereMargin {
-  width: 63%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.toKolonnerMereMarginBillede {
-  width: 50%;
-  margin: auto;
-}
-
-.toKolonnerMereMarginTekst {
-  width: 67%;
-  margin: auto;
-  padding-top: 60px;
-}
-
 /*INSTAGRAM BANNER*/
 footer {
   margin-top: 50px;
@@ -158,7 +139,7 @@ footer {
 #SoMe {
   display: flex;
   width: 62%;
-  margin-top: 80px;
+  margin-top: 12%;
 }
 
 #SoMe img {
@@ -216,7 +197,7 @@ footer {
 }
 
 .footer h2 {
-  margin-bottom: 25px;
+  margin-bottom: 9%;
 }
 
 .footer li {
@@ -664,6 +645,67 @@ header li a:hover,
 @media screen and (max-width: 768px) {
   /*GENERELT*/
 
+  h1,
+  h2,
+  h3,
+  p {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 7.2vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+
+  p,
+  li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f1f1f;
+    font-size: 3.5vw;
+    line-height: 5vw;
+  }
+
+  li {
+    line-height: 6vw;
+  }
+
+  .toKolonner {
+    flex-wrap: wrap;
+  }
+
+  .toKolonnerBillede {
+    width: 100%;
+  }
+
+  .toKolonnerTekst {
+    width: 80%;
+  }
+
+  /*CTA-KNAPPER*/
+
+  .lilleCTA {
+    font-size: 3.1vw;
+    padding: 2vw 5vw 2vw 5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .storCTA {
+    font-size: 3.7vw;
+    padding: 3vw 7vw 3vw 7vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  }
+
+  /*HEADER*/
+
   nav ul {
     display: none;
   }
@@ -684,6 +726,44 @@ header li a:hover,
     width: 12%;
     margin-left: 2.5vw;
     margin-top: 1vw;
+  }
+
+  /*INSTAGRAM BANNER*/
+
+  .toKolonnerInsta {
+    flex-wrap: wrap-reverse;
+    margin-left: 10%;
+  }
+
+  #toKolonnerInstaBillede {
+    width: 100%;
+  }
+
+  #toKolonnerInstaTekst {
+    width: 100%;
+  }
+
+  #SoMe {
+    width: 100%;
+    margin-top: 17%;
+  }
+
+  #SoMe img {
+    width: 80%;
+  }
+
+  /*FOOTER*/
+  .footer {
+    flex-wrap: wrap;
+    padding-left: 10%;
+  }
+
+  .footer h2 {
+    margin-top: 9%;
+  }
+
+  .footer div {
+    width: 100%;
   }
 
   /*FORSIDE*/
@@ -751,5 +831,97 @@ header li a:hover,
     width: 15vw;
     top: 113vw;
     left: 45vw;
+  }
+
+  #laeseklubBannerIMG {
+    width: 90%;
+  }
+
+  /*FORSIDE*/
+  #forsideIntro {
+    background-image: url(img/ForsideIllustrationMobil.svg);
+    width: 110%;
+    top: -36vw;
+  }
+
+  #forsideIntroTekst {
+    top: 135vw;
+    left: 15vw;
+    z-index: 15;
+    width: 70%;
+  }
+
+  #forsideIntroTekst h2 {
+    width: 70%;
+  }
+
+  /*CSS-animationer på forsiden*/
+  #skib,
+  #havfugle,
+  #stjerneStor,
+  #stjerneLille {
+    display: none;
+  }
+
+  #luftBallon {
+    width: 25vw;
+    top: 65vw;
+    left: 13vw;
+  }
+
+  #planeter {
+    width: 45vw;
+    top: 50vw;
+    left: 50vw;
+  }
+
+  #maane {
+    width: 20vw;
+    top: 85vw;
+    left: 40vw;
+  }
+
+  #hval {
+    width: 35vw;
+    top: 110vw;
+  }
+
+  #sky1 {
+    width: 25vw;
+    top: 120vw;
+  }
+
+  #sky2 {
+    width: 25vw;
+    top: 125vw;
+    left: 50vw;
+  }
+
+  #sky3 {
+    width: 20vw;
+    top: 110vw;
+    left: 57vw;
+  }
+
+  #sky4 {
+    width: 17vw;
+    top: 119vw;
+    left: 73vw;
+  }
+
+  #sky5 {
+    width: 15vw;
+    top: 113vw;
+    left: 45vw;
+  }
+
+  /*EVENT BANNER*/
+
+  #eventBanner {
+    flex-wrap: wrap-reverse;
+  }
+
+  #eventBannerIMG {
+    height: 55vw;
   }
 }
