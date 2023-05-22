@@ -264,6 +264,14 @@ i følgende id'er:*/
   right: 27%;
 }
 
+#rabatBlob{
+  background: url();
+  height: 5vw;
+  position: absolute;
+  top: 3%;
+  right: -3%;
+}
+
 /*ikon-illustrationernes størrelse styres her*/
 .igIkon{
   scale: 0.4;
