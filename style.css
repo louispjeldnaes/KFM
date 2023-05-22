@@ -638,6 +638,65 @@ header li a:hover,
 
   /*GENERELT*/
   
+h1, h2, h3, p{
+  text-align: left;
+}
+
+  h1 {
+    font-size: 7.2vw;
+  }
+  
+  h2 {
+    font-size: 4vw;
+  }
+  
+  h3 {
+    font-size: 4vw;
+  }
+  
+  p,
+  li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f1f1f;
+    font-size: 3.5vw;
+    line-height: 5vw;
+  }
+  
+  li {
+    line-height: 6vw;
+  }
+
+  .toKolonner {
+    flex-wrap: wrap;
+    
+  }
+  
+  .toKolonnerBillede {
+    width: 100%;
+  }
+  
+  .toKolonnerTekst {
+    width: 80%;
+
+  }
+
+  /*CTA-KNAPPER*/
+
+.lilleCTA {
+  font-size: 3.1vw;
+  padding: 2vw 5vw 2vw 5vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.storCTA {
+  font-size: 3.7vw;
+  padding: 3vw 7vw 3vw 7vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+  /*HEADER*/
 
   nav ul { 
     display: none;
@@ -662,11 +721,28 @@ header li a:hover,
   }
 
 
+
+  #laeseklubBannerIMG {
+    width: 90%;
+  }
+
+
   /*FORSIDE*/
 #forsideIntro {
   background-image: url(img/ForsideIllustrationMobil.svg);
-width: 100%;
+width: 110%;
 top: -36vw;
+}
+
+#forsideIntroTekst {
+  top: 135vw;
+  left: 15vw;
+  z-index: 15;
+  width: 70%;
+}
+
+#forsideIntroTekst h2 {
+  width: 70%;
 }
 
 /*CSS-animationer på forsiden*/
@@ -725,6 +801,16 @@ top: -36vw;
   width: 15vw;
   top: 113vw;
   left: 45vw;
+}
+
+/*EVENT BANNER*/
+
+#eventBanner {
+  flex-wrap: wrap-reverse;
+}
+
+#eventBannerIMG {
+  height: 55vw ;
 }
 
 }
