@@ -1,3 +1,14 @@
+//BOGKARRUSEL
+const bogKarrusel = document.getElementsByClassName("bogKarrusel");
+const bogIKarrusel = document.querySelector(".bogIKarrusel");
+const venstrePil = document.getElementById("karruselHoejrePil");
+const hoejrePil = document.getElementById("karruselVenstrePil");
+
+/*hoejrePil.addEventListener("click", () => {
+  const bogIKarruselWidth = bogIKarrusel.clientWidth;
+  bogKarrusel.scrollLeft += bogIKarruselWidth;
+});*/
+
 //RUL EN BOG
 const vistBog = document.getElementById("rulEnBogMedKnap");
 const rulEnBog = document.getElementById("rulEnBogKnap");

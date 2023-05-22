@@ -69,7 +69,6 @@ a {
   cursor: pointer;
 }
 
-
 .lilleCTA:hover,
 .storCTA:hover {
   opacity: 0.7;
@@ -168,6 +167,39 @@ footer {
 
 #instagramUnderpunkter {
   margin-top: 40px;
+}
+
+/*BOGKARRUSEL*/
+
+.karrusel {
+  position: relative;
+  overflow: hidden;
+}
+
+.bogKarrusel {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bogIKarrusel {
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+}
+
+.karruselPile {
+  width: 1%;
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: white;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 /*FOOTER*/
@@ -276,82 +308,78 @@ header li a:hover,
   width: 60px;
 }
 
-
-
 /*HEADER MOBIL */
 
-/*OVERLAY/CURTAIN MENU - SLIDE IN LEFT*/ 
+/*OVERLAY/CURTAIN MENU - SLIDE IN LEFT*/
 
-/*Overlay baggrund - Eksempel*/ 
+/*Overlay baggrund - Eksempel*/
 
 .overlay {
-  height: 100%; 
-  width: 0; 
-  z-index: 100; 
+  height: 100%;
+  width: 0;
+  z-index: 100;
   position: fixed;
-  right: 0; /*Ændr 'right' til 'left' for at få SLIDE IN RIGHT*/ 
-  top: 0; 
-  background-color: #DBECD9; 
-  overflow-x: hidden; /*Horisontal scroll-bar BE GONE!!*/ 
-  transition: 0.5s; 
-  } 
+  right: 0; /*Ændr 'right' til 'left' for at få SLIDE IN RIGHT*/
+  top: 0;
+  background-color: #dbecd9;
+  overflow-x: hidden; /*Horisontal scroll-bar BE GONE!!*/
+  transition: 0.5s;
+}
 
-  /*Åbn menu knap*/ 
-  
-  #overlay_burgermenu { 
-    position: fixed; 
-    width: 40px; 
-    bottom: 4vw; 
-    right: 2vw; 
-    cursor: pointer; 
-    z-index: 100;
-  } 
-  
-  /*Overlay content*/ 
-  
-  .overlay_content { 
-    position: relative;
-    top: 20%; 
-    margin-bottom: 30px;
-    width: 100%;
-    text-align: left; 
-  } 
+/*Åbn menu knap*/
 
-  .logoMobilMenu {
-    width: 30%;
-    margin: auto;
-    margin-bottom: 5vw;
-  }
+#overlay_burgermenu {
+  position: fixed;
+  width: 40px;
+  bottom: 4vw;
+  right: 2vw;
+  cursor: pointer;
+  z-index: 100;
+}
 
-  /*Links i overlay*/ 
-  
-  .overlay a { 
-    padding: 35px; 
-    text-decoration: none; 
-    font-size: 5vw; 
-    color: #2a3c24;
-    display: block; 
-    transition: 0.3s; 
-    margin-left: 5vw;
-  } 
+/*Overlay content*/
 
-  .overlay a:hover { 
-    color: #a690a4; 
-  } 
-  
-  /*Luk menu knap*/ 
-  
-  .closebtn { 
-    position: absolute; 
-    width: 40px; 
-    bottom: 4vw; 
-    right: 2vw; 
-    cursor: pointer; 
-    z-index: 100;
-  } 
+.overlay_content {
+  position: relative;
+  top: 20%;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: left;
+}
 
-  
-  
+.logoMobilMenu {
+  width: 30%;
+  margin: auto;
+  margin-bottom: 5vw;
+}
+
+/*Links i overlay*/
+
+.overlay a {
+  padding: 35px;
+  text-decoration: none;
+  font-size: 5vw;
+  color: #2a3c24;
+  display: block;
+  transition: 0.3s;
+  margin-left: 5vw;
+}
+
+.overlay a:hover {
+  color: #a690a4;
+}
+
+/*Luk menu knap*/
+
+.closebtn {
+  position: absolute;
+  width: 40px;
+  bottom: 4vw;
+  right: 2vw;
+  cursor: pointer;
+  z-index: 100;
+}
+
 /*FORSIDE*/
 
 #forsideIntro {
@@ -621,7 +649,6 @@ header li a:hover,
   background-color: #a690a4;
 }
 
-
 /*MEDIA QUERIES*/
 
 /*LAPTOP*/
@@ -635,11 +662,9 @@ header li a:hover,
 /*MOBIL*/
 
 @media screen and (max-width: 768px) {
-
   /*GENERELT*/
-  
 
-  nav ul { 
+  nav ul {
     display: none;
   }
 
@@ -661,70 +686,70 @@ header li a:hover,
     margin-top: 1vw;
   }
 
-
   /*FORSIDE*/
-#forsideIntro {
-  background-image: url(img/ForsideIllustrationMobil.svg);
-width: 100%;
-top: -36vw;
-}
+  #forsideIntro {
+    background-image: url(img/ForsideIllustrationMobil.svg);
+    width: 100%;
+    top: -36vw;
+  }
 
-/*CSS-animationer på forsiden*/
-#skib, #havfugle, #stjerneStor, #stjerneLille {
-  display: none;
-} 
+  /*CSS-animationer på forsiden*/
+  #skib,
+  #havfugle,
+  #stjerneStor,
+  #stjerneLille {
+    display: none;
+  }
 
-#luftBallon {
-  width: 25vw;
-  top: 65vw;
-  left: 13vw;
-}
+  #luftBallon {
+    width: 25vw;
+    top: 65vw;
+    left: 13vw;
+  }
 
-#planeter {
-  width: 45vw;
-  top: 50vw;
-  left: 50vw;
-}
+  #planeter {
+    width: 45vw;
+    top: 50vw;
+    left: 50vw;
+  }
 
-#maane {
-  width: 20vw;
-  top: 85vw;
-  left: 40vw;
-}
+  #maane {
+    width: 20vw;
+    top: 85vw;
+    left: 40vw;
+  }
 
-#hval {
-  width: 35vw;
-  top: 110vw;
-}
+  #hval {
+    width: 35vw;
+    top: 110vw;
+  }
 
-#sky1 {
-  width: 25vw;
-  top: 120vw;
-}
+  #sky1 {
+    width: 25vw;
+    top: 120vw;
+  }
 
-#sky2 {
-  width: 25vw;
-  top: 125vw;
-  left: 50vw;
-}
+  #sky2 {
+    width: 25vw;
+    top: 125vw;
+    left: 50vw;
+  }
 
-#sky3 {
-  width: 20vw;
-  top: 110vw;
-  left: 57vw;
-}
+  #sky3 {
+    width: 20vw;
+    top: 110vw;
+    left: 57vw;
+  }
 
-#sky4 {
-  width: 17vw;
-  top: 119vw;
-  left: 73vw;
+  #sky4 {
+    width: 17vw;
+    top: 119vw;
+    left: 73vw;
+  }
 
-}
-
-#sky5 {
-  width: 15vw;
-  top: 113vw;
-  left: 45vw;
-}
-
+  #sky5 {
+    width: 15vw;
+    top: 113vw;
+    left: 45vw;
+  }
 }
