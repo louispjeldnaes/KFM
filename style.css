@@ -647,7 +647,7 @@ h1, h2, h3, p{
   }
   
   h2 {
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
   
   h3 {
@@ -730,8 +730,19 @@ h1, h2, h3, p{
   /*FORSIDE*/
 #forsideIntro {
   background-image: url(img/ForsideIllustrationMobil.svg);
-width: 100%;
+width: 110%;
 top: -36vw;
+}
+
+#forsideIntroTekst {
+  top: 135vw;
+  left: 15vw;
+  z-index: 15;
+  width: 70%;
+}
+
+#forsideIntroTekst h2 {
+  width: 70%;
 }
 
 /*CSS-animationer på forsiden*/
