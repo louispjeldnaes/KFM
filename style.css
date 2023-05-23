@@ -75,7 +75,7 @@ a {
   margin-bottom: 0.5vw;
 }
 
-.CTAstor{
+.CTAstor {
   font-size: 1.1vw;
   padding: 1.3vw 3vw 1.3vw 3vw;
   margin-top: 1vw;
@@ -84,7 +84,8 @@ a {
 }
 
 /*Inspiration til opbygning af knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/*/
-.CTAstor, .lilleCTA {
+.CTAstor,
+.lilleCTA {
   background-color: #f9dc5c;
   color: #2a3c24;
   cursor: pointer;
@@ -173,14 +174,18 @@ footer {
   justify-content: space-between;
 }
 
-.bogIKarrusel {
-  padding-left: 40px;
-  padding-right: 40px;
-  width: 100%;
+.bogKarrusel::-webkit-scrollbar {
+  width: 0;
+}
+
+.bogKarrusel img {
+  width: 12%;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
 .karruselPile {
-  width: 1%;
+  width: 2%;
   position: absolute;
   display: flex;
   top: 0;
@@ -189,7 +194,22 @@ footer {
   background-color: white;
   padding: 0;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.8;
+}
+
+#karruselVenstrePil {
+  border-radius: 0 32px 32px 0;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+#karruselHoejrePil {
+  right: 0;
+  border-radius: 32px 0 0 32px;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /*BOG KORT*/
@@ -421,7 +441,8 @@ header li a:hover,
   z-index: 101;
 }
 
-#burgerCirkel, #burgerCirkelLuk {
+#burgerCirkel,
+#burgerCirkelLuk {
   position: fixed;
   width: 20vw;
   bottom: -1vw;
@@ -848,11 +869,23 @@ header li a:hover,
   }
 
   #toKolonnerInstaBillede {
-    width: 100%;
+    width: 85%;
+    position: absolute;
+    top: 0;
+    margin-top: 208%;
   }
 
   #toKolonnerInstaTekst {
     width: 100%;
+    padding-top: 600px;
+  }
+
+  #toKolonnerInstaTekst h1 {
+    padding-bottom: 2%;
+  }
+
+  #toKolonnerInstaTekst h2 {
+    text-align: left;
   }
 
   #SoMe {
@@ -864,6 +897,18 @@ header li a:hover,
     width: 80%;
   }
 
+  /*BOGKARRUSEL*/
+
+  .bogKarrusel img {
+    width: 30%;
+    margin-left: 37px;
+    margin-right: 37px;
+  }
+
+  .karruselPile {
+    width: 7%;
+  }
+
   /*FOOTER*/
   .footer {
     flex-wrap: wrap;
@@ -872,6 +917,11 @@ header li a:hover,
 
   .footer h2 {
     margin-top: 9%;
+    text-align: left;
+  }
+
+  .footer p {
+    text-align: left;
   }
 
   .footer div {
@@ -993,7 +1043,6 @@ header li a:hover,
     left: 40vw;
   }
 
-
   #hval {
     width: 35vw;
     top: 105vw;
@@ -1039,38 +1088,36 @@ header li a:hover,
     height: 65vw;
   }
 
-  
   /*Dele af illustration på eventbanner*/
-  
+
   #eventReol1 {
     position: block;
     width: 37%;
     margin-top: 10vw;
     margin-left: 5vw;
   }
-  
+
   #eventReol2 {
     width: 53%;
     top: 5vw;
     left: 37vw;
   }
-  
+
   #eventForfatter {
     width: 30%;
     top: 32vw;
     left: 13vw;
     z-index: 1;
   }
-  
+
   #eventDeltagere {
     width: 65%;
     top: 24vw;
     left: 25vw;
   }
-  
+
   .bogKarousselMidlertidig {
     height: 700px;
     background-color: #a690a4;
   }
-  
 }

@@ -7,14 +7,24 @@
     <!--Fonts fra Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
-    <script src="https://kit.fontawesome.com/0396285b10.js"crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0396285b10.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styleAndreSider.css" />
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Animationer fra https://michalsnik.github.io/aos/-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Animationer fra https://michalsnik.github.io/aos/-->
     <title>Kristian F. Møller - Aarhus' hyggeligeste boghandel</title>
   </head>
 
@@ -22,71 +32,86 @@
     <header>
       <!--Logo-->
       <div class="header">
-          <div id="logo">
-              <a href="index.html">
-                  <img src="img/logo-ny-grøn.svg" alt="">
-              </a>
-          </div>
-          <!--Navigation-->
-          <nav>
-              <ul>
-                  <li class="dropdown"> <!--Inpireret af løsning på https://www.w3schools.com/howto/howto_css_dropdown.asp-->
-                      <a href="#">Find bøger <i class="fa-sharp fa-solid fa-caret-down"></i></a>
-                      <div class="dropdown-content">
-                          <a href="#">Skønlitteratur</a>
-                          <a href="#">Faglitteratur</a>
-                          <a href="#">Engelske bøger</a>
-                          <a href="#">Børne- og ungdomsbøger</a>
-                          <a href="inspiration.html">Inspiration</a>
-                      </div>
-                  </li>
-                  <li >
-                      <a href="laeseklubber.html">Læseklubber</a>
-                  </li>
-                  <li><a href="events.html">Events</a></li>
-                  <li><a href="#">Om Os</a></li>
-              </ul>
-          </nav>
+        <div id="logo">
+          <a href="index.html">
+            <img src="img/logo-ny-grøn.svg" alt="" />
+          </a>
+        </div>
+        <!--Navigation-->
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <!--Inpireret af løsning på https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+              <a href="#"
+                >Find bøger <i class="fa-sharp fa-solid fa-caret-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">Skønlitteratur</a>
+                <a href="#">Faglitteratur</a>
+                <a href="#">Engelske bøger</a>
+                <a href="#">Børne- og ungdomsbøger</a>
+                <a href="inspiration.html">Inspiration</a>
+              </div>
+            </li>
+            <li>
+              <a href="laeseklubber.html">Læseklubber</a>
+            </li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#">Om Os</a></li>
+          </ul>
+        </nav>
 
-          <!--Ikoner-->
-          <div class="ikoner">
-              <div><i class="fa-solid fa-2x  fa-magnifying-glass"></i></div>
-              <div><i class="fa-solid fa-2x  fa-heart"></i></div>
-              <div><i class="fa-solid fa-2x  fa-basket-shopping"></i></div>
-          </div>
+        <!--Ikoner-->
+        <div class="ikoner">
+          <div><i class="fa-solid fa-2x fa-magnifying-glass"></i></div>
+          <div><i class="fa-solid fa-2x fa-heart"></i></div>
+          <div><i class="fa-solid fa-2x fa-basket-shopping"></i></div>
+        </div>
       </div>
 
       <div id="headerMobil">
-          <div id="overlayNav" class="overlay"> 
-              <!--Knap der lukker menuen--> 
-              <div class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark fa-3x"></i></div>
-              <div id="burgerCirkelLuk" onclick="openNav()"><img src="img/burgerCirkel.svg" alt=""></div>
-
-              
-              <!--Menupunkter--> 
-              
-              <div class="overlay_content"> 
-                  <div class="logoMobilMenu"><img src="img/logo-ny-grøn.svg" alt=""></div>
-                  <a href="#">Find bøger</a> 
-                  <a href="laeseklubber.html">Læseklubber</a> 
-                  <a href="events.html">Events</a> 
-                  <a href="#">Om Os</a>
-              </div> 
+        <div id="overlayNav" class="overlay">
+          <!--Knap der lukker menuen-->
+          <div class="closebtn" onclick="closeNav()">
+            <i class="fa-solid fa-xmark fa-3x"></i>
           </div>
-      
-      <!--Element der åbner menuen--> 
-          <div id="overlay_burgermenu" onclick="openNav()"><i class="fa-solid fa-bars fa-3x "></i></div>
-          <div id="burgerCirkel" onclick="openNav()"><img src="img/burgerCirkel.svg" alt=""></div>
-      </div>    
-      
-  </header>
+          <div id="burgerCirkelLuk" onclick="openNav()">
+            <img src="img/burgerCirkel.svg" alt="" />
+          </div>
+
+          <!--Menupunkter-->
+
+          <div class="overlay_content">
+            <div class="logoMobilMenu">
+              <img src="img/logo-ny-grøn.svg" alt="" />
+            </div>
+            <a href="#">Find bøger</a>
+            <a href="laeseklubber.html">Læseklubber</a>
+            <a href="events.html">Events</a>
+            <a href="#">Om Os</a>
+          </div>
+        </div>
+
+        <!--Element der åbner menuen-->
+        <div id="overlay_burgermenu" onclick="openNav()">
+          <i class="fa-solid fa-bars fa-3x"></i>
+        </div>
+        <div id="burgerCirkel" onclick="openNav()">
+          <img src="img/burgerCirkel.svg" alt="" />
+        </div>
+      </div>
+    </header>
 
     <main>
       <!--INSPIRATION INTRO-->
 
-      <section id="inspirationIntro" class="toKolonner" >
-        <div class="toKolonnerTekst" data-aos="fade-right" data-aos-duration="3000">
-          <h1 class="overskriftLaptop" >Inspiration</h1>
+      <section id="inspirationIntro" class="toKolonner">
+        <div
+          class="toKolonnerTekst"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
+          <h1 class="overskriftLaptop">Inspiration</h1>
           <h2>
             Om du er til krimier, poesi, fantasy eller blot er ude efter en gave
             til en du har kær - kan vi hjælpe dig!
@@ -97,7 +122,11 @@
             lige nu - dyk ned i bøgernes verden!
           </h2>
         </div>
-        <div class="toKolonnerBillede" data-aos="fade-left" data-aos-duration="3000">
+        <div
+          class="toKolonnerBillede"
+          data-aos="fade-left"
+          data-aos-duration="3000"
+        >
           <h1 class="overskriftMobil">Inspiration</h1>
           <img src="img/inspirationIllustration.svg" alt="" />
         </div>
@@ -106,38 +135,290 @@
       <!--bogKarrusel-->
 
       <section class="karrusel">
-        <img class="karruselPile" id="karruselVenstrePil" src="img/venstrePil.svg" alt="Venstrepil i bogkarrusel"/>
+        <img
+          class="karruselPile"
+          id="karruselVenstrePil"
+          src="img/venstrePil.svg"
+          alt="Venstrepil i bogkarrusel"
+        />
 
-        <img class="karruselPile" id="karruselHoejrePil" src="img/hoejrePil.svg" alt="Hoejrepil i bogkarrusel" />
+        <img
+          class="karruselPile"
+          id="karruselHoejrePil"
+          src="img/hoejrePil.svg"
+          alt="Hoejrepil i bogkarrusel"
+        />
 
-        <ul class="bogKarrusel">
-          <li class="bogIKarrusel">
-            <img src="img/fyrsterneAfFinntjern.jpg" alt="Fyrsterne af Finntjern af Lars Elling" />
-          </li>
-          <li class="bogIKarrusel">
-            <img src="img/DetOrdnerSig.jpg" alt="" />
-          </li>
-          <li class="bogIKarrusel">
-            <img src="img/fremtidenErDer.jpg" alt="" />
-          </li>
-          <li class="bogIKarrusel">
-            <img src="img/citronbjerget.jpg" alt="" />
-          </li>
-          <li class="bogIKarrusel">
-            <img src="img/vølvensVejUlveGabet.jpg" alt="" />
-          </li>
-          <li class="bogIKarrusel">
-            <img src="img/det-manglende-lys.jpg" alt="" />
-          </li>
-          <li class="bogIKarrusel">
-            <img src="img/detTredjeRige.jpg" alt="" />
-          </li>
-        </ul>
+        
+        
+          
+        </div>
+      </section>
+
+      <section>
+        <div class="bogKarrusel">
+        <div class="bogKort">
+          <a href="bogbeskrivelse.html"
+            ><div class="bogBillede">
+              <img src="img/fyrsterneAfFinntjern.jpg" alt="" /></div
+          ></a>
+          <div class="anmeldelse">
+            <img src="img/anmeldelse.svg" alt="" />
+          </div>
+          <div class="favoritHjerte">
+            <div class="hjerteBaggrund">
+              <img src="img/hjerteBaggrund.svg" alt="" />
+            </div>
+            <div id="hjerteFyldt" onclick="hjerteToemmes()">
+              <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+            </div>
+            <!--Hjerte fuld-->
+            <div id="hjerteTomt" onclick="hjerteFyldes()">
+              <i
+                class="fa-regular fa-heart fa-2xl"
+                style="color: #2a3c24"
+              ></i>
+            </div>
+            <!--Hjerte omrids-->
+          </div>
+          <div class="bogKortTekst">
+            <h2>Det manglende lys</h2>
+            <h3>Nino Haratischwili</h3>
+            <div class="knapPrisFlex">
+              <form action="#">
+                <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                <button type="submit" class="lilleCTA">Læg i kurv</button>
+              </form>
+              <h2>299,95 kr</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bogKort">
+          <a href="bogbeskrivelse.html"
+            ><div class="bogBillede">
+              <img src="img/DetOrdnerSig.jpg" alt="" /></div
+          ></a>
+          <div class="anmeldelse">
+            <img src="img/anmeldelse.svg" alt="" />
+          </div>
+          <div class="favoritHjerte">
+            <div class="hjerteBaggrund">
+              <img src="img/hjerteBaggrund.svg" alt="" />
+            </div>
+            <div id="hjerteFyldt" onclick="hjerteToemmes()">
+              <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+            </div>
+            <!--Hjerte fuld-->
+            <div id="hjerteTomt" onclick="hjerteFyldes()">
+              <i
+                class="fa-regular fa-heart fa-2xl"
+                style="color: #2a3c24"
+              ></i>
+            </div>
+            <!--Hjerte omrids-->
+          </div>
+          <div class="bogKortTekst">
+            <h2>Det manglende lys</h2>
+            <h3>Nino Haratischwili</h3>
+            <div class="knapPrisFlex">
+              <form action="#">
+                <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                <button type="submit" class="lilleCTA">Læg i kurv</button>
+              </form>
+              <h2>299,95 kr</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bogKort">
+          <a href="bogbeskrivelse.html"
+            ><div class="bogBillede">
+              <img src="img/fremtidenErDer.jpg" alt="" /></div
+          ></a>
+          <div class="anmeldelse">
+            <img src="img/anmeldelse.svg" alt="" />
+          </div>
+          <div class="favoritHjerte">
+            <div class="hjerteBaggrund">
+              <img src="img/hjerteBaggrund.svg" alt="" />
+            </div>
+            <div id="hjerteFyldt" onclick="hjerteToemmes()">
+              <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+            </div>
+            <!--Hjerte fuld-->
+            <div id="hjerteTomt" onclick="hjerteFyldes()">
+              <i
+                class="fa-regular fa-heart fa-2xl"
+                style="color: #2a3c24"
+              ></i>
+            </div>
+            <!--Hjerte omrids-->
+          </div>
+          <div class="bogKortTekst">
+            <h2>Det manglende lys</h2>
+            <h3>Nino Haratischwili</h3>
+            <div class="knapPrisFlex">
+              <form action="#">
+                <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                <button type="submit" class="lilleCTA">Læg i kurv</button>
+              </form>
+              <h2>299,95 kr</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bogKort">
+          <a href="bogbeskrivelse.html"
+            ><div class="bogBillede">
+              <img src="img/citronbjerget.jpg" alt="" /></div
+          ></a>
+          <div class="anmeldelse">
+            <img src="img/anmeldelse.svg" alt="" />
+          </div>
+          <div class="favoritHjerte">
+            <div class="hjerteBaggrund">
+              <img src="img/hjerteBaggrund.svg" alt="" />
+            </div>
+            <div id="hjerteFyldt" onclick="hjerteToemmes()">
+              <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+            </div>
+            <!--Hjerte fuld-->
+            <div id="hjerteTomt" onclick="hjerteFyldes()">
+              <i
+                class="fa-regular fa-heart fa-2xl"
+                style="color: #2a3c24"
+              ></i>
+            </div>
+            <!--Hjerte omrids-->
+          </div>
+          <div class="bogKortTekst">
+            <h2>Det manglende lys</h2>
+            <h3>Nino Haratischwili</h3>
+            <div class="knapPrisFlex">
+              <form action="#">
+                <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                <button type="submit" class="lilleCTA">Læg i kurv</button>
+              </form>
+              <h2>299,95 kr</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bogKort">
+          <a href="bogbeskrivelse.html"
+            ><div class="bogBillede">
+              <img src="img/vølvensVejUlveGabet.jpg" alt="" /></div
+          ></a>
+          <div class="anmeldelse">
+            <img src="img/anmeldelse.svg" alt="" />
+          </div>
+          <div class="favoritHjerte">
+            <div class="hjerteBaggrund">
+              <img src="img/hjerteBaggrund.svg" alt="" />
+            </div>
+            <div id="hjerteFyldt" onclick="hjerteToemmes()">
+              <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+            </div>
+            <!--Hjerte fuld-->
+            <div id="hjerteTomt" onclick="hjerteFyldes()">
+              <i
+                class="fa-regular fa-heart fa-2xl"
+                style="color: #2a3c24"
+              ></i>
+            </div>
+            <!--Hjerte omrids-->
+          </div>
+          <div class="bogKortTekst">
+            <h2>Det manglende lys</h2>
+            <h3>Nino Haratischwili</h3>
+            <div class="knapPrisFlex">
+              <form action="#">
+                <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                <button type="submit" class="lilleCTA">Læg i kurv</button>
+              </form>
+              <h2>299,95 kr</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bogKort">
+          <a href="bogbeskrivelse.html"
+            ><div class="bogBillede">
+              <img src="img/det-manglende-lys.jpg" alt="" /></div
+          ></a>
+          <div class="anmeldelse">
+            <img src="img/anmeldelse.svg" alt="" />
+          </div>
+          <div class="favoritHjerte">
+            <div class="hjerteBaggrund">
+              <img src="img/hjerteBaggrund.svg" alt="" />
+            </div>
+            <div id="hjerteFyldt" onclick="hjerteToemmes()">
+              <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+            </div>
+            <!--Hjerte fuld-->
+            <div id="hjerteTomt" onclick="hjerteFyldes()">
+              <i
+                class="fa-regular fa-heart fa-2xl"
+                style="color: #2a3c24"
+              ></i>
+            </div>
+            <!--Hjerte omrids-->
+          </div>
+          <div class="bogKortTekst">
+            <h2>Det manglende lys</h2>
+            <h3>Nino Haratischwili</h3>
+            <div class="knapPrisFlex">
+              <form action="#">
+                <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                <button type="submit" class="lilleCTA">Læg i kurv</button>
+              </form>
+              <h2>299,95 kr</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bogKort">
+          <a href="bogbeskrivelse.html"
+            ><div class="bogBillede">
+              <img src="img/detTredjeRige.jpg" alt="" /></div
+          ></a>
+          <div class="anmeldelse">
+            <img src="img/anmeldelse.svg" alt="" />
+          </div>
+          <div class="favoritHjerte">
+            <div class="hjerteBaggrund">
+              <img src="img/hjerteBaggrund.svg" alt="" />
+            </div>
+            <div id="hjerteFyldt" onclick="hjerteToemmes()">
+              <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+            </div>
+            <!--Hjerte fuld-->
+            <div id="hjerteTomt" onclick="hjerteFyldes()">
+              <i
+                class="fa-regular fa-heart fa-2xl"
+                style="color: #2a3c24"
+              ></i>
+            </div>
+            <!--Hjerte omrids-->
+          </div>
+          <div class="bogKortTekst">
+            <h2>Det manglende lys</h2>
+            <h3>Nino Haratischwili</h3>
+            <div class="knapPrisFlex">
+              <form action="#">
+                <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                <button type="submit" class="lilleCTA">Læg i kurv</button>
+              </form>
+              <h2>299,95 kr</h2>
+            </div>
+          </div>
+        </div>
+        </div>
       </section>
 
       <!--RUL EN BOG-->
       <section id="rulEnBog" class="toKolonner">
-        <div class="toKolonnerTekst" data-aos="fade-right" data-aos-duration="3000">
+        <div
+          class="toKolonnerTekst"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
           <h1>Er du på udkig efter nye spændende bøger?</h1>
           <h2>
             - Og ønsker du at blive udfordret til at prøve noget helt nyt?
@@ -151,7 +432,11 @@
           </p>
           <button id="rulEnBogKnap" class="CTAstor">Rul en bog</button>
         </div>
-        <div class="toKolonnerBillede" data-aos="fade-left" data-aos-duration="3000">
+        <div
+          class="toKolonnerBillede"
+          data-aos="fade-left"
+          data-aos-duration="3000"
+        >
           <img src="img/RulEnBog_1.svg" alt="" />
         </div>
         <div id="rulEnBogMedKnap">
@@ -161,13 +446,18 @@
 
       <section class="bogKarousselMidlertidig"></section>
 
+      <div class="favoritHjerte">
+        <div><img src="" alt="" /></div>
+        <!--Baggrund-->
 
-  
+        <div><img src="" alt="" /></div>
+        <!--Hjerte fuld-->
 
-    
+        <div><img src="" alt="" /></div>
+        <!--Hjerte omrids-->
+      </div>
     </main>
     <footer>
-
       <!--INSTAGRAM BANNER-->
       <!--toKolonner - bruges på alle sider -->
       <section class="toKolonner">
@@ -244,7 +534,7 @@
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
-      </script> 
+      AOS.init();
+    </script>
   </body>
 </html>
