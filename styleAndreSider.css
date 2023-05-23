@@ -34,7 +34,7 @@ i {
 /*Justering af width på hvert event i oversigten,
 så tekst og billede aligner både til højre og venstre*/
 .eventKort {
-  width: 30%;
+  width: 30%; /*30% så der er tre kort på en række*/
 }
 
 .eventFlex h2 {
@@ -627,6 +627,19 @@ h5 {
     width: 65%;
   }
 
+  /*EVENTS (oversigten)*/
+
+  /*Justering af width på hvert event i oversigten,
+så tekst og billede aligner både til højre og venstre*/
+  .eventKort {
+    width: 100%; /*100% så der på mobilen kun vises 1 kort på en række*/
+    margin-bottom: 20px;
+  }
+
+  .eventBillede {
+    height: 65vw;
+  }
+
   /*EVENTBESKRIVELSE*/
   #balloner {
     display: none;
@@ -704,6 +717,15 @@ h5 {
   .bogCover {
     margin-bottom: 70px;
     margin-top: -50px;
+  }
+
+  /*Infographic*/
+  #infographicBaggrund,
+  #infographicBaggrund h2 {
+    margin-top: 55px;
+  }
+  .knapPrisFlex {
+    flex-direction: column-reverse;
   }
 
   /*Infographic*/
