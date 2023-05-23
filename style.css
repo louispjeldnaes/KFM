@@ -192,7 +192,6 @@ footer {
 .bogKort {
   width: 15%;
   position: relative;
-  background-color: #a690a4;
 }
 
 .bogBillede {
@@ -218,7 +217,10 @@ footer {
   top: -5.5vw;
 }
 
-
+.bogKortTekst {
+  width: 90%;
+  margin: auto;
+}
 
 /*HJERTE*/
 
