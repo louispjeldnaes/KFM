@@ -36,7 +36,7 @@ i {
 /*Justering af width på hvert event i oversigten,
 så tekst og billede aligner både til højre og venstre*/
 .eventKort {
-  width: 30%;
+  width: 30%; /*30% så der er tre kort på en række*/
 }
 
 .eventFlex h2 {
@@ -545,10 +545,6 @@ h5 {
       top: 3%;
       right: -3%;
     }
-
-
-
-  
 }
 
 
@@ -557,14 +553,6 @@ h5 {
 /*MOBIL*/
 
 @media screen and (max-width: 768px) {
-  .lilleCTA {
-    font-size: 1.5vw;
-    padding: 1vw 1.8vw 1vw 1.8vw;
-    margin-top: 0.5vw;
-    margin-bottom: 0.5vw;
-  }
-  
-
 
   /*Overskrifter der skal centreres
   og have samme top og bottom margin*/
@@ -632,7 +620,18 @@ h5 {
   }
 
 
+/*EVENTS (oversigten)*/
 
+/*Justering af width på hvert event i oversigten,
+så tekst og billede aligner både til højre og venstre*/
+.eventKort {
+  width: 100%; /*100% så der på mobilen kun vises 1 kort på en række*/
+  margin-bottom: 20px;
+}
+
+.eventBillede{
+  height: 65vw;
+}
 
   /*EVENTBESKRIVELSE*/
   #balloner {
@@ -676,6 +675,10 @@ h5 {
   .bogCover{
     margin-bottom: 70px;
     margin-top: -50px;
+  }
+
+  .knapPrisFlex{
+    flex-direction: column-reverse;
   }
 
     /*Infographic*/
