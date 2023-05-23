@@ -168,7 +168,6 @@ uden at det påvirker pris osv. i div'en med bogcover*/
 .toKolonnerMereMarginTekst {
   width: 67%;
   margin: auto;
-  padding-top: 60px;
 }
 
 /*BOGBESKRIVELSE*/
@@ -180,7 +179,7 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   left: 0;
   top: 0;
   margin-left: 13.4%;
-  margin-top: 7%;
+  margin-top: 12.4%;
 }
 
 #bogbeskrivelseCover {
@@ -189,9 +188,6 @@ uden at det påvirker pris osv. i div'en med bogcover*/
 }
 
 /*EVENTBESKRIVELSE*/
-.bogOverBlob {
-  margin-bottom: -70px;
-}
 
 #eventbeskrivelseBillede {
   width: 50%;
@@ -592,20 +588,21 @@ h5 {
   }
 
   #bogbeskrivelseCover {
-    position: relative;
-    margin-left: 23%;
-    width: 55%;
+    position: absolute;
+    margin-left: 18%;
+    margin-top: 19%;
+    width: 45%;
   }
 
   #lillaBlob {
     width: 68%;
-    margin-top: 15%;
+    margin-top: 21%;
     margin-left: 15.7%;
   }
 
   .toKolonnerMereMarginTekst {
     width: 85%;
-    padding-top: 60px;
+    padding-top: 420px;
   }
 
   /*Hvis ikke class navnet bliver skrevet inden
@@ -614,6 +611,16 @@ h5 {
   .toKolonnerMereMarginTekst h2,
   .toKolonnerMereMarginTekst p {
     text-align: center;
+  }
+
+  .toKolonnerMereMarginTekst h2 {
+    padding-bottom: 4%;
+    padding-top: 3%;
+  }
+
+  .toKolonnerMereMarginTekst p {
+    width: 79%;
+    margin: auto;
   }
 
   .beskrivelsePrisLap {
