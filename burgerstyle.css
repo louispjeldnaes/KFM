@@ -59,7 +59,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 #bogUnder{
     animation: drejBogUnder 0.6s ease-in-out;
     animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
-    animation-delay: 0.1s;
     animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
 }
 
@@ -71,7 +70,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 #bogVenstre{
     animation: drejBogVenstre 0.6s ease-in-out;
     animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
-    animation-delay: 0.1s;
     animation-fill-mode: forwards; /*Så animationen afspiller fra 0%-100% og stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
 }
 
@@ -83,7 +81,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 #bogHoejre{
     animation: drejBogHoejre 0.6s ease-in-out;
     animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
-    animation-delay: 0.1s;
     animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
 }
 

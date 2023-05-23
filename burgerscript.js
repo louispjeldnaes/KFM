@@ -7,7 +7,7 @@ const bogHoejre = document.getElementById("bogHoejre");
 const burgerIkon = document.getElementById("burgerIkon");
 const overlayNav = document.getElementById("overlayNav");
 
-const synlig = false;
+let synlig = false;
 
 /*Burgerfunktionen sat op med if og else for at
 #burgerIkonCirkel kan bruges som toggle til både at
@@ -24,11 +24,15 @@ function burgerFunktion(){
         bogVenstre.style.animationPlayState = "running";
         bogHoejre.style.animationPlayState = "running";
 
+        
+        burgerBog.style.animationDirection = "normal"; 
+        bogUnder.style.animationDirection = "normal"; 
+        bogVenstre.style.animationDirection = "normal"; 
+        bogHoejre.style.animationDirection = "normal"; 
+
         synlig = true;
 
     }else{
-        alert("test!") //DER ER IKKE HUL HER!!!!
-
         /* Lukker burgermenuen */
         overlayNav.style.width = "0%";
 
@@ -37,13 +41,7 @@ function burgerFunktion(){
         burgerBog.style.animationDirection = "reverse"; 
         bogUnder.style.animationDirection = "reverse"; 
         bogVenstre.style.animationDirection = "reverse"; 
-        bogHoejre.style.animationDirection = "reverse"; 
-
-        /* sætter CSS-animationerne i gang */
-        burgerBog.style.animationPlayState = "running";
-        bogUnder.style.animationPlayState = "running";
-        bogVenstre.style.animationPlayState = "running";
-        bogHoejre.style.animationPlayState = "running";
+        bogHoejre.style.animationDirection = "reverse";
 
         synlig = false;
     }    
