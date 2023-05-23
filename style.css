@@ -157,7 +157,7 @@ footer {
 
 .karrusel {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .bogKarrusel {
@@ -165,16 +165,11 @@ footer {
   scroll-behavior: smooth;
   display: flex;
   justify-content: space-between;
+  padding-top: 100px;
 }
 
 .bogKarrusel::-webkit-scrollbar {
   width: 0;
-}
-
-.bogKarrusel img {
-  width: 12%;
-  margin-left: 45px;
-  margin-right: 45px;
 }
 
 .karruselPile {
@@ -210,6 +205,8 @@ footer {
 .bogKort {
   width: 15%;
   position: relative;
+  padding-right: 27px;
+  padding-left: 27px;
 }
 
 .bogBillede {
@@ -220,12 +217,11 @@ footer {
   z-index: 5;
 }
 
-
 .anmeldelse {
-  width: 85%;
+  width: 71.2%;
   position: absolute;
-  top: -3.3vw;
-  left: 0.8vw;
+  top: -2.6vw;
+  left: 2.06vw;
   z-index: 1;
   cursor: pointer;
   transition: top 2s;
@@ -246,13 +242,13 @@ footer {
   position: absolute;
   z-index: 6;
   top: 0;
-  right: 2vw;
+  right: 3.2vw;
 }
 
 .hjerteBaggrund {
   position: absolute;
   width: 3vw;
-  top: -1.5vw;
+  top: -1.6vw;
   left: -0.5vw;
 }
 
@@ -269,8 +265,6 @@ footer {
   position: absolute;
   top: 0;
 }
-
-
 
 /*FOOTER*/
 .footer {
