@@ -70,12 +70,18 @@ a {
   margin-bottom: 0.5vw;
 }
 
+.CTAstor{
+  font-size: 1.1vw;
+  padding: 1.3vw 3vw 1.3vw 3vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  padding: 14px 28px;
+}
+
 /*Inspiration til opbygning af knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/*/
 .CTAstor, .lilleCTA {
   background-color: #f9dc5c;
   color: #2a3c24;
-  padding: 14px 28px;
-  font-size: 1.1vw;
   cursor: pointer;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
@@ -84,9 +90,6 @@ a {
   border-radius: 15%;
   border-radius: 35px;
   border: none;
-  padding: 1.3vw 3vw 1.3vw 3vw;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
 }
 
 /*LISTE*/
@@ -736,14 +739,14 @@ header li a:hover,
   }
 
   h3 {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   p,
   li {
     font-family: Arial, Helvetica, sans-serif;
     color: #1f1f1f;
-    font-size: 3.5vw;
+    font-size: 3.2vw;
     line-height: 5vw;
   }
 
@@ -766,8 +769,8 @@ header li a:hover,
   /*CTA-KNAPPER*/
 
   .lilleCTA {
-    font-size: 3.1vw;
-    padding: 2vw 5vw 2vw 5vw;
+    font-size: 2.8vw;
+    padding: 1.5vw 3vw 1.5vw 3vw;
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
   }
