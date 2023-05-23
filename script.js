@@ -86,3 +86,13 @@ function hjerteToemmes() {
   document.getElementById("hjerteTomt").style.display = "block";
 }
 
+
+/*Åbner anmeldelse op*/ 
+function aabenAnmeldelse() {
+  document.getElementById("anmeldelseKort").style.display = "block";
+}
+
+/* Lukker anmeldelse */
+function lukAndmeldelse() {
+  document.getElementById("anmeldelseKort").style.display = "none";
+}

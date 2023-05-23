@@ -35,6 +35,12 @@ h3 {
   font-size: 1.2vw;
 }
 
+h5 {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
 p,
 li {
   font-family: Arial, Helvetica, sans-serif;
@@ -55,7 +61,6 @@ a {
   font-weight: bold;
   color: #2a3c24;
 }
-
 
 
 .lilleCTA:hover,
@@ -252,6 +257,33 @@ footer {
   top: 0;
 }
 
+/*ANMELDELSESKORT*/
+
+.karruselErTanken {
+  position: relative;
+}
+
+#anmeldelseKort {
+  display: none;
+  position: absolute;
+  width: 33%;
+  left: 33%;
+  top: -10vw;
+  z-index: 40;
+  padding: 8vw 7vw 8vw 7vw;
+  background-image: url(img/baggrundAnmeldelse.svg);
+  background-size: cover;
+}
+
+#anmeldelseKortTekst {
+  width: 50%;
+}
+
+.lukAnmeldelse {
+  position: absolute;
+  top: 5vw;
+  right: 3vw;
+}
 
 
 /*FOOTER*/
