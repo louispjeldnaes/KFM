@@ -1,0 +1,169 @@
+/*BurgerBogen lukket*/
+body{
+   background-color: #a690a4;
+    
+}
+#burgerBog{
+    position: relative;
+    width: 33px;
+    height: 40px;
+    max-height: fit-content;
+}
+#burgerBog div{
+    background-color: #2a3c24;
+    border-radius: 30px;
+  }
+
+#bogRyg{
+    position: absolute;
+    right: 0;
+    height: 33px;
+    width: 10px;
+}
+#bogOver,
+#bogUnder{
+    position: absolute;
+    right: 1px;
+    height: 7px;
+    width: 43px;
+}
+
+#bogUnder{
+    top: 26px;
+}
+
+#bogHoejre,
+#bogVenstre{
+    position: absolute;
+    right: 1px;
+    top: 14px;
+    height: 5px;
+    width: 43px;
+}
+
+/*BurgerBogen åbner - animation*/
+/*Har lært om følgende properies og måde at opstille CSS-animationer på i
+Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/learning/css-animation-14153685?u=68595258*/
+
+#burgerBog{
+    animation: drejBog 0.6s ease-in-out;
+    animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
+    animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
+}
+
+@keyframes drejBog{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(90deg);}
+}
+
+#bogUnder{
+    animation: drejBogUnder 0.6s ease-in-out;
+    animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
+}
+
+@keyframes drejBogUnder{
+    0%{transform: rotate(0);}
+    100%{transform: translateX(6px) translateY(11px) rotate(-55deg);}
+}
+
+#bogVenstre{
+    animation: drejBogVenstre 0.6s ease-in-out;
+    animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards; /*Så animationen afspiller fra 0%-100% og stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
+}
+
+@keyframes drejBogVenstre{
+    0%{transform: rotate(0);}
+    100%{transform: translateY(12px) rotate(-45deg);}
+}
+
+#bogHoejre{
+    animation: drejBogHoejre 0.6s ease-in-out;
+    animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
+}
+
+@keyframes drejBogHoejre{
+    0%{transform: rotate(0);}
+    100%{transform: translateX(-1px) translateY(3px) rotate(-20deg);}
+}
+
+
+
+
+
+
+/*HEADER MOBIL */
+
+/*OVERLAY/CURTAIN MENU - SLIDE IN LEFT*/
+
+/*Overlay baggrund - Eksempel*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    z-index: 100;
+    position: fixed;
+    right: 0; /*Ændr 'right' til 'left' for at få SLIDE IN RIGHT*/
+    top: 0;
+    background-color: #dbecd9;
+    overflow: hidden; /*Horisontal scroll-bar BE GONE!!*/
+    transition: 0.6s; /*Samme tid som burgerBog-ikonets animation*/
+  }
+  
+  /*Åben burgermenu-knap*/
+  
+  /*Burger-IKONET*/
+  #burgerIkon {
+    position: fixed;
+    width: 7vw;
+    bottom: 3vw;
+    right: 3vw;
+    cursor: pointer;
+    z-index: 102;
+  }
+  
+  #burgerCirkel{
+    position: fixed;
+    width: 20vw;
+    bottom: -1vw;
+    right: -1vw;
+    cursor: pointer;
+    z-index: 101;
+  }
+  
+  /*Overlay MenuPunkter*/
+  .overlayMenuPunkter {
+    position: relative;
+    top: 20%;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  /*Logo i Mobil-menuen*/
+  .logoMobilMenu {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 5vw;
+    margin-top: -20vw;
+  }
+  
+  /*Links i overlay*/
+  .overlay a {
+    padding: 35px;
+    text-decoration: none;
+    font-size: 5vw;
+    color: #2a3c24;
+    display: block;
+    transition: 0.6s; /*Samme tid som burgerBog-ikonets animation*/
+    margin-left: 5vw;
+  }
+  
+  .overlay a:hover {
+    color: #a690a4;
+  }
