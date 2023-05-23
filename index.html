@@ -157,6 +157,50 @@
             </div>
         </section>
 
+<div class="karruselErTanken">
+        <!--Bogkort til karousel-->
+        <div class="bogKort">
+            <a href="bogbeskrivelse.html"><div class="bogBillede"><img src="img/11%.jpg" alt=""></div></a>
+            <div class="anmeldelse" onclick="aabenAnmeldelse()"><img src="img/anmeldelse.svg" alt=""></div>
+            <div class="favoritHjerte">
+                <div class="hjerteBaggrund"><img src="img/hjerteBaggrund.svg" alt=""></div>
+                <div id="hjerteFyldt" onclick="hjerteToemmes()"><i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24;"></i></div> <!--Hjerte fuld-->
+                <div id="hjerteTomt" onclick="hjerteFyldes()"><i class="fa-regular fa-heart fa-2xl" style="color: #2a3c24;"></i></div> <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+                <h2>Det manglende lys</h2>
+                <h3>Nino Haratischwili</h3>
+                <div class="knapPrisFlex">
+                    <h2>299,95 kr</h2>
+                    <div>
+                        <form action="#"> <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/--> 
+                            <button type="submit" class="lilleCTA">Læg i kurv</button> 
+                        </form>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div id="anmeldelseKort">
+            <div class="anmeldelseKortTekst">
+                <h2>Anbefaling fra Kristian F. Møller</h2>
+                <h5>"Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                    velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in 
+                    culpa qui officia deserunt mollit anim id est laborum."
+                </h5>
+                <br>
+                <h5>
+                    - Marianne 
+                </h5>
+            </div>
+            <div class="lukAnmeldelse" onclick="lukAndmeldelse()"><i class="fa-solid fa-xmark fa-3x"></i></div>
+        </div>
+</div>
+        
     </main>
     <footer>
 

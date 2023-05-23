@@ -1,6 +1,5 @@
 //BOGKARRUSEL
-const bogKarrusel = document.getElementsByClassName("bogKarrusel");
-const bogIKarrusel = document.querySelector(".bogIKarrusel");
+
 const venstrePil = document.getElementById("karruselHoejrePil");
 const hoejrePil = document.getElementById("karruselVenstrePil");
 
@@ -64,8 +63,35 @@ function openNav() {
 }
 
 /* Lukker burgermenuen */
+
 function closeNav() {
   document.getElementById("overlayNav").style.width = "0%";
   document.getElementById("overlay_burgermenu").style.display = "block";
   document.getElementById("burgerCirkelLuk").style.display = "block";
+}
+
+/* Fylder hjertet */
+
+
+function hjerteFyldes() {
+  document.getElementById("hjerteTomt").style.display = "none";
+  document.getElementById("hjerteFyldt").style.display = "block";
+
+}
+
+/* Tømmer hjertet */
+function hjerteToemmes() {  
+  document.getElementById("hjerteFyldt").style.display = "none";
+  document.getElementById("hjerteTomt").style.display = "block";
+}
+
+
+/*Åbner anmeldelse op*/ 
+function aabenAnmeldelse() {
+  document.getElementById("anmeldelseKort").style.display = "block";
+}
+
+/* Lukker anmeldelse */
+function lukAndmeldelse() {
+  document.getElementById("anmeldelseKort").style.display = "none";
 }
