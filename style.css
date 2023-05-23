@@ -163,7 +163,7 @@ footer {
 
 .karrusel {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .bogKarrusel {
@@ -211,12 +211,12 @@ footer {
 .bogKort {
   width: 15%;
   position: relative;
-  padding-right: 27px;
-  padding-left: 27px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .bogBillede {
-  width: 90%;
+  width: 100%;
   position: relative;
   margin: auto;
   cursor: pointer;
@@ -224,21 +224,21 @@ footer {
 }
 
 .anmeldelse {
-  width: 71.2%;
+  width: 68.5%;
   position: absolute;
-  top: -2.6vw;
-  left: 2.06vw;
+  top: -2.54vw;
+  left: 2.22vw;
   z-index: 1;
   cursor: pointer;
-  transition: top 2s;
+  transition: top 1s;
 }
 
 .anmeldelse:hover {
-  top: -5.5vw;
+  top: -4.5vw;
 }
 
 .bogKortTekst {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
@@ -863,15 +863,13 @@ header li a:hover,
   }
 
   #toKolonnerInstaBillede {
-    width: 85%;
-    position: absolute;
-    top: 0;
-    margin-top: 208%;
+    width: 100%;
+    padding-top: 30%;
   }
 
   #toKolonnerInstaTekst {
     width: 100%;
-    padding-top: 600px;
+    padding-top: 20px;
   }
 
   #toKolonnerInstaTekst h1 {
@@ -893,14 +891,12 @@ header li a:hover,
 
   /*BOGKARRUSEL*/
 
-  .bogKarrusel img {
-    width: 30%;
-    margin-left: 37px;
-    margin-right: 37px;
-  }
-
   .karruselPile {
     width: 7%;
+  }
+
+  .bogKort {
+    width: 100%;
   }
 
   /*FOOTER*/
