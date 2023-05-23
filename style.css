@@ -56,21 +56,10 @@ a {
   color: #2a3c24;
 }
 
-.lilleCTA,
-.storCTA {
-  background-color: #f9dc5c;
-  text-align: center;
-  border-radius: 35px;
-  border: none;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: #2a3c24;
-  cursor: pointer;
-}
+
 
 .lilleCTA:hover,
-.storCTA:hover {
+.CTAstor:hover {
   opacity: 0.7;
 }
 
@@ -81,8 +70,20 @@ a {
   margin-bottom: 0.5vw;
 }
 
-.storCTA {
+/*Inspiration til opbygning af knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/*/
+.CTAstor, .lilleCTA {
+  background-color: #f9dc5c;
+  color: #2a3c24;
+  padding: 14px 28px;
   font-size: 1.1vw;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 15%;
+  border-radius: 35px;
+  border: none;
   padding: 1.3vw 3vw 1.3vw 3vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
@@ -706,7 +707,7 @@ header li a:hover,
     margin-bottom: 0.5vw;
   }
 
-  .storCTA {
+  .CTAstor {
     font-size: 3.7vw;
     padding: 3vw 7vw 3vw 7vw;
     margin-top: 3vw;
