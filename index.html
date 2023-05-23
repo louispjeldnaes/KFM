@@ -44,7 +44,7 @@
                         <a href="laeseklubber.html">Læseklubber</a>
                     </li>
                     <li><a href="events.html">Events</a></li>
-                    <li><a href="#">Om Os</a></li>
+                    <li><a href="#">Om os</a></li>
                 </ul>
             </nav>
 
@@ -56,27 +56,36 @@
             </div>
         </div>
 
+        <!--Header på mobil-->
         <div id="headerMobil">
-            <div id="overlayNav" class="overlay"> 
-                <!--Knap der lukker menuen--> 
-                <div class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark fa-3x"></i></div>
-                <div id="burgerCirkelLuk" onclick="openNav()"><img src="img/burgerCirkel.svg" alt=""></div>
-
+            <div id="overlayNav" class="overlay">
                 
                 <!--Menupunkter--> 
-                
-                <div class="overlay_content"> 
+                <div class="overlayMenuPunkter"> 
                     <div class="logoMobilMenu"><img src="img/logo-ny-grøn.svg" alt=""></div>
                     <a href="#">Find bøger</a> 
                     <a href="laeseklubber.html">Læseklubber</a> 
                     <a href="events.html">Events</a> 
-                    <a href="#">Om Os</a>
+                    <a href="#">Om os</a>
                 </div> 
             </div>
         
-        <!--Element der åbner menuen--> 
-            <div id="overlay_burgermenu" onclick="openNav()"><i class="fa-solid fa-bars fa-3x "></i></div>
-            <div id="burgerCirkel" onclick="openNav()"><img src="img/burgerCirkel.svg" alt=""></div>
+        <!--Element der åbner/lukker menuen--> 
+            <div id="burgerIkon">
+                
+                <!--Ikonet - laves af div'er der styles og placeres i CSS-->
+                <div id="burgerBog">
+                    <div id="bogRyg"></div>
+                    <div id="bogOver"></div>
+                    <div id="bogUnder"></div>
+                    <div id="bogHoejre"></div>
+                    <div id="bogVenstre"></div>
+                </div>
+            </div>
+            <!--1/4-Cirkel-->
+            <div id="burgerCirkel">
+                <img src="img/burgerCirkel.svg" alt="">
+            </div>        
         </div>    
         
     </header>
