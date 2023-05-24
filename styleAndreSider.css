@@ -668,9 +668,9 @@ h5 {
 
   /*Hvis ikke class navnet bliver skrevet inden
   hver ny teksttype, ændrer det også på teksten i footer*/
-  .toKolonnerMereMarginTekst h1,
+  .toKolonnerMereMarginTekst h1, .toKolonnerMereMarginTekst
   h2,
-  p {
+  .toKolonnerMereMarginTekst p {
     text-align: center;
   }
 
@@ -723,8 +723,8 @@ så tekst og billede aligner både til højre og venstre*/
   }
 
   #eventbeskrivelseTekst h1,
-  h2,
-  p {
+  #eventbeskrivelseTekst h2,
+  #eventbeskrivelseTekst p {
     text-align: center;
   }
 
