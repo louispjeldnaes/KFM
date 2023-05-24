@@ -58,7 +58,6 @@ function burgerFunktion(){
   burgerIkon.addEventListener("click", burgerFunktion);
 
   
-
 //BOGKARRUSEL
 
 const venstrePil = document.getElementById("karruselHoejrePil");
@@ -68,6 +67,7 @@ const hoejrePil = document.getElementById("karruselVenstrePil");
   const bogIKarruselWidth = bogIKarrusel.clientWidth;
   bogKarrusel.scrollLeft += bogIKarruselWidth;
 });*/
+
 
 //RUL EN BOG
 const vistBog = document.getElementById("rulEnBogMedKnap");
@@ -138,6 +138,6 @@ function aabenAnmeldelse() {
 }
 
 /* Lukker anmeldelse */
-function lukAndmeldelse() {
+function lukAnmeldelse() {
   document.getElementById("anmeldelseKort").style.display = "none";
 }
