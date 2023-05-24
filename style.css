@@ -63,7 +63,7 @@ a {
 }
 
 .lilleCTA:hover,
-.CTAstor:hover {
+.storCTA:hover {
   opacity: 0.7;
 }
 
@@ -74,7 +74,7 @@ a {
   margin-bottom: 0.5vw;
 }
 
-.CTAstor {
+.storCTA {
   font-size: 1.1vw;
   padding: 1.3vw 3vw 1.3vw 3vw;
   margin-top: 1vw;
@@ -83,7 +83,7 @@ a {
 }
 
 /*Inspiration til opbygning af knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/*/
-.CTAstor,
+.storCTA,
 .lilleCTA {
   background-color: #f9dc5c;
   color: #2a3c24;
@@ -387,7 +387,7 @@ header li a:hover,
   color: #a690a4;
 }
 
-.dropdown-content {
+.dropdownContent {
   display: none; /*Indhold i dropdown viser sig ikke*/
   position: absolute;
   top: 2vw;
@@ -396,11 +396,11 @@ header li a:hover,
   padding-top: 2vw;
 }
 
-.dropdown-content a {
+.dropdownContent a {
   display: block;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdownContent {
   display: block; /*Indhold vises ved dropdown*/
 }
 
@@ -895,7 +895,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     margin-bottom: 0.5vw;
   }
 
-  .CTAstor {
+  .storCTA {
     font-size: 3.7vw;
     padding: 3vw 7vw 3vw 7vw;
     margin-top: 3vw;
