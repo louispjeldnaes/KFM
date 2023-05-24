@@ -387,7 +387,7 @@ header li a:hover,
   color: #a690a4;
 }
 
-.dropdown-content {
+.dropdownContent {
   display: none; /*Indhold i dropdown viser sig ikke*/
   position: absolute;
   top: 2vw;
@@ -396,11 +396,11 @@ header li a:hover,
   padding-top: 2vw;
 }
 
-.dropdown-content a {
+.dropdownContent a {
   display: block;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdownContent {
   display: block; /*Indhold vises ved dropdown*/
 }
 
