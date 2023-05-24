@@ -58,12 +58,10 @@ rulEnBog.addEventListener("click", rul);
 
 
 
-
 /* Fylder hjertet */
 function hjerteFyldes() {
   document.getElementById("hjerteTomt").style.display = "none";
   document.getElementById("hjerteFyldt").style.display = "block";
-
 }
 
 /* Tømmer hjertet */
