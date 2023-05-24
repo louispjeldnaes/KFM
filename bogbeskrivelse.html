@@ -33,12 +33,12 @@
             <nav>
                 <ul>
                     <li class="dropdown"> <!--Inpireret af løsning på https://www.w3schools.com/howto/howto_css_dropdown.asp-->
-                        <a href="#">Find bøger <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                        <a href="404.html">Find bøger <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <div class="dropdownContent">
-                            <a href="#">Skønlitteratur</a>
-                            <a href="#">Faglitteratur</a>
-                            <a href="#">Engelske bøger</a>
-                            <a href="#">Børne- og ungdomsbøger</a>
+                            <a href="404.html">Skønlitteratur</a>
+                            <a href="404.html">Faglitteratur</a>
+                            <a href="404.html">Engelske bøger</a>
+                            <a href="404.html">Børne- og ungdomsbøger</a>
                             <a href="inspiration.html">Inspiration</a>
                         </div>
                     </li>
@@ -46,7 +46,7 @@
                         <a href="laeseklubber.html">Læseklubber</a>
                     </li>
                     <li><a href="events.html">Events</a></li>
-                    <li><a href="#">Om os</a></li>
+                    <li><a href="404.html">Om os</a></li>
                 </ul>
             </nav>
 
@@ -66,10 +66,10 @@
                 <div class="overlayMenuPunkter"> 
                   <div class="logoMobilMenu"><a href="index.html"><img src="img/logo-ny-grøn.svg" alt="Kristian F. Møllers logo"></a></div>
 
-                    <a href="#">Find bøger</a> 
+                    <a href="404.html">Find bøger</a> 
                     <a href="laeseklubber.html">Læseklubber</a> 
                     <a href="events.html">Events</a> 
-                    <a href="#">Om os</a>
+                    <a href="404.html">Om os</a>
                 </div> 
             </div>
         
@@ -132,7 +132,7 @@
             er inspireret af nordisk mytologi. Første bog i serien hedder
             "Snehild".
           </p>
-          <br>
+          
           <br>
           <div class="knapOgPris">
             <form action="#">
@@ -148,7 +148,7 @@
       </section>
 
       <section class="karrusel">
-        <h1>Nyheder!</h1>
+        <h1>Andre købte også</h1>
 
         <img
           class="karruselPile"
@@ -168,11 +168,9 @@
           <div class="bogKort">
             <a href="bogbeskrivelse.html"
               ><div class="bogBillede">
-                <img src="bogcovers/fyrsterneAfFinntjern.jpg" alt=""></div
+                <img src="bogcovers/fyrsterneAfFinntjern.jpg" alt="Fyrsterne af Finntjern af Lars Elling"></div
             ></a>
-            <div class="anmeldelse">
-              <img src="img/anmeldelse.svg" alt="">
-            </div>
+            
             <div class="favoritHjerte">
               <div class="hjerteBaggrund">
                 <img src="img/hjerteBaggrund.svg" alt="">
@@ -201,10 +199,12 @@
               </div>
             </div>
           </div>
+
+
           <div class="bogKort">
             <a href="bogbeskrivelse.html"
               ><div class="bogBillede">
-                <img src="bogcovers/detOrdnerSig.jpg" alt=""></div
+                <img src="bogcovers/himmelstormere.jpg" alt="Himmelstormere af Maggie Shiptead"></div
             ></a>
             <div class="anmeldelse">
               <img src="img/anmeldelse.svg" alt="">
@@ -226,21 +226,59 @@
               <!--Hjerte omrids-->
             </div>
             <div class="bogKortTekst">
-              <h2>Det ordner sig</h2>
-              <h3>Signe Amtoft</h3>
+              <h2>Himmelstormere</h2>
+              <h3>Maggie Shiptead</h3>
               <div class="knapPrisFlex">
                 <form action="#">
                   <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
                   <button type="submit" class="lilleCTA">Læg i kurv</button>
                 </form>
-                <h2>299,95 kr</h2>
+                <h2>149,95 kr</h2>
               </div>
             </div>
           </div>
+
+
           <div class="bogKort">
             <a href="bogbeskrivelse.html"
               ><div class="bogBillede">
-                <img src="bogcovers/11.jpg" alt=""></div
+                <img src="bogcovers/vølvensVejSnehild.jpg" alt="Vølvens vej Snehild af Anne-Marie Vedsø Olesen"></div
+            ></a>
+            
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="">
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>Vølvens vej 1</h2>
+              <h3>Anne-Marie Vedsø Olesen</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>129,95 kr</h2>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/uniform.jpg" alt="Uniform af Thomas Rydahl"></div
             ></a>
             <div class="anmeldelse">
               <img src="img/anmeldelse.svg" alt="">
@@ -262,61 +300,25 @@
               <!--Hjerte omrids-->
             </div>
             <div class="bogKortTekst">
-              <h2>11%</h2>
-              <h3>Maren Uthaug</h3>
+              <h2>Uniform</h2>
+              <h3>Thomas Rydahl</h3>
               <div class="knapPrisFlex">
                 <form action="#">
                   <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
                   <button type="submit" class="lilleCTA">Læg i kurv</button>
                 </form>
-                <h2>299,95 kr</h2>
+                <h2>119,95 kr</h2>
               </div>
             </div>
           </div>
+
+
           <div class="bogKort">
             <a href="bogbeskrivelse.html"
               ><div class="bogBillede">
-                <img src="bogcovers/citronbjerget.jpg" alt=""></div
+                <img src="bogcovers/vølvensVejUlveGabet.jpg" alt="Vølvens vej ulvegabet af Anne-Marie Vedsø Olesen"></div
             ></a>
-            <div class="anmeldelse">
-              <img src="img/anmeldelse.svg" alt="">
-            </div>
-            <div class="favoritHjerte">
-              <div class="hjerteBaggrund">
-                <img src="img/hjerteBaggrund.svg" alt="">
-              </div>
-              <div id="hjerteFyldt" onclick="hjerteToemmes()">
-                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
-              </div>
-              <!--Hjerte fuld-->
-              <div id="hjerteTomt" onclick="hjerteFyldes()">
-                <i
-                  class="fa-regular fa-heart fa-2xl"
-                  style="color: #2a3c24"
-                ></i>
-              </div>
-              <!--Hjerte omrids-->
-            </div>
-            <div class="bogKortTekst">
-              <h2>Citronbjerget</h2>
-              <h3>Eva Tind</h3>
-              <div class="knapPrisFlex">
-                <form action="#">
-                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
-                  <button type="submit" class="lilleCTA">Læg i kurv</button>
-                </form>
-                <h2>299,95 kr</h2>
-              </div>
-            </div>
-          </div>
-          <div class="bogKort">
-            <a href="bogbeskrivelse.html"
-              ><div class="bogBillede">
-                <img src="bogcovers/vølvensVejUlveGabet.jpg" alt=""></div
-            ></a>
-            <div class="anmeldelse">
-              <img src="img/anmeldelse.svg" alt="">
-            </div>
+            
             <div class="favoritHjerte">
               <div class="hjerteBaggrund">
                 <img src="img/hjerteBaggrund.svg" alt="">
@@ -345,14 +347,14 @@
               </div>
             </div>
           </div>
+
+
           <div class="bogKort">
             <a href="bogbeskrivelse.html"
               ><div class="bogBillede">
-                <img src="bogcovers/detManglendeLys.jpg" alt=""></div
+                <img src="bogcovers/deForsvundneTræersØ.jpg" alt="De forsvundne træers ø af Elif Shafak"></div
             ></a>
-            <div class="anmeldelse">
-              <img src="img/anmeldelse.svg" alt="">
-            </div>
+            
             <div class="favoritHjerte">
               <div class="hjerteBaggrund">
                 <img src="img/hjerteBaggrund.svg" alt="">
@@ -370,21 +372,23 @@
               <!--Hjerte omrids-->
             </div>
             <div class="bogKortTekst">
-              <h2>Det manglende lys</h2>
-              <h3>Nino Haratischwili</h3>
+              <h2>De forsvundne træers</h2>
+              <h3>Elif Shafak</h3>
               <div class="knapPrisFlex">
                 <form action="#">
                   <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
                   <button type="submit" class="lilleCTA">Læg i kurv</button>
                 </form>
-                <h2>299,95 kr</h2>
+                <h2>249,95 kr</h2>
               </div>
             </div>
           </div>
+
+
           <div class="bogKort">
             <a href="bogbeskrivelse.html"
               ><div class="bogBillede">
-                <img src="bogcovers/detTredjeRige.jpg" alt=""></div
+                <img src="bogcovers/11.jpg" alt="11% af Maren Uthaug"></div
             ></a>
             <div class="anmeldelse">
               <img src="img/anmeldelse.svg" alt="">
@@ -406,14 +410,14 @@
               <!--Hjerte omrids-->
             </div>
             <div class="bogKortTekst">
-              <h2>Det tredje rige</h2>
-              <h3>Karl Ove Knausgård</h3>
+              <h2>11%</h2>
+              <h3>Maren Uthaug</h3>
               <div class="knapPrisFlex">
                 <form action="#">
                   <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
                   <button type="submit" class="lilleCTA">Læg i kurv</button>
                 </form>
-                <h2>299,95 kr</h2>
+                <h2>179,95 kr</h2>
               </div>
             </div>
           </div>
