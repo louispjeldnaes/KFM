@@ -167,7 +167,7 @@ footer {
 }
 
 .karrusel h1 {
-  margin-left: 9.5vw;
+  margin-left: 8.3vw;
 }
 
 .bogKarrusel {
@@ -992,16 +992,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     width: 80%;
   }
 
-  /*BOGKARRUSEL*/
-
-  .karruselPile {
-    width: 7%;
-  }
-
-  .bogKort {
-    width: 100%;
-  }
-
   /*FOOTER*/
   .footer {
     flex-wrap: wrap;
@@ -1020,8 +1010,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
   .footer div {
     width: 100%;
   }
-
-
 
   /*FORSIDE*/
   #forsideIntro {
@@ -1140,13 +1128,56 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     left: 25vw;
   }
 
-    #laeseklubBannerIMG {
+  #laeseklubBannerIMG {
     width: 90%;
   }
 
+  /*BOGKARRUSEL*/
+  .karrusel h1 {
+    text-align: center;
+    margin-left: 0;
+  }
 
-  .bogKarousselMidlertidig {
-    height: 700px;
-    background-color: #a690a4;
+  .bogKort {
+    padding-left: 9vw;
+    padding-right: 9vw;
+    width: 100%;
+  }
+
+  .bogBillede {
+    width: 40vw;
+  }
+
+  .bogKortTekst {
+    width: 40vw;
+  }
+
+  .bogKortTekst h2 {
+    text-align: left;
+  }
+
+  .anmeldelse {
+    width: 69%;
+    top: -10vw;
+    left: 9vw;
+  }
+
+  .anmeldelse:hover {
+    top: -16.5vw;
+  }
+
+  .favoritHjerte {
+    top: 0.2vw;
+    right: 13vw;
+  }
+
+  .hjerteBaggrund {
+    width: 10vw;
+    top: -5vw;
+    left: -1.5vw;
+  }
+
+  .karruselPile {
+    width: 7%;
   }
 }
