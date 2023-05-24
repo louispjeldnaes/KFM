@@ -14,40 +14,48 @@ const rulEnBog = document.getElementById("rulEnBogKnap");
 
 /*Vi bruger Math.random til at generere en tilfældig bog*/
 function rul() {
-  let resultat = Math.floor(Math.random() * 8) + 1;
+  let resultat = Math.floor(Math.random() * 10) + 1;
   switch (resultat) {
     case 1:
       vistBog.innerHTML =
-        '<a href="bogbeskrivelse.html"><img src="img/citronbjerget.jpg" alt="Citronbjerget af Eva Tind"></a>';
+        '<a href="bogbeskrivelse.html"><img src="bogcovers/citronbjerget.jpg" alt="Citronbjerget af Eva Tind"></a>';
       break;
     case 2:
       vistBog.innerHTML =
-        '<a href="bogbeskrivelse.html"><img src= "img/deBedsteFamilier.jpg" alt="De bedste familier af Kim Blæsbjerg"></a>';
+        '<a href="bogbeskrivelse.html"><img src= "bogcovers/deBedsteFamilier.jpg" alt="De bedste familier af Kim Blæsbjerg"></a>';
       break;
     case 3:
       vistBog.innerHTML =
-        '<a href="bogbeskrivelse.html"><img src="img/deForsvundneTræersØ.jpg" alt="De forsvundne træers ø af Elif Shafak"></a>';
+        '<a href="bogbeskrivelse.html"><img src="bogcovers/deForsvundneTræersØ.jpg" alt="De forsvundne træers ø af Elif Shafak"></a>';
       break;
     case 4:
       vistBog.innerHTML =
-        '<a href="bogbeskrivelse.html"><img src="img/mrLoverman.jpg" alt="Mr. Loverman af Bernardine Evaristo"></a>';
+        '<a href="bogbeskrivelse.html"><img src="bogcovers/mrLoverman.jpg" alt="Mr. Loverman af Bernardine Evaristo"></a>';
       break;
     case 5:
       vistBog.innerHTML =
-        '<a href="bogbeskrivelse.html"><img src="img/detTredjeRige.jpg" alt="Det tredje rige af Karl Ove Knausgård"></a>';
+        '<a href="bogbeskrivelse.html"><img src="bogcovers/detTredjeRige.jpg" alt="Det tredje rige af Karl Ove Knausgård"></a>';
       break;
     case 6:
       vistBog.innerHTML =
-        '<a href="bogbeskrivelse.html"><img src="img/enVejUdAfTågen.jpg" alt="En vej ud af tågen af Kristian Leth"></a>';
+        '<a href="bogbeskrivelse.html"><img src="bogcovers/enVejUdAfTågen.jpg" alt="En vej ud af tågen af Kristian Leth"></a>';
       break;
     case 7:
       vistBog.innerHTML =
-        '<a href="bogbeskrivelse.html"><img src="img/fremtidenErDer.jpg" alt="Fremtiden er der også i morgen af Kristian Leth"></a>';
+        '<a href="bogbeskrivelse.html"><img src="bogcovers/fremtidenErDer.jpg" alt="Fremtiden er der også i morgen af Kristian Leth"></a>';
       break;
     case 8:
       vistBog.innerHTML =
-        '<a href="bogbeskrivelse.html"><img src="img/fyrsterneAfFinntjern.jpg" alt="Fyrsterne af Finntjern af Lars Elling"></a>';
+        '<a href="bogbeskrivelse.html"><img src="bogcovers/fyrsterneAfFinntjern.jpg" alt="Fyrsterne af Finntjern af Lars Elling"></a>';
       break;
+    case 9:
+      vistBog.innerHTML =
+        '<a href="bogbeskrivelse.html"><img src="bogcovers/11.jpg" alt="11% af Maren Uthaug"></a>';
+      break;
+    case 10:
+      vistBog.innerHTML =
+        '<a href="bogbeskrivelse.html"><img src="bogcovers/nøjsomheden.jpg" alt="Nøjsomheden af Stine Askov"></a>';
+      break;  
     default: //???
   }
 }
