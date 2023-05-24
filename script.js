@@ -1,4 +1,3 @@
-
 //BOGKARRUSEL
 
 const venstrePil = document.getElementById("karruselHoejrePil");
@@ -8,7 +7,6 @@ const hoejrePil = document.getElementById("karruselVenstrePil");
   const bogIKarruselWidth = bogIKarrusel.clientWidth;
   bogKarrusel.scrollLeft += bogIKarruselWidth;
 });*/
-
 
 //RUL EN BOG
 const vistBog = document.getElementById("rulEnBogMedKnap");
@@ -56,24 +54,19 @@ function rul() {
 
 rulEnBog.addEventListener("click", rul);
 
-
-
-
 /* Fylder hjertet */
 function hjerteFyldes() {
   document.getElementById("hjerteTomt").style.display = "none";
   document.getElementById("hjerteFyldt").style.display = "block";
-
 }
 
 /* Tømmer hjertet */
-function hjerteToemmes() {  
+function hjerteToemmes() {
   document.getElementById("hjerteFyldt").style.display = "none";
   document.getElementById("hjerteTomt").style.display = "block";
 }
 
-
-/*Åbner anmeldelse op*/ 
+/*Åbner anmeldelse op*/
 function aabenAnmeldelse() {
   document.getElementById("anmeldelseKort").style.display = "block";
 }
