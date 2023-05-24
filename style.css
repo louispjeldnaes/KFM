@@ -253,14 +253,14 @@ footer {
 .favoritHjerte {
   position: absolute;
   z-index: 6;
-  top: 0;
-  right: 3.2vw;
+  top: -1vw;
+  right: 4.2vw;
 }
 
 .hjerteBaggrund {
   position: absolute;
-  width: 3vw;
-  top: -1.6vw;
+  width: 4vw;
+  top: -0.6vw;
   left: -0.5vw;
 }
 
@@ -1021,76 +1021,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     width: 100%;
   }
 
-  /*FORSIDE*/
-  #forsideIntro {
-    background-image: url(img/ForsideIllustrationMobil.svg);
-    width: 100%;
-    top: -36vw;
-  }
 
-  /*CSS-animationer på forsiden*/
-  #skib,
-  #havfugle,
-  #stjerneStor,
-  #stjerneLille {
-    display: none;
-  }
-
-  #luftBallon {
-    width: 25vw;
-    top: 65vw;
-    left: 13vw;
-  }
-
-  #planeter {
-    width: 45vw;
-    top: 50vw;
-    left: 50vw;
-  }
-
-  #maane {
-    width: 20vw;
-    top: 85vw;
-    left: 40vw;
-  }
-
-  #hval {
-    width: 35vw;
-    top: 110vw;
-  }
-
-  #sky1 {
-    width: 25vw;
-    top: 120vw;
-  }
-
-  #sky2 {
-    width: 25vw;
-    top: 125vw;
-    left: 50vw;
-  }
-
-  #sky3 {
-    width: 20vw;
-    top: 110vw;
-    left: 57vw;
-  }
-
-  #sky4 {
-    width: 17vw;
-    top: 119vw;
-    left: 73vw;
-  }
-
-  #sky5 {
-    width: 15vw;
-    top: 113vw;
-    left: 45vw;
-  }
-
-  #laeseklubBannerIMG {
-    width: 90%;
-  }
 
   /*FORSIDE*/
   #forsideIntro {
@@ -1208,6 +1139,11 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     top: 24vw;
     left: 25vw;
   }
+
+    #laeseklubBannerIMG {
+    width: 90%;
+  }
+
 
   .bogKarousselMidlertidig {
     height: 700px;
