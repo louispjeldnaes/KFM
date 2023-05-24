@@ -574,13 +574,6 @@ h5 {
 /*MOBIL*/
 
 @media screen and (max-width: 768px) {
-  .lilleCTA {
-    font-size: 1.5vw;
-    padding: 1vw 1.8vw 1vw 1.8vw;
-    margin-top: 0.5vw;
-    margin-bottom: 0.5vw;
-  }
-
   /*Overskrifter der skal centreres
   og have samme top og bottom margin*/
   .overskriftCenter {
