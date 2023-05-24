@@ -880,6 +880,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 
   .toKolonnerBillede {
     width: 100%;
+    margin-bottom: 3vw;
   }
 
   .toKolonnerTekst {
