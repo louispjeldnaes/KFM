@@ -267,12 +267,12 @@ footer {
   left: -0.5vw;
 }
 
-#hjerteFyldt {
+.hjerteFyldt {
   display: none;
   cursor: pointer;
 }
 
-#hjerteTomt {
+.hjerteTomt {
   cursor: pointer;
 }
 
@@ -812,15 +812,20 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 /*LÆSEKLUB BANNER - FORSIDE*/
 
 #laeseklubBanner {
-  margin-top: 7vw;
-  margin-bottom: 7vw;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
 }
 
 #laeseklubBannerIMG {
   width: 40%;
 }
 
+/*EVENT BANNER - FORSIDE*/
 
+#eventBanner {
+  margin-top: 10vw;
+  margin-bottom: 18vw;
+}
 
 
 
@@ -1075,34 +1080,6 @@ footer {
 
   #eventBannerIMG {
     height: 65vw;
-  }
-
-  /*Dele af illustration på eventbanner*/
-
-  #eventReol1 {
-    position: block;
-    width: 37%;
-    margin-top: 10vw;
-    margin-left: 5vw;
-  }
-
-  #eventReol2 {
-    width: 53%;
-    top: 5vw;
-    left: 37vw;
-  }
-
-  #eventForfatter {
-    width: 30%;
-    top: 32vw;
-    left: 13vw;
-    z-index: 1;
-  }
-
-  #eventDeltagere {
-    width: 65%;
-    top: 24vw;
-    left: 25vw;
   }
 
   #laeseklubBannerIMG {
