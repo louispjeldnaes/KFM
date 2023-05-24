@@ -574,7 +574,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 
 /*Logo i Mobil-menuen*/
 .logoMobilMenu {
-  width: 30%;
+  width: 50%;
   margin: auto;
   margin-bottom: 5vw;
   margin-top: -20vw;
@@ -882,6 +882,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 
   .toKolonnerBillede {
     width: 100%;
+    margin-bottom: 3vw;
   }
 
   .toKolonnerTekst {
