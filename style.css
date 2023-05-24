@@ -166,6 +166,10 @@ footer {
   overflow: hidden;
 }
 
+.karrusel h1 {
+  margin-left: 9.5vw;
+}
+
 .bogKarrusel {
   overflow: scroll;
   scroll-behavior: smooth;
@@ -196,6 +200,7 @@ footer {
   padding-right: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
+  z-index: 6;
 }
 
 #karruselHoejrePil {
@@ -204,19 +209,20 @@ footer {
   padding-left: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
+  z-index: 6;
 }
 
 /*BOG KORT*/
 
 .bogKort {
-  width: 15%;
+  width: 30%;
   position: relative;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 2.8vw;
+  padding-right: 2.8vw;
 }
 
 .bogBillede {
-  width: 100%;
+  width: 14vw;
   position: relative;
   margin: auto;
   cursor: pointer;
@@ -224,21 +230,21 @@ footer {
 }
 
 .anmeldelse {
-  width: 68.5%;
+  width: 71.3%;
   position: absolute;
-  top: -2.54vw;
-  left: 2.22vw;
+  top: -3.6vw;
+  left: 2.8vw;
   z-index: 1;
   cursor: pointer;
   transition: top 1s;
 }
 
 .anmeldelse:hover {
-  top: -4.5vw;
+  top: -5.5vw;
 }
 
 .bogKortTekst {
-  width: 100%;
+  width: 14vw;
   margin: auto;
 }
 
@@ -247,14 +253,14 @@ footer {
 .favoritHjerte {
   position: absolute;
   z-index: 6;
-  top: 0;
-  right: 3.2vw;
+  top: -1vw;
+  right: 4.2vw;
 }
 
 .hjerteBaggrund {
   position: absolute;
-  width: 3vw;
-  top: -1.6vw;
+  width: 4vw;
+  top: -0.6vw;
   left: -0.5vw;
 }
 
@@ -337,8 +343,6 @@ footer {
   width: 30%;
 }
 
-
-
 /* LAPTOP HEADER*/
 
 .header {
@@ -409,48 +413,45 @@ header li a:hover,
   width: 60px;
 }
 
-
-
-
 /*BURGER IKON styling og animationer*/
 
 /*BurgerBogen lukket*/
-#burgerBog{
-   position: relative;
-   width: 33px;
-   height: 40px;
-   max-height: fit-content;
+#burgerBog {
+  position: relative;
+  width: 33px;
+  height: 40px;
+  max-height: fit-content;
 }
-#burgerBog div{
-   background-color: #2a3c24;
-   border-radius: 30px;
- }
+#burgerBog div {
+  background-color: #2a3c24;
+  border-radius: 30px;
+}
 
-#bogRyg{
-   position: absolute;
-   right: 0;
-   height: 33px;
-   width: 10px;
+#bogRyg {
+  position: absolute;
+  right: 0;
+  height: 33px;
+  width: 10px;
 }
 #bogOver,
-#bogUnder{
-   position: absolute;
-   right: 1px;
-   height: 7px;
-   width: 43px;
+#bogUnder {
+  position: absolute;
+  right: 1px;
+  height: 7px;
+  width: 43px;
 }
 
-#bogUnder{
-   top: 26px;
+#bogUnder {
+  top: 26px;
 }
 
 #bogHoejre,
-#bogVenstre{
-   position: absolute;
-   right: 1px;
-   top: 14px;
-   height: 5px;
-   width: 43px;
+#bogVenstre {
+  position: absolute;
+  right: 1px;
+  top: 14px;
+  height: 5px;
+  width: 43px;
 }
 
 /*BurgerBogen åbner - animation*/
@@ -458,51 +459,65 @@ header li a:hover,
 Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/learning/css-animation-14153685?u=68595258
  og på w3schools*/
 
-#burgerBog{
-   animation: drejBog 0.6s ease-in-out;
-   animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
-   animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
+#burgerBog {
+  animation: drejBog 0.6s ease-in-out;
+  animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
+  animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
 }
 
-@keyframes drejBog{
-   0%{transform: rotate(0);}
-   100%{transform: rotate(90deg);}
+@keyframes drejBog {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
 }
 
-#bogUnder{
-   animation: drejBogUnder 0.6s ease-in-out;
-   animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
-   animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
+#bogUnder {
+  animation: drejBogUnder 0.6s ease-in-out;
+  animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
+  animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
 }
 
-@keyframes drejBogUnder{
-   0%{transform: rotate(0);}
-   100%{transform: translateX(6px) translateY(11px) rotate(-55deg);}
+@keyframes drejBogUnder {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translateX(6px) translateY(11px) rotate(-55deg);
+  }
 }
 
-#bogVenstre{
-   animation: drejBogVenstre 0.6s ease-in-out;
-   animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
-   animation-fill-mode: forwards; /*Så animationen afspiller fra 0%-100% og stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
+#bogVenstre {
+  animation: drejBogVenstre 0.6s ease-in-out;
+  animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
+  animation-fill-mode: forwards; /*Så animationen afspiller fra 0%-100% og stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
 }
 
-@keyframes drejBogVenstre{
-   0%{transform: rotate(0);}
-   100%{transform: translateY(12px) rotate(-45deg);}
+@keyframes drejBogVenstre {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translateY(12px) rotate(-45deg);
+  }
 }
 
-#bogHoejre{
-   animation: drejBogHoejre 0.6s ease-in-out;
-   animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
-   animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
+#bogHoejre {
+  animation: drejBogHoejre 0.6s ease-in-out;
+  animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
+  animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
 }
 
-@keyframes drejBogHoejre{
-   0%{transform: rotate(0);}
-   100%{transform: translateX(-1px) translateY(3px) rotate(-20deg);}
+@keyframes drejBogHoejre {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translateX(-1px) translateY(3px) rotate(-20deg);
+  }
 }
-
-
 
 /*HEADER MOBIL */
 
@@ -535,7 +550,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 }
 
 /*1/4 hvid cirkel*/
-#burgerCirkel{
+#burgerCirkel {
   position: fixed;
   width: 20vw;
   bottom: -1vw;
@@ -575,10 +590,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 .overlay a:hover {
   color: #a690a4;
 }
-
-
-
-
 
 /*FORSIDE*/
 
@@ -817,10 +828,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     display: none;
   }
 }
-
-
-
-
 
 /*MOBIL*/
 

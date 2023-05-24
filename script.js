@@ -1,4 +1,5 @@
- //BOGKARRUSEL
+
+//BOGKARRUSEL
 
 const venstrePil = document.getElementById("karruselHoejrePil");
 const hoejrePil = document.getElementById("karruselVenstrePil");
