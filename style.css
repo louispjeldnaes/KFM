@@ -124,7 +124,7 @@ ul li {
 
 /*INSTAGRAM BANNER*/
 footer {
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .toKolonnerInsta {
@@ -816,7 +816,17 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
   width: 40%;
 }
 
+
+
+
+
+
 /*MEDIA QUERIES*/
+
+
+
+
+
 
 /*LAPTOP*/
 
@@ -947,6 +957,11 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
   #SoMe img {
     width: 80%;
   }
+
+  /*INSTAGRAM BANNER*/
+footer {
+  margin-top: 50px;
+}
 
   /*FOOTER*/
   .footer {
