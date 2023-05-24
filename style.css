@@ -816,50 +816,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
   width: 40%;
 }
 
-/*EVENT BANNER - FORSIDE*/
-
-#eventBannerIMG {
-  height: 43vw;
-  position: relative;
-}
-
-#eventBannerIMG div {
-  position: absolute;
-}
-
-/*Dele af illustration på eventbanner*/
-
-#eventReol1 {
-  position: block;
-  width: 40%;
-  margin-top: 10vw;
-  margin-left: 2vw;
-}
-
-#eventReol2 {
-  width: 56%;
-  top: 5vw;
-  left: 20vw;
-}
-
-#eventForfatter {
-  width: 33%;
-  top: 19vw;
-  left: 5vw;
-  z-index: 1;
-}
-
-#eventDeltagere {
-  width: 70%;
-  top: 14vw;
-  left: 11vw;
-}
-
-.bogKarousselMidlertidig {
-  height: 700px;
-  background-color: #a690a4;
-}
-
 /*MEDIA QUERIES*/
 
 /*LAPTOP*/
@@ -1090,7 +1046,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     left: 45vw;
   }
 
-  /*EVENT BANNER*/
+  /*BANNERE*/
 
   #eventBanner {
     flex-wrap: wrap-reverse;
@@ -1179,5 +1135,8 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 
   .karruselPile {
     width: 7%;
+  }
+  #laeseklubBannerIMG {
+    width: 90%;
   }
 }

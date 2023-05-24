@@ -13,13 +13,14 @@
     <script src="https://kit.fontawesome.com/0396285b10.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleAndreSider.css">
+    <script src="burgerscript.js" defer></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Animationer fra https://michalsnik.github.io/aos/-->
     <title>Kristian F. Møller - Aarhus' hyggeligeste boghandel</title>
 
 </head>
 
-<body>
+<body> <!---->
     <header>
         <!--Logo-->
         <div class="header">
@@ -102,7 +103,7 @@
             <div class="toKolonnerBillede" data-aos="fade-right" data-aos-duration="3000"> <!--Animation fra https://michalsnik.github.io/aos/-->
                 <img src="img/læsegrupper.svg" alt="">
             </div>
-            <div class="toKolonnerTekst" data-aos="fade-left" data-aos-duration="3000"> <!--Animation fra https://michalsnik.github.io/aos/-->
+            <div class="toKolonnerTekst" data-aos="fade-in" data-aos-duration="3000"> <!--Animation fra https://michalsnik.github.io/aos/-->
                 <h1>Læsefællesskab</h1>
                 <h2>Vi mener det er vigtigt at støtte op omkring
                     læsefællesskabet og -glæden.
@@ -125,9 +126,11 @@
                     <div class="laeseklubberLaeserFlex" data-aos="fade-right" data-aos-duration="3000"> <!--Animation fra https://michalsnik.github.io/aos/-->
                         
                         <div class="bogCover"><!--Billede, titel , pris .. -->
-                            <div >
-                                <img src="img/det-manglende-lys.jpg" alt="">
-                            </div>
+                          <a href="bogbeskrivelse.html">
+                              <div >
+                                  <img src="img/det-manglende-lys.jpg" alt="">
+                              </div>
+                            </a>
                             <h2>Det manglende lys</h2>
                             <h3>Nino Haratischwili</h3>
                             <div class="knapPrisFlex">
@@ -157,9 +160,11 @@
                     <!--Læseklub 3 læser-->
                     <div class="laeseklubberLaeserFlex" data-aos="fade-right" data-aos-duration="3000"> <!--Animation fra https://michalsnik.github.io/aos/--> 
                         <div class="bogCover"><!--Billede, titel , pris .. -->
-                            <div>
+                            <a href="bogbeskrivelse.html">
+                              <div>
                                 <img src="img/nøjsomheden.jpg" alt="">
-                            </div>
+                              </div>
+                            </a>
                             <h2>Nøjsomheden</h2>
                             <h3>Stine Askov</h3>
                             <div class="knapPrisFlex">
@@ -203,9 +208,11 @@
                                 århundreder og kontinenter.</p>
                         </div> 
                         <div class="bogCover"><!--Billede, titel , pris .. -->
-                            <div>
+                            <a href="bogbeskrivelse.html">
+                              <div>
                                 <img src="img/himmelstormere.jpg" alt="">
-                            </div>
+                              </div>
+                            </a>
                             <h2>Himmelstormere</h2>
                             <h3>Maggie Shiptead</h3>
                             <div class="knapPrisFlex">
@@ -225,8 +232,10 @@
             
         </section>
 
-        <!--INFORGRAPHIC--> 
-        <section id="infographicBaggrund"> <!-- Billede som baggrund-->
+        <!--INFORGRAPHIC-->
+
+        <!-- Billede som baggrund-->
+        <section id="infographicBaggrund" data-aos="fade-in" data-aos-duration="3000"> <!--Animation fra https://michalsnik.github.io/aos/-->
             
             <div id="igOverskrift">
                 <h1>Ønsker du dit eget læsefællesskab?</h1>
