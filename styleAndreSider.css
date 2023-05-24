@@ -8,9 +8,13 @@ og have samme top og bottom margin*/
 
 /*sørger for at det første element på siden er
 100% synlig ved at lægge under headeren og
-ikke bagved*/
+ikke bagved*/ 
 main {
-  margin-top: 300px;
+  margin-top: 10vw;
+}
+
+.bogOgEventBeskrivelse{
+  margin-top: 20vw;
 }
 
 /*styrer farve på alle i'er (ikoner fra Fontawesome)*/
