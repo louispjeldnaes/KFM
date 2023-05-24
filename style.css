@@ -164,10 +164,12 @@ footer {
 .karrusel {
   position: relative;
   overflow: hidden;
+  padding-bottom: 2vw;
 }
 
 .karrusel h1 {
   margin-left: 8.3vw;
+  padding-bottom: 1vw;
 }
 
 .bogKarrusel {
@@ -923,7 +925,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 
   #toKolonnerInstaBillede {
     width: 100%;
-    padding-top: 30%;
+    padding-top: 5vw;
   }
 
   #toKolonnerInstaTekst {
