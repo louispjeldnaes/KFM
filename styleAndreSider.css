@@ -8,12 +8,12 @@ og have samme top og bottom margin*/
 
 /*sørger for at det første element på siden er
 100% synlig ved at lægge under headeren og
-ikke bagved*/ 
+ikke bagved*/
 main {
   margin-top: 10vw;
 }
 
-.bogOgEventBeskrivelse{
+.bogOgEventBeskrivelse {
   margin-top: 20vw;
 }
 
@@ -291,8 +291,8 @@ uden at det påvirker pris osv. i div'en med bogcover*/
 
 #fejlTekst h1 {
   text-align: right;
-  margin-right: 120px;
-  padding-top: 40px;
+  margin-right: 6.6vw;
+  padding-top: 2.2vw;
 }
 
 #tristSmiley {
@@ -902,10 +902,32 @@ så tekst og billede aligner både til højre og venstre*/
   }
 
   /*Rul en bog*/
+  #rulEnBog {
+    padding-bottom: 30vw;
+  }
+
+  #rulEnBog h2 {
+    text-align: left;
+  }
+
+  #rulEnBog p {
+    text-align: left;
+  }
+
+  #rulEnBog div {
+    padding-bottom: 6vw;
+  }
 
   #rulEnBogMedKnap {
     width: 28vw;
     right: 29vw;
-    top: 102vw;
+    top: 88vw;
+  }
+
+  #rulEnBogKnap {
+    position: absolute;
+    top: 0;
+    margin-top: 150vw;
+    margin-left: 17.5vw;
   }
 }

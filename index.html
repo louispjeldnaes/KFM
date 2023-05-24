@@ -156,106 +156,621 @@
         <div id="baggrundIntroForside"></div>
       </section>
 
-      <!--bogKarroussel-->
+      <!--BOGKARRUSEL-->
       <!--Bogkort til karousel-->
-      <div class="karruselErTanken">
-        <div class="bogKort">
-          <a href="bogbeskrivelse.html"
-            ><div class="bogBillede"><img src="img/11%.jpg" alt="" /></div
-          ></a>
-          <div class="anmeldelse" onclick="aabenAnmeldelse()">
-            <img src="img/anmeldelse.svg" alt="" />
-          </div>
-          <div class="favoritHjerte">
-            <div class="hjerteBaggrund">
-              <img src="img/hjerteBaggrund.svg" alt="" />
+      <section class="karrusel">
+        <h1>Nyheder!</h1>
+
+        <img
+          class="karruselPile"
+          id="karruselVenstrePil"
+          src="img/venstrePil.svg"
+          alt="Venstrepil i bogkarrusel"
+        />
+
+        <img
+          class="karruselPile"
+          id="karruselHoejrePil"
+          src="img/hoejrePil.svg"
+          alt="Hoejrepil i bogkarrusel"
+        />
+
+        <div class="bogKarrusel">
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/nøjsomheden.jpg" alt="Nøjsomheden af Stine Askov - bog"></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
             </div>
-            <div id="hjerteFyldt" onclick="hjerteToemmes()">
-              <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
             </div>
-            <!--Hjerte fuld-->
-            <div id="hjerteTomt" onclick="hjerteFyldes()">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #2a3c24"></i>
-            </div>
-            <!--Hjerte omrids-->
-          </div>
-          <div class="bogKortTekst">
-            <h2>Det manglende lys</h2>
-            <h3>Nino Haratischwili</h3>
-            <div class="knapPrisFlex">
-              <h2>299,95 kr</h2>
-              <div>
+            <div class="bogKortTekst">
+              <h2>Nøjsomheden</h2>
+              <h3>Stine Askov</h3>
+              <div class="knapPrisFlex">
                 <form action="#">
                   <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
                   <button type="submit" class="lilleCTA">Læg i kurv</button>
                 </form>
+                <h2>249,95 kr</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/pige1983.jpg" alt="Pige, 1983 af Linn Ullmann - bog"></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
+            </div>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>Det ordner sig</h2>
+              <h3>Signe Amtoft</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>299,95 kr</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/11.jpg" alt="" /></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
+            </div>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>11%</h2>
+              <h3>Maren Uthaug</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>299,95 kr</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/citronbjerget.jpg" alt="" /></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
+            </div>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>Citronbjerget</h2>
+              <h3>Eva Tind</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>299,95 kr</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/vølvensVejUlveGabet.jpg" alt="" /></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
+            </div>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>Vølvens vej 3</h2>
+              <h3>Anne-Marie Vedsø Olesen</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>299,95 kr</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/detManglendeLys.jpg" alt="" /></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
+            </div>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>Det manglende lys</h2>
+              <h3>Nino Haratischwili</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>299,95 kr</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/detTredjeRige.jpg" alt="" /></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
+            </div>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>Det tredje rige</h2>
+              <h3>Karl Ove Knausgård</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>299,95 kr</h2>
               </div>
             </div>
           </div>
         </div>
-        <div id="anmeldelseKort">
-          <div class="anmeldelseKortTekst">
-            <h2>Anbefaling fra Kristian F. Møller</h2>
-            <h5>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </h5>
-            <br />
-            <h5>- Marianne</h5>
-          </div>
-          <div class="lukAnmeldelse" onclick="lukAndmeldelse()">
-            <i class="fa-solid fa-xmark fa-3x"></i>
-          </div>
-        </div>
-      </div>
-      
-        
-
-            
-      <!--LÆSEKLUB BANNER-->
-      <section id="laeseklubBanner" class="toKolonner"> 
-        <div id="laeseklubBannerIMG" class="toKolonnerBillede"  data-aos="fade-right" data-aos-duration="3000"> <!--Animation fra https://michalsnik.github.io/aos/-->
-            <img src="img/læsegrupper.svg" alt="læseklub skaber læsefællesskab ved bord med kaffe og bøger">
-        </div>
-        <div  data-aos="fade-in" data-aos-duration="3000" class="toKolonnerTekst"> <!--Animation fra https://michalsnik.github.io/aos/-->
-            <h1>Elsker du at læse bøger?</h1>
-            <h2>- Men savner nogen at snakke med om dem?</h2>
-            <p>Følg med i, hvilke bøger vores tre læseklubber læser 
-                for tiden og få tips til, hvordan du kan starte din 
-                egen læseklub og få 20% rabat i Kristian F. Møller.</p>
-                <form action="laeseklubber.html"> <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
-                    <button type="submit" class="CTAstor">læseklubber</button>
-                  </form>
-        </div>
-    </section>
-
-      <!--bogKarroussel-->
-
-            
-
-      <!--EVENT BANNER-->
-      <section id="eventBanner" class="toKolonner"> 
-        <div data-aos="fade-in" data-aos-duration="3000" class="toKolonnerTekst"> 
-            <h1>Events hos Kristian F. Møller</h1>
-            <h2>Vi vil gerne give dig og andre læseheste mulighed for at deltage i 
-                spændende og inspirerende forfatter-arrangementer afholdt i vores egen 
-                lille hyggelige boghandel.</h2>
-    
-                <form action="events.html"> <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
-                    <button type="submit" class="CTAstor">Kommende events</button>
-                  </form>
-        </div>
-        
-        <div class="toKolonnerBillede"  data-aos="fade-left" data-aos-duration="3000"><img src="img/EventIllustration.svg"
-                alt="Illustration af et afholdt forfatterevent i Kristian F. Møller butikken">
-        </div><!--Animation fra https://michalsnik.github.io/aos/--> 
       </section>
 
+      <!--LÆSEKLUB BANNER-->
+      <section id="laeseklubBanner" class="toKolonner">
+        <div
+          id="laeseklubBannerIMG"
+          class="toKolonnerBillede"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
+          <!--Animation fra https://michalsnik.github.io/aos/-->
+          <img
+            src="img/læsegrupper.svg"
+            alt="læseklub skaber læsefællesskab ved bord med kaffe og bøger"
+          />
+        </div>
+        <div
+          data-aos="fade-in"
+          data-aos-duration="3000"
+          class="toKolonnerTekst"
+        >
+          <!--Animation fra https://michalsnik.github.io/aos/-->
+          <h1>Elsker du at læse bøger?</h1>
+          <h2>- Men savner nogen at snakke med om dem?</h2>
+          <p>
+            Følg med i, hvilke bøger vores tre læseklubber læser for tiden og få
+            tips til, hvordan du kan starte din egen læseklub og få 20% rabat i
+            Kristian F. Møller.
+          </p>
+          <form action="laeseklubber.html">
+            <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+            <button type="submit" class="CTAstor">læseklubber</button>
+          </form>
+        </div>
+      </section>
+
+      <!--BOGKARRUSEL-->
+      <section class="karrusel">
+        <h1>Nyheder!</h1>
+
+        <img
+          class="karruselPile"
+          id="karruselVenstrePil"
+          src="img/venstrePil.svg"
+          alt="Venstrepil i bogkarrusel"
+        />
+
+        <img
+          class="karruselPile"
+          id="karruselHoejrePil"
+          src="img/hoejrePil.svg"
+          alt="Hoejrepil i bogkarrusel"
+        />
+
+        <div class="bogKarrusel">
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/fyrsterneAfFinntjern.jpg" alt="" /></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
+            </div>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>Fyrsterne af Finntjern</h2>
+              <h3>Lars Elling</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>299,95 kr</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/detOrdnerSig.jpg" alt="" /></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
+            </div>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>Det ordner sig</h2>
+              <h3>Signe Amtoft</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>299,95 kr</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/11.jpg" alt="" /></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
+            </div>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>11%</h2>
+              <h3>Maren Uthaug</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>299,95 kr</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/citronbjerget.jpg" alt="" /></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
+            </div>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>Citronbjerget</h2>
+              <h3>Eva Tind</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>299,95 kr</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/vølvensVejUlveGabet.jpg" alt="" /></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
+            </div>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>Vølvens vej 3</h2>
+              <h3>Anne-Marie Vedsø Olesen</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>299,95 kr</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/detManglendeLys.jpg" alt="" /></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
+            </div>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>Det manglende lys</h2>
+              <h3>Nino Haratischwili</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>299,95 kr</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bogKort">
+            <a href="bogbeskrivelse.html"
+              ><div class="bogBillede">
+                <img src="bogcovers/detTredjeRige.jpg" alt="" /></div
+            ></a>
+            <div class="anmeldelse">
+              <img src="img/anmeldelse.svg" alt="" />
+            </div>
+            <div class="favoritHjerte">
+              <div class="hjerteBaggrund">
+                <img src="img/hjerteBaggrund.svg" alt="" />
+              </div>
+              <div id="hjerteFyldt" onclick="hjerteToemmes()">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #2a3c24"></i>
+              </div>
+              <!--Hjerte fuld-->
+              <div id="hjerteTomt" onclick="hjerteFyldes()">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #2a3c24"
+                ></i>
+              </div>
+              <!--Hjerte omrids-->
+            </div>
+            <div class="bogKortTekst">
+              <h2>Det tredje rige</h2>
+              <h3>Karl Ove Knausgård</h3>
+              <div class="knapPrisFlex">
+                <form action="#">
+                  <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+                  <button type="submit" class="lilleCTA">Læg i kurv</button>
+                </form>
+                <h2>299,95 kr</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--EVENT BANNER-->
+      <section id="eventBanner" class="toKolonner">
+        <div
+          data-aos="fade-in"
+          data-aos-duration="3000"
+          class="toKolonnerTekst"
+        >
+          <h1>Events hos Kristian F. Møller</h1>
+          <h2>
+            Vi vil gerne give dig og andre læseheste mulighed for at deltage i
+            spændende og inspirerende forfatter-arrangementer afholdt i vores
+            egen lille hyggelige boghandel.
+          </h2>
+
+          <form action="events.html">
+            <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/-->
+            <button type="submit" class="CTAstor">Kommende events</button>
+          </form>
+        </div>
+
+        <div
+          class="toKolonnerBillede"
+          data-aos="fade-left"
+          data-aos-duration="3000"
+        >
+          <img
+            src="img/EventIllustration.svg"
+            alt="Illustration af et afholdt forfatterevent i Kristian F. Møller butikken"
+          />
+        </div>
+        <!--Animation fra https://michalsnik.github.io/aos/-->
+      </section>
     </main>
     <footer>
       <!--INSTAGRAM BANNER-->
