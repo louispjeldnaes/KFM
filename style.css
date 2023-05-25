@@ -184,7 +184,7 @@ footer {
   width: 0;
 }
 
-.karruselPile {
+.karruselVenstrePil {
   width: 2%;
   position: absolute;
   display: flex;
@@ -195,9 +195,6 @@ footer {
   padding: 0;
   cursor: pointer;
   opacity: 0.8;
-}
-
-#karruselVenstrePil {
   border-radius: 0 32px 32px 0;
   padding-right: 1vw;
   padding-top: 1vw;
@@ -205,7 +202,17 @@ footer {
   z-index: 6;
 }
 
-#karruselHoejrePil {
+.karruselHoejrePil{
+  width: 2%;
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: white;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.8;
   right: 0;
   border-radius: 32px 0 0 32px;
   padding-left: 1vw;
@@ -213,6 +220,8 @@ footer {
   padding-bottom: 1vw;
   z-index: 6;
 }
+
+
 
 /*BOG KORT*/
 
