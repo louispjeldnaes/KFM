@@ -614,6 +614,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
   z-index: 15;
 }
 
+/*Baggrunde med tekstur*/
 .baggrundBeige, .baggrundGroen  {
   background-image: url(img/BaggrundBeige.svg);
   background-size: cover;
@@ -1053,8 +1054,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     height: 200vw;
   }
 
-
-
   #forsideIntroTekst {
     top: 135vw;
     left: 15vw;
@@ -1065,6 +1064,12 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
   #forsideIntroTekst h2 {
     width: 70%;
   }
+
+  /*baggrund til forsidensIntro*/
+  .baggrundBeige {
+    height: 230vw;
+  }
+
 
   /*CSS-animationer på forsiden*/
   #skib,
@@ -1141,7 +1146,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 
 
   #eventBannerBaggrund {
-    top: 650vw;
+    top: 660vw;
     height: 180vw;
   }
 
@@ -1150,8 +1155,13 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
   }
 
   #laeseklubBannerBaggrund {
-    top: 340vw;
+    top: 360vw;
     height: 180vw;
+  }
+
+  #footerBaggrund {
+    height: 188vw;
+    top: 950vw;
   }
 
   /*BOGKARRUSEL*/
