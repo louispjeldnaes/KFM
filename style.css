@@ -1182,14 +1182,14 @@ footer {
   }
 
   .favoritHjerte {
-    top: 0.2vw;
-    right: 13vw;
+    top: -3.5vw;
+    right: 13.8vw;
   }
 
   .hjerteBaggrund {
     width: 10vw;
-    top: -5vw;
-    left: -1.5vw;
+    top: -0.2vw;
+    left: -1vw;
   }
 
   .karruselPile {
