@@ -170,7 +170,6 @@ footer {
 .karrusel h1 {
   margin-left: 8.3vw;
   margin-top: 6vw;
-  padding-bottom: 1vw;
 }
 
 .bogKarrusel {
@@ -178,7 +177,7 @@ footer {
   scroll-behavior: smooth;
   display: flex;
   justify-content: space-between;
-  padding-top: 5vw;
+  padding-top: 8vw;
 }
 
 .bogKarrusel::-webkit-scrollbar {
@@ -237,7 +236,7 @@ footer {
   position: absolute;
   top: -3.6vw;
   left: 2.8vw;
-  z-index: 1;
+  z-index: 2;
   cursor: pointer;
   transition: top 1s;
 }
@@ -986,6 +985,8 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 
   /*INSTAGRAM BANNER*/
 
+  
+
   .toKolonnerInsta {
     flex-wrap: wrap-reverse;
     margin-left: 10%;
@@ -1018,11 +1019,12 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     width: 80%;
   }
 
-footer {
-  margin-top: 5vw;
-}
 
   /*FOOTER*/
+    footer /*Toppen af instagram-banner*/{
+    margin-top: 8vw;
+  }
+
   .footer {
     flex-wrap: wrap;
     padding-left: 10%;
@@ -1048,6 +1050,7 @@ footer {
     background-image: url(img/ForsideIllustrationMobil.svg);
     width: 110%;
     top: -36vw;
+    height: 200vw;
   }
 
 
@@ -1152,6 +1155,10 @@ footer {
   }
 
   /*BOGKARRUSEL*/
+  .bogKarrusel {
+    padding-top: 23vw;
+  }
+  
   .karrusel h1 {
     text-align: center;
     margin-left: 0;
@@ -1185,9 +1192,19 @@ footer {
     top: -16.5vw;
   }
 
+  .hjerteFyldt {
+    scale: 0.9;
+    
+  }
+
+  .hjerteTomt {
+    scale: 0.9;
+  }
+
   .favoritHjerte {
     top: -3.5vw;
     right: 13.8vw;
+    scale: 0.7;
   }
 
   .hjerteBaggrund {

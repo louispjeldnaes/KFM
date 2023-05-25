@@ -324,7 +324,7 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   right: 0;
   top: 0;
   margin-top: 42.2%;
-  margin-right: 12%;
+  margin-right: 9%;
 }
 
 
@@ -334,7 +334,7 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   right: 0;
   top: 0;
   margin-top: 43.8%;
-  margin-right: 41.8%;
+  margin-right: 40%;
 }
 
 /*INSPIRATIONSSIDE*/
@@ -634,8 +634,6 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   #fejlTekst h1 {
     text-align: center;
     margin-right: 14vw;
-    padding-top: 2vw;
-    padding-bottom: 6vw;
   }
 
   #tristSmiley {
