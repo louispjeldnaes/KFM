@@ -37,7 +37,7 @@ h3 {
 
 h5 {
   font-family: "Indie Flower", sans-serif;
-  font-size: 18px;
+  font-size: 2vw;
   font-weight: 100;
 }
 
@@ -79,7 +79,7 @@ a {
   padding: 1.3vw 3vw 1.3vw 3vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
-  padding: 14px 28px;
+  padding: 1.2vw 2.2vw;
 }
 
 /*Inspiration til opbygning af knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/*/
@@ -124,7 +124,7 @@ ul li {
 
 /*INSTAGRAM BANNER*/
 footer {
-  margin-top: 150px;
+  margin-top: 10vw;
 }
 
 .toKolonnerInsta {
@@ -156,7 +156,7 @@ footer {
 }
 
 #instagramUnderpunkter {
-  margin-top: 40px;
+  margin-top: 2vw;
 }
 
 /*BOGKARRUSEL*/
@@ -178,7 +178,7 @@ footer {
   scroll-behavior: smooth;
   display: flex;
   justify-content: space-between;
-  padding-top: 100px;
+  padding-top: 5vw;
 }
 
 .bogKarrusel::-webkit-scrollbar {
@@ -200,18 +200,18 @@ footer {
 
 #karruselVenstrePil {
   border-radius: 0 32px 32px 0;
-  padding-right: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-right: 1vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   z-index: 6;
 }
 
 #karruselHoejrePil {
   right: 0;
   border-radius: 32px 0 0 32px;
-  padding-left: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-left: 1vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   z-index: 6;
 }
 
@@ -375,7 +375,7 @@ nav ul {
 
 nav a {
   padding: 0vw 0vw 1vw 1vw;
-  font-size: 13px;
+  font-size: 0.8vw;
   font-weight: 600;
   margin-right: 3vw;
 }
@@ -414,8 +414,10 @@ header li a:hover,
 }
 
 .ikoner div i {
-  width: 60px;
+  width: 3.7vw;
 }
+
+/*Mobil BURGER*/
 
 /*BURGER IKON styling og animationer*/
 
@@ -523,8 +525,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
   }
 }
 
-/*HEADER MOBIL */
-
 /*OVERLAY/CURTAIN MENU - SLIDE IN LEFT*/
 
 /*Overlay baggrund - Eksempel*/
@@ -567,7 +567,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 .overlayMenuPunkter {
   position: relative;
   top: 20%;
-  margin-bottom: 30px;
+  margin-bottom: 5vw;
   width: 100%;
   text-align: left;
 }
@@ -582,7 +582,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 
 /*Links i overlay*/
 .overlay a {
-  padding: 35px;
+  padding: 7vw;
   text-decoration: none;
   font-size: 5vw;
   color: #2a3c24;
@@ -974,6 +974,10 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     z-index: 100;
   }
 
+  .ikoner div i {
+    width: 11vw;
+  }
+
   #logo {
     width: 12%;
     margin-left: 2.5vw;
@@ -994,7 +998,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 
   #toKolonnerInstaTekst {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 2vw;
   }
 
   #toKolonnerInstaTekst h1 {
@@ -1015,7 +1019,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
   }
 
 footer {
-  margin-top: 50px;
+  margin-top: 5vw;
 }
 
   /*FOOTER*/
