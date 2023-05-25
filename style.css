@@ -1232,8 +1232,8 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     left: -1vw;
   }
 
-  .karruselPile {
-    width: 7%;
+  .karruselVenstrePil, .karruselHoejrePil {
+    width: 6%;
   }
   #laeseklubBannerIMG {
     width: 90%;
