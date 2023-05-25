@@ -1,12 +1,4 @@
-//BOGKARRUSEL
 
-const venstrePil = document.getElementById("karruselHoejrePil");
-const hoejrePil = document.getElementById("karruselVenstrePil");
-
-/*hoejrePil.addEventListener("click", () => {
-  const bogIKarruselWidth = bogIKarrusel.clientWidth;
-  bogKarrusel.scrollLeft += bogIKarruselWidth;
-});*/
 
 //RUL EN BOG
 const vistBog = document.getElementById("rulEnBogMedKnap");
