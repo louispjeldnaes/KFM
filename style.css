@@ -598,7 +598,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 /*FORSIDE*/
 
 #forsideIntro {
-  height: 970px;
+  height: 60vw;
   background-image: url(img/baggrundForsideIllustration.svg);
   background-size: cover;
   position: relative;
@@ -633,10 +633,14 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 #footerBaggrund {
   background-image: url(img/BaggrundGul.svg);
   width: 120%;
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
   left: -5vw;
   height:24vw;
   top: 310vw;
   padding: -10vw;
+  z-index: -1;
 }
 
 #laeseklubBannerBaggrund {
@@ -1042,6 +1046,8 @@ footer {
     top: -36vw;
   }
 
+
+
   #forsideIntroTekst {
     top: 135vw;
     left: 15vw;
@@ -1126,14 +1132,19 @@ footer {
     height: 65vw;
   }
 
+
   #eventBannerBaggrund {
     top: 650vw;
     height: 180vw;
-  
   }
 
   #laeseklubBannerIMG {
     width: 90%;
+  }
+
+  #laeseklubBannerBaggrund {
+    top: 340vw;
+    height: 180vw;
   }
 
   /*BOGKARRUSEL*/
