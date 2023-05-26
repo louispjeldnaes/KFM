@@ -898,6 +898,10 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
   #headerMobil {
     display: none;
   }
+
+  #baggrundsBilledeMobil {
+    display: none;
+  }
 }
 
 /*MOBIL*/
@@ -1062,7 +1066,7 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     top: -36vw;
     height: 200vw;
   }
-  
+
   #baggrundsBilledeMobil {
     position: absolute;
     top: 0;
