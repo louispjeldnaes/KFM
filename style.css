@@ -648,7 +648,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
   left: -5vw;
   height:24vw;
   top: 310vw;
-  padding: -10vw;
   z-index: -1;
 }
 
@@ -1222,19 +1221,12 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     top: -16.5vw;
   }
 
-  .hjerteFyldt {
-    scale: 0.9;
-    
-  }
-
-  .hjerteTomt {
-    scale: 0.9;
-  }
+  
 
   .favoritHjerte {
     top: -3.5vw;
     right: 13.8vw;
-    scale: 0.7;
+    
   }
 
   .hjerteBaggrund {
