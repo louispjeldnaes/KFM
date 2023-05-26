@@ -30,7 +30,7 @@ function rul() {
       break;
     case 6:
       vistBog.innerHTML =
-        '<a href="bogbeskrivelse.html"><img src="bogcovers/enVejUdAfTågen.jpg" alt="En vej ud af tågen af Kristian Leth"></a>';
+        '<a href="bogbeskrivelse.html"><img src="bogcovers/uniform.jpg" alt="Uniform af Thomas Rydahl"></a>';
       break;
     case 7:
       vistBog.innerHTML =
