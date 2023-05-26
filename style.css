@@ -1057,10 +1057,17 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 
   /*FORSIDE*/
   #forsideIntro {
-    background-image: url(img/ForsideIllustrationMobil.svg);
+    background-image: none;
     width: 110%;
     top: -36vw;
     height: 200vw;
+  }
+  
+  #baggrundsBilledeMobil {
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    width: 100%;
   }
 
   #forsideIntroTekst {
