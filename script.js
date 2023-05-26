@@ -14,7 +14,7 @@ function rul() {
       break;
     case 2:
       vistBog.innerHTML =
-        '<a href="bogbeskrivelse.html"><img src= "bogcovers/deBedsteFamilier.jpg" alt="De bedste familier af Kim Blæsbjerg"></a>';
+        '<a href="bogbeskrivelse.html"><img src="bogcovers/deBedsteFamilier.jpg" alt="De bedste familier af Kim Blæsbjerg"></a>';
       break;
     case 3:
       vistBog.innerHTML =
