@@ -53,6 +53,7 @@ så tekst og billede aligner både til højre og venstre*/
 .eventTidKnap {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 4vw;
 }
 
 /*ur-ikon og klokkeslæt flexes*/
@@ -327,7 +328,6 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   margin-right: 11.2%;
 }
 
-
 #knapPil {
   width: 2.5%;
   position: absolute;
@@ -369,15 +369,7 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   top: 8vw;
 }
 
-
-
-
-
 /*MEDIA QUERIES*/
-
-
-
-
 
 /*LAPTOP*/
 
@@ -658,8 +650,8 @@ uden at det påvirker pris osv. i div'en med bogcover*/
 
   /*Hvis ikke class navnet bliver skrevet inden
   hver ny teksttype, ændrer det også på teksten i footer*/
-  .toKolonnerMereMarginTekst h1, .toKolonnerMereMarginTekst
-  h2,
+  .toKolonnerMereMarginTekst h1,
+  .toKolonnerMereMarginTekst h2,
   .toKolonnerMereMarginTekst p {
     text-align: center;
   }
